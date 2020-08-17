@@ -5,10 +5,10 @@
     Microchip Technology Inc.
 
   File Name
-    plib_sercom4_spi.c
+    plib_sercom4_spi_master.c
 
   Summary
-    SERCOM4_SPI PLIB Implementation File.
+    SERCOM4_SPI Master PLIB Implementation File.
 
   Description
     This file defines the interface to the SERCOM SPI peripheral library.
@@ -45,7 +45,7 @@
 *******************************************************************************/
 // DOM-IGNORE-END
 
-#include "plib_sercom4_spi.h"
+#include "plib_sercom4_spi_master.h"
 
 // *****************************************************************************
 // *****************************************************************************
@@ -91,6 +91,8 @@ void SERCOM4_SPI_Initialize(void)
     /* Instantiate the SERCOM4 SPI object */
     sercom4SPIObj.callback = NULL ;
     sercom4SPIObj.transferIsBusy = false ;
+	sercom4SPIObj.txSize = 0;
+	sercom4SPIObj.rxSize = 0;
 
     /* Selection of the Character Size and Receiver Enable */
     SERCOM4_REGS->SPIM.SERCOM_CTRLB = SERCOM_SPIM_CTRLB_CHSIZE_8_BIT | SERCOM_SPIM_CTRLB_RXEN_Msk ;
@@ -164,12 +166,14 @@ bool SERCOM4_SPI_TransferSetup(SPI_TRANSFER_SETUP *setup, uint32_t spiSourceCloc
         if((baudValue > 0) & (baudValue <= 255))
         {
             /* Selection of the Clock Polarity and Clock Phase */
+			SERCOM4_REGS->SPIM.SERCOM_CTRLA &= ~(SERCOM_SPIM_CTRLA_CPOL_Msk | SERCOM_SPIM_CTRLA_CPHA_Msk);
             SERCOM4_REGS->SPIM.SERCOM_CTRLA |= (uint32_t)setup->clockPolarity | (uint32_t)setup->clockPhase;
 
             /* Selection of the Baud Value */
             SERCOM4_REGS->SPIM.SERCOM_BAUD = baudValue;
 
             /* Selection of the Character Size */
+			SERCOM4_REGS->SPIM.SERCOM_CTRLB &= ~SERCOM_SPIM_CTRLB_CHSIZE_Msk;
             SERCOM4_REGS->SPIM.SERCOM_CTRLB |= setup->dataBits;
 
             /* Wait for synchronization */
@@ -241,7 +245,15 @@ void SERCOM4_SPI_CallbackRegister(SERCOM_SPI_CALLBACK callBack, uintptr_t contex
 
 bool SERCOM4_SPI_IsBusy(void)
 {
-    return ((sercom4SPIObj.transferIsBusy == true) || ((SERCOM4_REGS->SPIM.SERCOM_INTFLAG & SERCOM_SPIM_INTFLAG_TXC_Msk) == 0));
+	if ((sercom4SPIObj.txSize == 0) && (sercom4SPIObj.rxSize == 0))
+	{
+		/* This means no transfer has been requested yet; hence SPI is not busy. */
+		return false;
+	}
+	else
+	{
+		return ((sercom4SPIObj.transferIsBusy == true) || ((SERCOM4_REGS->SPIM.SERCOM_INTFLAG & SERCOM_SPIM_INTFLAG_TXC_Msk) == 0));
+	}
 }
 
 // *****************************************************************************

@@ -55,7 +55,7 @@
 #include "peripheral/nvic/plib_nvic.h"
 #include "peripheral/dmac/plib_dmac.h"
 #include "peripheral/cmcc/plib_cmcc.h"
-#include "peripheral/sercom/spim/plib_sercom4_spi.h"
+#include "peripheral/sercom/spi_master/plib_sercom4_spi_master.h"
 #include "peripheral/tc/plib_tc0.h"
 #include "driver/sdspi/drv_sdspi.h"
 #include "system/time/sys_time.h"
