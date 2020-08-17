@@ -16,9 +16,7 @@ This application shows an example of using the MPLAB Harmony File System to acce
 
 The reason for choosing a JPEG file for test purposes is that the duplicate file, **Dir1/FILE_TOO_LONG_NAME_EXAMPLE_123.JPG** created by the demonstration could be easily verified for correctness.If the new file inside **Dir1** opens for viewing on the computer and matches to original image, the test is deemed to have passed. Otherwise, if the file does not open (i.e., is corrupted), the test will be considered to have failed.
 
-### Note:
-
-*Since the application creates a directory named Dir1, it is important that the a folder with the same name does not exist on the SD card. If a directory named Dir1 is already present on the SD card, the application will fail.*
+**Note:** *Since the application creates a directory named Dir1, it is important that the a folder with the same name does not exist on the SD card. If a directory named Dir1 is already present on the SD card, the application will fail.*
 
 ### File system layer uses:
 
@@ -52,16 +50,22 @@ The following table shows the target hardware for the application projects.
 ### Setting up [SAM E54 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsame54-xpro)
 
 - To run this application, following additional hardware is required
-  - SD-Card formatted to fat file system and containing a non-empty file named "FILE.txt"
+  - One micro-sd card
+  - Create a new JPEG file in the SD Card with name **FILE_TOO_LONG_NAME_EXAMPLE_123.JPG**
 - Connect the Debug USB port on the board to the computer using a micro USB cable
 
 ## Running the Application
 
 1. Build and program the application using its IDE
+2. Insert the SD Card in the SD Card slot of the Device
+3. The LED is turned ON if there was no error during creating the directory and copying the file into it
 
-Refer to the following table for LED name:
+    Refer to the following table for LED name:
 
-| Board | LED Name |
-| ----- | -------- |
-|  [SAM E54 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsame54-xpro) | LED0 |
-|||
+    | Board | LED Name |
+    | ----- | -------- |
+    |  [SAM E54 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsame54-xpro) | LED0 |
+    |||
+
+4. If LED is ON, Insert the SD Card on to your host PC
+5. SD Card should have the file **Dir1/FILE_TOO_LONG_NAME_EXAMPLE_123.JPG** and should match the original image

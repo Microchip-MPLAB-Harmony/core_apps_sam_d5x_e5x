@@ -47,7 +47,7 @@ The following table shows the target hardware for the application projects.
 
 1. Build and program the application using its IDE
 2. The LED indicates success or failure
-    - The LED turns ON when the data read from the EEPROMs matches with the data written to the EEPROMs.
+    - The LED turns ON when the data read from the EEPROMs matches with the data written to the EEPROMs
 
 Refer to the following table for LED name:
 

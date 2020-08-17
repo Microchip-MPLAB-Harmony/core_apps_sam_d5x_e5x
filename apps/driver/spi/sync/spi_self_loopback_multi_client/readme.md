@@ -1,20 +1,18 @@
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
-# SPI Driver asynchronous - Self loopback multi client
+# SPI Driver synchronous - Self loopback multi client
 
-This example demonstrates how to use the SPI driver in asynchronous mode to achieve self-loop back between multiple clients.
+This example demonstrates how to use the SPI driver in synchronous mode to achieve self-loop back between multiple clients in RTOS environment.
 
 ## Description
 
-- This example writes and reads back the same data (self loop back) for two different clients connected over the same SPI bus by using the multi client feature of the driver
+This example writes and reads back the same data (self loop back) for two different clients connected over the same SPI bus by using the multi client feature of a synchronous SPI driver. The example also demonstrates how to setup two different client transfers at two different baud rates.
 
-- It uses the request (write and read request) queuing feature of the asynchronous driver and does not waste CPU bandwidth in waiting for previous request completion
+The example has three RTOS threads for the purpose:
 
-- The example also demonstrates how to setup two different client transfers at different baud rates
-
-- This example performs self loop back only once after a power on reset
-- Success is indicated when a successful self loop back is reported by both the clients
-- After the loop back test is complete, the application remains in the idle state
+- **APP_CLIENT1_Tasks**: This thread opens the SPI driver instance and performs a continuous loop back transfer. If the loop back is successful, the loop back is repeated every 100 ms. In case of an error, the thread closes the driver and suspends itself.
+- **APP_CLIENT2_Tasks**: This thread opens the SPI driver instance and performs a continuous loop back transfer. If the loop back is successful, the loop back is repeated every 100 ms. In case of an error, the thread closes the driver and suspends itself.
+- **APP_MONITOR_Tasks**: This thread checks the status of loop back done by the two client tasks and turns on the LED if the loop back transfer status reported by both the clients is successful.
 
 ## Downloading and building the application
 

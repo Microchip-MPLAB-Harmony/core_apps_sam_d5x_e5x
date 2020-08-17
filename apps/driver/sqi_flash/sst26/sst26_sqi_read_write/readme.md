@@ -1,12 +1,12 @@
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
-# SST26 SQI flash driver - Flash read write in SPI mode
+# SST26 SQI flash driver - Flash read write in Quad IO mode
 
-This example application shows how to use the SST26 SQI flash driver to perform block operations on the On-Board SST26 Flash memory in SQI mode.
+This example application shows how to use the SST26 SQI flash driver to perform block operations on the On-Board SST26 Flash memory in Quad IO mode.
 
 ## Description
 
-This application uses the SST26 driver to Erase/Write/Read on the On-Board SST26 Flash memory using the SQI peripheral library configured in SQI mode.
+This application uses the SST26 driver to Erase/Write/Read on the On-Board SST26 Flash memory using the QSPI or SQI peripheral library in Quad IO mode.
 
 The application consists of APP_SST26_Tasks() which is called through SYS_Tasks() routine.
 

@@ -1,6 +1,6 @@
 ﻿[![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
-# Harmony 3 core library application examples for SAM E5x/D5x family
+# Harmony 3 Driver and System Service application examples for SAM E5x/D5x family
 
 MPLAB® Harmony 3 is an extension of the MPLAB® ecosystem for creating embedded firmware solutions for Microchip 32-bit SAM and PIC® microcontroller and microprocessor devices.  Refer to the following links for more information.
 
@@ -10,7 +10,7 @@ MPLAB® Harmony 3 is an extension of the MPLAB® ecosystem for creating embedded
 - [Microchip MPLAB® Harmony](https://www.microchip.com/mplab/mplab-harmony)
 - [Microchip MPLAB® Harmony Pages](https://microchip-mplab-harmony.github.io/)
 
-This repository contains the MPLAB® Harmony 3 core library application examples for SAM E5x/D5x family
+This repository contains the MPLAB® Harmony 3 Driver and System Service application examples for SAM E5x/D5x family
 
 - [Release Notes](release_notes.md)
 - [MPLAB® Harmony License](mplab_harmony_license.md)
@@ -27,7 +27,7 @@ This content can also be downloaded using content manager by following these [in
 
 ## Code Examples
 
-The following applications are provided to demonstrate the typical or interesting usage models of one or more peripheral libraries.
+The following applications are provided to demonstrate the typical or interesting usage models of one or more driver and system services.
 
 | Name | Description|
 |:---------|:-----------|
@@ -43,10 +43,10 @@ The following applications are provided to demonstrate the typical or interestin
 | [SPI Driver asynchronous - Self loopback multi client](apps/driver/spi/async/spi_self_loopback_multi_client/readme.md) | This example demonstrates how to use the SPI driver in asynchronous mode to achieve self-loop back between multiple clients |
 | [SPI driver synchronous - multi instance](apps/driver/spi/sync/spi_multi_instance/readme.md) | This example application demonstrates the multi instance feature of the synchronous mode of the SPI driver by reading and writing to two EEPROMs connected to two different SPI bus |
 | [SPI Driver synchronous - multi client](apps/driver/spi/sync/spi_multi_slave/readme.md) | This example demonstrates how to use single instance of the SPI driver in synchronous mode to communicate with multiple EEPROMs |
-| [SPI Driver asynchronous - Self loopback multi client](apps/driver/spi/sync/spi_self_loopback_multi_client/readme.md) | This example demonstrates how to use the SPI driver in asynchronous mode to achieve self-loop back between multiple clients |
+| [SPI Driver synchronous - Self loopback multi client](apps/driver/spi/sync/spi_self_loopback_multi_client/readme.md) | This example demonstrates how to use the SPI driver in synchronous mode to achieve self-loop back between multiple clients in RTOS environment |
 | [SPI EEPROM AT25 driver - EEPROM Read Write](apps/driver/spi_eeprom/at25/at25_eeprom_read_write/readme.md) | This example application shows how to use the AT25 driver to perform read and write operations on AT25 series of EEPROM |
 | [SST26 SQI flash driver - Flash read write in SPI mode](apps/driver/sqi_flash/sst26/sst26_spi_read_write/readme.md) | This example application shows how to use the SST26 SQI flash driver to perform block operations on the On-Board SST26 Flash memory in SPI mode |
-| [SST26 SQI flash driver - Flash read write in SPI mode](apps/driver/sqi_flash/sst26/sst26_sqi_read_write/readme.md) | This example application shows how to use the SST26 SQI flash driver to perform block operations on the On-Board SST26 Flash memory in SQI mode |
+| [SST26 SQI flash driver - Flash read write in Quad IO mode](apps/driver/sqi_flash/sst26/sst26_sqi_read_write/readme.md) | This example application shows how to use the SST26 SQI flash driver to perform block operations on the On-Board SST26 Flash memory in Quad IO mode |
 | [USART driver asynchronous - USART echo](apps/driver/usart/async/usart_echo/readme.md) | This example echoes the received characters over the console using the USART driver in asynchronous mode |
 | [USART driver asynchronous - USART multi instance](apps/driver/usart/async/usart_multi_instance/readme.md) | This example echoes the received characters over the two consoles using the USART driver in asynchronous mode |
 | [USART driver synchronous - USART echo](apps/driver/usart/sync/usart_echo/readme.md) | This example echoes the received characters over the console using the USART driver in synchronous mode |

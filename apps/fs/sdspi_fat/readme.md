@@ -59,15 +59,15 @@ The following table shows the target hardware for the application projects.
 ## Running the Application
 
 1. Build and program the application using its IDE
-2. Press the switch to start the application.
-3. The LED is turned ON if there was no error during creating the directory and copying the file into it.
+2. Press the switch to start the application
+3. The LED is turned ON if there was no error during creating the directory and copying the file into it
 
     Refer to the following table for LED name:
 
-    | Board | LED Name |
-    | ----- | -------- |
-    |  [SAM E54 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsame54-xpro) | LED0 |
-    |||
+    | Board | LED Name | Switch Name |
+    | ----- | -------- | ----------- |
+    |  [SAM E54 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsame54-xpro) | LED0 | SW0 |
+    ||||
 
 4. If LED is ON, Insert the SD Card on to your host PC
 5. SD Card should have the file **Dir1/FILE_TOO_LONG_NAME_EXAMPLE_123.JPG** and should match the original image

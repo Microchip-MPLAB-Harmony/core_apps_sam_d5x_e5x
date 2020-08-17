@@ -15,8 +15,8 @@ This application shows an example of using the FAT File System to access files a
 
 ### File system layer uses:
 
-- Memory driver to communicate with underlying NVM media.
-- SDSPI Driver to communicate to SD Card over SPI.
+- Memory driver to communicate with underlying NVM media
+- SDSPI Driver to communicate to SD Card over SPI
 
 ## Downloading and building the application
 
@@ -54,7 +54,7 @@ The following table shows the target hardware for the application projects.
 ## Running the Application
 
 1. Build and program the application using its IDE
-2. The LED is turned ON when the content from the NVM media is copied to SD-Card successfully.
+2. The LED is turned ON when the content from the NVM media is copied to SD-Card successfully
 
     Refer to the following table for LED name:
 
@@ -64,4 +64,4 @@ The following table shows the target hardware for the application projects.
     |||
 
 3. If Success, Insert the SD Card on to your host PC
-4. FILE.txt should have the content "This data from NVM Disk Test is successful".
+4. FILE.txt should have the content "This data from NVM Disk Test is successful"

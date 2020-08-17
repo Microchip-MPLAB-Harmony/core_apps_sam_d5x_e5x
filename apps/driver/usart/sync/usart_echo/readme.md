@@ -33,7 +33,6 @@ The following table shows the target hardware for the application projects.
 
 ### Setting up [SAM E54 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsame54-xpro)
 
-
 - Connect the Debug USB port on the board to the computer using a micro USB cable
 
 ## Running the Application

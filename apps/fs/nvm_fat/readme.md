@@ -59,7 +59,7 @@ The following table shows the target hardware for the application projects.
 
 Refer to the following table for LED name:
 
-| Board | LED Name |
-| ----- | -------- |
-|  [SAM E54 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsame54-xpro) | LED0 |
-|||
+| Board | LED Name | Switch Name |
+| ----- | -------- | ----------- |
+|  [SAM E54 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsame54-xpro) | LED0 | SW0 |
+||||
