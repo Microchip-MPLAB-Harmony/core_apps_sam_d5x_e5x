@@ -9,7 +9,7 @@ This application shows an example of using the MPLAB Harmony File System to acce
 ### File System Operations on the On-Board SQI Flash Memory:
 
 - Performs a SYS-FS_FormatDisk
-- Opens a **newfile.txt** on the i2c eeprom media (at24)
+- Opens a **newfile.txt** on the i2c eeprom media (AT24 EEPROM)
 - Write and reads back 4KB of data on **newfile.txt**
 - Verifies the Data Read back
 
@@ -53,7 +53,7 @@ The following table shows the target hardware for the application projects.
 ## Running the Application
 
 1. Build and program the application using its IDE
-2. The LED is turned ON if there was no error during creating the directory and copying the file into it
+2. The LED is turned ON if writing and reading is successful on EEPROM media
 
     Refer to the following table for LED name:
 
@@ -61,6 +61,3 @@ The following table shows the target hardware for the application projects.
     | ----- | -------- |
     |  [SAM E54 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsame54-xpro) | LED0 |
     |||
-
-3. If LED is ON, Insert the SD Card on to your host PC.
-4. SD Card should have the file **Dir1/FILE_TOO_LONG_NAME_EXAMPLE_123.JPG** and should match the original image.
