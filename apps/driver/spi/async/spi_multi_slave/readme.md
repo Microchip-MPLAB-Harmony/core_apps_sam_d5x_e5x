@@ -1,6 +1,6 @@
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
-# SPI Driver asynchronous - multi client
+# SPI Driver asynchronous - multi slave
 
 This example demonstrates how to use single instance of the SPI driver in asynchronous mode to communicate with multiple EEPROMs.
 
@@ -38,7 +38,7 @@ The following table shows the target hardware for the application projects.
   - Two [mikroBUS Xplained Pro boards](https://www.microchip.com/developmenttools/ProductDetails/ATMBUSADAPTER-XPRO)
 
 - Install [EEPROM 4 click boards](https://www.mikroe.com/eeprom-4-click) on to the [mikroBUS Xplained Pro boards](https://www.microchip.com/developmenttools/ProductDetails/ATMBUSADAPTER-XPRO)
-- Connect the [mikroBUS Xplained Pro boards](https://www.microchip.com/developmenttools/ProductDetails/ATMBUSADAPTER-XPRO) on EXT1 and EXT2 headers
+- Connect the [mikroBUS Xplained Pro boards](https://www.microchip.com/developmenttools/ProductDetails/ATMBUSADAPTER-XPRO) on EXT2 and EXT3 headers
 - Connect the Debug USB port on the board to the computer using a micro USB cable
 
 ## Running the Application
