@@ -1,8 +1,8 @@
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
-# FAT file system using NVM and SDSPI media
+# FAT file system using NVM and SD Card media
 
-This application shows an example of using the FAT File System to access files across multiple media (NVM, SDSPI).
+This application shows an example of using the FAT File System to access files across multiple media (NVM, SD Card).
 
 ## Description
 
