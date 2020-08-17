@@ -605,12 +605,10 @@ typedef struct
     uint8_t     fattrib;
     /* Short file name (8.3 format) */
     char        fname[13];
-#if SYS_FS_USE_LFN
     /* Pointer to the LFN buffer */
     char       *lfname;
     /* Size of LFN buffer */
     uint32_t    lfsize;
-#endif
 } SYS_FS_FSTAT;
 
 
