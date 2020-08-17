@@ -55,11 +55,11 @@ The following table shows the target hardware for the application projects.
     - If success the 10 characters typed are echoed back and an LED toggles on each time 10 characters are echoed
     - **Console 1**
 
-    ![output_async_usart_multi_instance_console_1](./images/output_async_usart_multi_instance_console_1.png)
+    ![sync_usart_multi_instance_console_1](./images/sync_usart_multi_instance_console_1.png)
 
     - **Console 2**
 
-    ![output_async_usart_multi_instance_console_2](./images/output_async_usart_multi_instance_console_2.png)
+    ![sync_usart_multi_instance_console_2](./images/sync_usart_multi_instance_console_2.png)
 
 Refer to the following table for LED name:
 
