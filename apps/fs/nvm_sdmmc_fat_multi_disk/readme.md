@@ -52,7 +52,7 @@ The following table shows the target hardware for the application projects.
 ## Running the Application
 
 1. Build and program the application using its IDE
-2. Insert the SD Card in the SD Card slot of the Device.
+2. Insert the SD Card in the SD Card slot of the Device
 3. The LED is turned ON when the content from the NVM media is copied to SD Card successfully
 
     Refer to the following table for LED name:
