@@ -1,18 +1,26 @@
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
-# SPI Driver synchronous - Self loopback multi client
+# SPI Driver Synchronous - Self loopback multi client
 
-This example demonstrates how to use the SPI driver in synchronous mode to achieve self-loop back between multiple clients in RTOS environment.
+This example demonstrates the multi client feature of the Synchronous mode SPI driver by performing self-loop back with two clients connected on the same SPI bus
 
 ## Description
 
-This example writes and reads back the same data (self loop back) for two different clients connected over the same SPI bus by using the multi client feature of a synchronous SPI driver. The example also demonstrates how to setup two different client transfers at two different baud rates.
+This example writes and reads back the same data (self loop back) for two different clients connected over the same SPI bus by using the multi client feature of the synchronous SPI driver
 
-The example has three RTOS threads for the purpose:
+- The example also demonstrates how to setup two different client transfers at two different baud rates
 
-- **APP_CLIENT1_Tasks**: This thread opens the SPI driver instance and performs a continuous loop back transfer. If the loop back is successful, the loop back is repeated every 100 ms. In case of an error, the thread closes the driver and suspends itself.
-- **APP_CLIENT2_Tasks**: This thread opens the SPI driver instance and performs a continuous loop back transfer. If the loop back is successful, the loop back is repeated every 100 ms. In case of an error, the thread closes the driver and suspends itself.
-- **APP_MONITOR_Tasks**: This thread checks the status of loop back done by the two client tasks and turns on the LED if the loop back transfer status reported by both the clients is successful.
+- The example has three RTOS threads for the purpose:
+    - **APP_CLIENT1_Tasks:**
+        - This thread opens the SPI driver instance and performs a continuous loop back transfer
+        - If the loop back is successful, the loop back is repeated every 100 ms
+        - In case of an error, the thread closes the driver and suspends itself
+    - **APP_CLIENT2_Tasks:**
+        - This thread opens the SPI driver instance and performs a continuous loop back transfer
+        - If the loop back is successful, the loop back is repeated every 100 ms
+        - In case of an error, the thread closes the driver and suspends itself
+    - **APP_MONITOR_Tasks:**
+        - This thread checks the status of loop back done by the two client tasks and turns on the LED if the loop back transfer status reported by both the clients is successful
 
 ## Downloading and building the application
 
