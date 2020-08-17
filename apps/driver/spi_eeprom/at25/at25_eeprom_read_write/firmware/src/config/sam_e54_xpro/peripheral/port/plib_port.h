@@ -65,36 +65,32 @@
 // *****************************************************************************
 // *****************************************************************************
 
-  
 /*** Macros for GPIO_PC06 pin ***/
 #define GPIO_PC06_Set()               (PORT_REGS->GROUP[2].PORT_OUTSET = 1 << 6)
 #define GPIO_PC06_Clear()             (PORT_REGS->GROUP[2].PORT_OUTCLR = 1 << 6)
 #define GPIO_PC06_Toggle()            (PORT_REGS->GROUP[2].PORT_OUTTGL = 1 << 6)
-#define GPIO_PC06_Get()               (((PORT_REGS->GROUP[2].PORT_IN >> 6)) & 0x01)
 #define GPIO_PC06_OutputEnable()      (PORT_REGS->GROUP[2].PORT_DIRSET = 1 << 6)
 #define GPIO_PC06_InputEnable()       (PORT_REGS->GROUP[2].PORT_DIRCLR = 1 << 6)
+#define GPIO_PC06_Get()               (((PORT_REGS->GROUP[2].PORT_IN >> 6)) & 0x01)
 #define GPIO_PC06_PIN                  PORT_PIN_PC06
 
 /*** Macros for GPIO_PB14 pin ***/
 #define GPIO_PB14_Set()               (PORT_REGS->GROUP[1].PORT_OUTSET = 1 << 14)
 #define GPIO_PB14_Clear()             (PORT_REGS->GROUP[1].PORT_OUTCLR = 1 << 14)
 #define GPIO_PB14_Toggle()            (PORT_REGS->GROUP[1].PORT_OUTTGL = 1 << 14)
-#define GPIO_PB14_Get()               (((PORT_REGS->GROUP[1].PORT_IN >> 14)) & 0x01)
 #define GPIO_PB14_OutputEnable()      (PORT_REGS->GROUP[1].PORT_DIRSET = 1 << 14)
 #define GPIO_PB14_InputEnable()       (PORT_REGS->GROUP[1].PORT_DIRCLR = 1 << 14)
+#define GPIO_PB14_Get()               (((PORT_REGS->GROUP[1].PORT_IN >> 14)) & 0x01)
 #define GPIO_PB14_PIN                  PORT_PIN_PB14
 
 /*** Macros for GPIO_PB01 pin ***/
 #define GPIO_PB01_Set()               (PORT_REGS->GROUP[1].PORT_OUTSET = 1 << 1)
 #define GPIO_PB01_Clear()             (PORT_REGS->GROUP[1].PORT_OUTCLR = 1 << 1)
 #define GPIO_PB01_Toggle()            (PORT_REGS->GROUP[1].PORT_OUTTGL = 1 << 1)
-#define GPIO_PB01_Get()               (((PORT_REGS->GROUP[1].PORT_IN >> 1)) & 0x01)
 #define GPIO_PB01_OutputEnable()      (PORT_REGS->GROUP[1].PORT_DIRSET = 1 << 1)
 #define GPIO_PB01_InputEnable()       (PORT_REGS->GROUP[1].PORT_DIRCLR = 1 << 1)
+#define GPIO_PB01_Get()               (((PORT_REGS->GROUP[1].PORT_IN >> 1)) & 0x01)
 #define GPIO_PB01_PIN                  PORT_PIN_PB01
-
-
-
 // *****************************************************************************
 /* PORT Group
 
@@ -1051,7 +1047,7 @@ void PORT_GroupToggle(PORT_GROUP group, uint32_t mask);
     void PORT_GroupInputEnable(PORT_GROUP group, uint32_t mask)
 
   Summary:
-    Confgiures the selected IO pins of a group as input.
+    Configures the selected IO pins of a group as input.
 
   Description:
     This function configures the selected IO pins of a group as input. The pins
@@ -1090,7 +1086,7 @@ void PORT_GroupInputEnable(PORT_GROUP group, uint32_t mask);
     void PORT_GroupOutputEnable(PORT_GROUP group, uint32_t mask)
 
   Summary:
-    Confgiures the selected IO pins of a group as output.
+    Configures the selected IO pins of a group as output.
 
   Description:
     This function configures the selected IO pins of a group as output. The pins
