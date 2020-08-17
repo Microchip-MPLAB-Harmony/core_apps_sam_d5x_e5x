@@ -53,7 +53,7 @@ The following table shows the target hardware for the application projects.
     - Flow Control : None
 3. Build and program the application using its IDE
 4. Type a character and observe the output on the two consoles as shown below:
-    - If success the character typed echoes back and an LED toggles on each time the character is echoed
+    - On success, the character typed echoes back and an LED toggles on each time the character is echoed
     - **Console 1**
 
     ![output_async_usart_multi_instance_console_1](./images/output_async_usart_multi_instance_console_1.png)
