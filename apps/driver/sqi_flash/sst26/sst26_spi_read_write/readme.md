@@ -37,6 +37,8 @@ The following table shows the target hardware for the application projects.
 
 - Connect the Debug USB port on the board to the computer using a micro USB cable
 
+**Note: This demo requires newer revision of [SAM E54 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsame54-xpro) that replaced N25Q256A QSPI Flash with SST26 QSPI Flash memory**
+
 ## Running the Application
 
 1. Build and program the application using its IDE
