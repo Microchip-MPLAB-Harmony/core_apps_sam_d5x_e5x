@@ -1,3 +1,10 @@
+---
+parent: Harmony 3 driver and system service application examples for SAM D5X/E5X family
+title: FAT file system using NVM and SDMMC media 
+has_children: false
+has_toc: false
+---
+
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
 # FAT file system using NVM and SDMMC media

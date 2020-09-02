@@ -1,3 +1,10 @@
+---
+parent: Harmony 3 driver and system service application examples for SAM D5X/E5X family
+title: I2C driver asynchronous - multi slave 
+has_children: false
+has_toc: false
+---
+
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
 # I2C driver asynchronous - multi slave

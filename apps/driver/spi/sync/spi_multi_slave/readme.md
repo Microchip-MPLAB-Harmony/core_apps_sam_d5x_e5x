@@ -1,3 +1,10 @@
+---
+parent: Harmony 3 driver and system service application examples for SAM D5X/E5X family
+title: SPI Driver synchronous - multi slave 
+has_children: false
+has_toc: false
+---
+
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
 # SPI Driver synchronous - multi slave
