@@ -1,0 +1,77 @@
+{
+	"metaDataVersion": "1.0.0",
+	"category": "com.microchip.ide.project",
+	"content": {
+		"metaDataVersion": "1.1.0",
+		"name": "com.microchip.mcu32.mplabx.project.core_apps_sam_d5x_e5x_driver_i2c_sync_i2c_eeprom_sam_e54_xpro_freertos",
+		"version": "3.0.1",
+		"displayName": "I2C driver synchronous - I2C EEPROM Example for SAM D5x/E5x Family",
+		"projectName": "sync_i2c_eeprom_sam_e54_xpro_freertos",
+		"shortDescription": "This example application shows how to use the I2C driver in synchronous mode to perform operations on the EEPROM.",
+		"ide": {
+			"name": "MPLABX",
+			"semverRange": ">=5.40.0"
+		},
+		"compiler": [
+			{
+				"name": "XC32",
+				"semverRange": ">=2.40.0"
+			}
+		],
+		"dfp": {
+			"name": "SAME54_DFP",
+			"semverRange": "^3.3.64"
+		},
+		"configurator": {
+			"name": "MHC",
+			"semverRange": ">=3.5.1"
+		},
+		"device": {
+			"metaDataVersion": "1.0.0",
+			"category": "com.microchip.portal.contentRef",
+			"content": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.device",
+				"name": "ATSAME54P20A",
+				"versionRange": "*"
+			}
+		},
+		"author": "Microchip",
+		"subcategories": [
+			[
+				"Development Kit", "SAM E54 Xplained Pro Evaluation Kit"
+			],
+			[
+				"Harmony", "Drivers", "I2C"
+			],
+			[
+				"Peripherals", "I2C"
+			]
+		],
+		"peripherals": [
+			"I2C"
+		],
+		"keywords": [
+			"MHC",
+			"Harmony",
+			"ATSAME54P20A",
+			"SAM D5x/E5x Family",
+			"I2C",
+			"Serial Communication",
+			"SERCOM",
+			"TWI",
+			"FLEXCOM"
+		],
+		"additionalData": {
+			"longDescription": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.portal.fileRef",
+				"content": {
+					"metaDataVersion": "1.0.0",
+					"fileName": "./../../readme.md",
+					"mimeType": "text/markdown"
+				}
+			}
+		}
+	}
+}
