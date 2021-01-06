@@ -118,6 +118,7 @@ static void APP_SysFSEventHandler(SYS_FS_EVENT event,void* eventData,uintptr_t c
             break;
 
         case SYS_FS_EVENT_ERROR:
+        default:
             break;
     }
 }
@@ -246,7 +247,7 @@ void APP_Tasks ( void )
         case APP_READ_WRITE_TO_FILE:
 
             appData.nBytesRead = SYS_FS_FileRead(appData.fileHandle, (void *)dataBuffer, APP_DATA_LEN);
-            
+
             if (appData.nBytesRead == -1)
             {
                 /* There was an error while reading the file.
