@@ -121,6 +121,7 @@
 
 void SYS_Initialize ( void* data )
 {
+
     NVMCTRL_Initialize( );
 
   
@@ -131,16 +132,21 @@ void SYS_Initialize ( void* data )
 
 
 
+    SERCOM2_USART_Initialize();
+
 	BSP_Initialize();
     EVSYS_Initialize();
 
+    EIC_Initialize();
 
 
 
 
-    APP_Initialize();
-    APP1_Initialize();
-    APP2_Initialize();
+
+    TASK1_Initialize();
+    TASK2_Initialize();
+    TASK3_Initialize();
+    TASK4_Initialize();
 
 
     NVIC_Initialize();
