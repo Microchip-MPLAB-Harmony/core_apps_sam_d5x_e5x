@@ -5,6 +5,13 @@ children:
 - type: Symbols
   children:
   - type: Integer
+    attributes: {id: FREERTOS_CPU_CLOCK_HZ}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: FreeRTOS, value: '120000000'}
+  - type: Integer
     attributes: {id: FREERTOS_EXPECTED_IDLE_TIME_BEFORE_SLEEP}
     children:
     - type: Attributes
