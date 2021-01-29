@@ -42,7 +42,7 @@ To build the application, refer to the following table and open the project usin
 | ----------------- | ---------------------------------------------- |
 | sam_e54_xpro.X | MPLABX project for [SAM E54 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsame54-xpro) |
 | sam_e54_xpro_freertos.X | MPLABX project for [SAM E54 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsame54-xpro) |
-| sam_e54_xpro_freertos_keil.KEIL | KEIL project for [SAM E54 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsame54-xpro) |
+| sam_e54_xpro_freertos_keil.KEIL/sdmmc_fat_sam_e54_xpro_freertos_keil.uvprojx | KEIL project for [SAM E54 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsame54-xpro) |
 |||
 
 ## Setting up the hardware
@@ -51,7 +51,7 @@ The following table shows the target hardware for the application projects.
 
 | Project Name| Board|
 |:---------|:---------:|
-| sam_e54_xpro.X <br> sam_e54_xpro_freertos.X <br> sam_e54_xpro_freertos_keil.KEIL | [SAM E54 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsame54-xpro) |
+| sam_e54_xpro.X <br> sam_e54_xpro_freertos.X <br> sam_e54_xpro_freertos_keil.KEIL/sdmmc_fat_sam_e54_xpro_freertos_keil.uvprojx | [SAM E54 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsame54-xpro) |
 |||
 
 ### Setting up [SAM E54 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsame54-xpro)
