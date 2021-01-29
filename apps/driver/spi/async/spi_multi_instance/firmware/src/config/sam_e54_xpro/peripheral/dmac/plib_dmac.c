@@ -252,7 +252,9 @@ void DMAC_ChannelDisable ( DMAC_CHANNEL channel )
 
 uint16_t DMAC_ChannelGetTransferredCount( DMAC_CHANNEL channel )
 {
-    return(descriptor_section[channel].DMAC_BTCNT - _write_back_section[channel].DMAC_BTCNT);
+    uint16_t transferredCount = descriptor_section[channel].DMAC_BTCNT;
+    transferredCount -= _write_back_section[channel].DMAC_BTCNT;
+    return(transferredCount);
 }
 
 
@@ -402,7 +404,7 @@ uint32_t DMAC_CRCCalculate(void *buffer, uint32_t length, DMAC_CRC_SETUP CRCSetu
         }
 
         /* Clear the busy bit */
-        DMAC_REGS->DMAC_CRCSTATUS = DMAC_CRCSTATUS_CRCBUSY_Msk; 
+        DMAC_REGS->DMAC_CRCSTATUS = DMAC_CRCSTATUS_CRCBUSY_Msk;
     }
 
     /* Return the final CRC calculated for the entire buffer */
