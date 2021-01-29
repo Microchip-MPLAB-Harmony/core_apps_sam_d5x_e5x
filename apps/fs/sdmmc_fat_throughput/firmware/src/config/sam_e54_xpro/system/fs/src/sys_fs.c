@@ -887,9 +887,11 @@ SYS_FS_HANDLE SYS_FS_FileOpen
     mode = (uint8_t)attributes;
 
     errorValue = SYS_FS_ERROR_OK;
+
     if (disk->fsFunctions->open != NULL)
     {
         fileStatus = disk->fsFunctions->open((uintptr_t)&fileObj->nativeFSFileObj, (const char *)pathWithDiskNo, mode);
+
         errorValue = (SYS_FS_ERROR)fileStatus;
     }
     else
@@ -3456,6 +3458,7 @@ SYS_FS_RESULT SYS_FS_DriveFormat
     if (osalResult == OSAL_RESULT_TRUE)
     {
         fileStatus = disk->fsFunctions->formatDisk((uint8_t)disk->diskNumber, opt, work, len);
+
         OSAL_MUTEX_Unlock(&(disk->mutexDiskVolume));
 
         errorValue = (SYS_FS_ERROR)fileStatus;

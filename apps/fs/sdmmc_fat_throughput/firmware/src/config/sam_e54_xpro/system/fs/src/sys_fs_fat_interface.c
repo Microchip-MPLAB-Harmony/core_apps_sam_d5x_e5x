@@ -643,6 +643,7 @@ int FATFS_mkfs (
     return ((int)res);
 }
 
+
 int FATFS_fdisk (
     uint8_t pdrv,           /* Physical drive number */
     const uint32_t ptbl[],  /* Pointer to the size table for each partitions */
