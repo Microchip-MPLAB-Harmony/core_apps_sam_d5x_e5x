@@ -5,38 +5,38 @@
                    displayName="Header Files"
                    projectFiles="true">
       <logicalFolder name="f1" displayName="config" projectFiles="true">
-        <logicalFolder name="f2" displayName="sam_e54_xpro" projectFiles="true">
-          <logicalFolder name="f3" displayName="bsp" projectFiles="true">
+        <logicalFolder name="f1" displayName="sam_e54_xpro" projectFiles="true">
+          <logicalFolder name="f1" displayName="bsp" projectFiles="true">
             <itemPath>../src/config/sam_e54_xpro/bsp/bsp.h</itemPath>
           </logicalFolder>
-          <logicalFolder name="f4" displayName="osal" projectFiles="true">
+          <logicalFolder name="f2" displayName="osal" projectFiles="true">
             <itemPath>../src/config/sam_e54_xpro/osal/osal.h</itemPath>
             <itemPath>../src/config/sam_e54_xpro/osal/osal_definitions.h</itemPath>
             <itemPath>../src/config/sam_e54_xpro/osal/osal_freertos.h</itemPath>
           </logicalFolder>
-          <logicalFolder name="f1" displayName="peripheral" projectFiles="true">
-            <logicalFolder name="f4" displayName="clock" projectFiles="true">
+          <logicalFolder name="f3" displayName="peripheral" projectFiles="true">
+            <logicalFolder name="f1" displayName="clock" projectFiles="true">
               <itemPath>../src/config/sam_e54_xpro/peripheral/clock/plib_clock.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f6" displayName="cmcc" projectFiles="true">
+            <logicalFolder name="f2" displayName="cmcc" projectFiles="true">
               <itemPath>../src/config/sam_e54_xpro/peripheral/cmcc/plib_cmcc.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f8" displayName="eic" projectFiles="true">
+            <logicalFolder name="f3" displayName="eic" projectFiles="true">
               <itemPath>../src/config/sam_e54_xpro/peripheral/eic/plib_eic.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f2" displayName="evsys" projectFiles="true">
+            <logicalFolder name="f4" displayName="evsys" projectFiles="true">
               <itemPath>../src/config/sam_e54_xpro/peripheral/evsys/plib_evsys.h</itemPath>
             </logicalFolder>
             <logicalFolder name="f5" displayName="nvic" projectFiles="true">
               <itemPath>../src/config/sam_e54_xpro/peripheral/nvic/plib_nvic.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f1" displayName="nvmctrl" projectFiles="true">
+            <logicalFolder name="f6" displayName="nvmctrl" projectFiles="true">
               <itemPath>../src/config/sam_e54_xpro/peripheral/nvmctrl/plib_nvmctrl.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f3" displayName="port" projectFiles="true">
+            <logicalFolder name="f7" displayName="port" projectFiles="true">
               <itemPath>../src/config/sam_e54_xpro/peripheral/port/plib_port.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f7" displayName="sercom" projectFiles="true">
+            <logicalFolder name="f8" displayName="sercom" projectFiles="true">
               <logicalFolder name="f1" displayName="usart" projectFiles="true">
                 <itemPath>../src/config/sam_e54_xpro/peripheral/sercom/usart/plib_sercom2_usart.h</itemPath>
                 <itemPath>../src/config/sam_e54_xpro/peripheral/sercom/usart/plib_sercom_usart_common.h</itemPath>
@@ -54,7 +54,7 @@
           <itemPath>../src/config/sam_e54_xpro/device_vectors.h</itemPath>
         </logicalFolder>
       </logicalFolder>
-      <logicalFolder name="f3" displayName="FreeRTOS" projectFiles="true">
+      <logicalFolder name="f2" displayName="FreeRTOS" projectFiles="true">
         <logicalFolder name="f1" displayName="Source" projectFiles="true">
           <logicalFolder name="f1" displayName="include" projectFiles="true">
             <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/croutine.h</itemPath>
@@ -85,7 +85,7 @@
           </logicalFolder>
         </logicalFolder>
       </logicalFolder>
-      <logicalFolder name="f2" displayName="packs" projectFiles="true">
+      <logicalFolder name="f3" displayName="packs" projectFiles="true">
         <logicalFolder name="f1" displayName="ATSAME54P20A_DFP" projectFiles="true">
           <logicalFolder name="f1" displayName="component" projectFiles="true">
             <itemPath>../src/packs/ATSAME54P20A_DFP/component/ac.h</itemPath>
@@ -127,6 +127,67 @@
             <itemPath>../src/packs/ATSAME54P20A_DFP/component/trng.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/component/usb.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/component/wdt.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f3" displayName="instance" projectFiles="true">
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/ac.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/adc0.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/adc1.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/aes.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/can0.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/can1.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/ccl.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/cmcc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/dac.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/dmac.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/dsu.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/eic.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/evsys.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/freqm.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/gclk.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/gmac.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/hmatrix.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/i2s.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/icm.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/mclk.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/nvmctrl.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/osc32kctrl.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/oscctrl.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/pac.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/pcc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/pdec.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/pm.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/port.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/qspi.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/ramecc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/rstc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/rtc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/sdhc0.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/sdhc1.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/sercom0.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/sercom1.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/sercom2.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/sercom3.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/sercom4.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/sercom5.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/sercom6.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/sercom7.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/supc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/tc0.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/tc1.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/tc2.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/tc3.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/tc4.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/tc5.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/tc6.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/tc7.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/tcc0.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/tcc1.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/tcc2.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/tcc3.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/tcc4.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/trng.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/usb.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/instance/wdt.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f2" displayName="pio" projectFiles="true">
             <itemPath>../src/packs/ATSAME54P20A_DFP/pio/same54p20a.h</itemPath>
@@ -192,41 +253,41 @@
                    projectFiles="true">
       <logicalFolder name="f1" displayName="config" projectFiles="true">
         <logicalFolder name="f1" displayName="sam_e54_xpro" projectFiles="true">
-          <logicalFolder name="f2" displayName="bsp" projectFiles="true">
+          <logicalFolder name="f1" displayName="bsp" projectFiles="true">
             <itemPath>../src/config/sam_e54_xpro/bsp/bsp.c</itemPath>
           </logicalFolder>
-          <logicalFolder name="f4" displayName="osal" projectFiles="true">
+          <logicalFolder name="f2" displayName="osal" projectFiles="true">
             <itemPath>../src/config/sam_e54_xpro/osal/osal_freertos.c</itemPath>
           </logicalFolder>
-          <logicalFolder name="f1" displayName="peripheral" projectFiles="true">
-            <logicalFolder name="f4" displayName="clock" projectFiles="true">
+          <logicalFolder name="f3" displayName="peripheral" projectFiles="true">
+            <logicalFolder name="f1" displayName="clock" projectFiles="true">
               <itemPath>../src/config/sam_e54_xpro/peripheral/clock/plib_clock.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f6" displayName="cmcc" projectFiles="true">
+            <logicalFolder name="f2" displayName="cmcc" projectFiles="true">
               <itemPath>../src/config/sam_e54_xpro/peripheral/cmcc/plib_cmcc.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f8" displayName="eic" projectFiles="true">
+            <logicalFolder name="f3" displayName="eic" projectFiles="true">
               <itemPath>../src/config/sam_e54_xpro/peripheral/eic/plib_eic.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f2" displayName="evsys" projectFiles="true">
+            <logicalFolder name="f4" displayName="evsys" projectFiles="true">
               <itemPath>../src/config/sam_e54_xpro/peripheral/evsys/plib_evsys.c</itemPath>
             </logicalFolder>
             <logicalFolder name="f5" displayName="nvic" projectFiles="true">
               <itemPath>../src/config/sam_e54_xpro/peripheral/nvic/plib_nvic.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f1" displayName="nvmctrl" projectFiles="true">
+            <logicalFolder name="f6" displayName="nvmctrl" projectFiles="true">
               <itemPath>../src/config/sam_e54_xpro/peripheral/nvmctrl/plib_nvmctrl.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f3" displayName="port" projectFiles="true">
+            <logicalFolder name="f7" displayName="port" projectFiles="true">
               <itemPath>../src/config/sam_e54_xpro/peripheral/port/plib_port.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f7" displayName="sercom" projectFiles="true">
+            <logicalFolder name="f8" displayName="sercom" projectFiles="true">
               <logicalFolder name="f1" displayName="usart" projectFiles="true">
                 <itemPath>../src/config/sam_e54_xpro/peripheral/sercom/usart/plib_sercom2_usart.c</itemPath>
               </logicalFolder>
             </logicalFolder>
           </logicalFolder>
-          <logicalFolder name="f3" displayName="stdio" projectFiles="true">
+          <logicalFolder name="f4" displayName="stdio" projectFiles="true">
             <itemPath>../src/config/sam_e54_xpro/stdio/xc32_monitor.c</itemPath>
           </logicalFolder>
           <itemPath>../src/config/sam_e54_xpro/initialization.c</itemPath>
@@ -241,14 +302,14 @@
       <logicalFolder name="f2" displayName="FreeRTOS" projectFiles="true">
         <logicalFolder name="f1" displayName="Source" projectFiles="true">
           <logicalFolder name="f1" displayName="portable" projectFiles="true">
-            <logicalFolder name="f2" displayName="GCC" projectFiles="true">
+            <logicalFolder name="f1" displayName="GCC" projectFiles="true">
               <logicalFolder name="f1" displayName="SAM" projectFiles="true">
                 <logicalFolder name="f1" displayName="ARM_CM4F" projectFiles="true">
                   <itemPath>../src/third_party/rtos/FreeRTOS/Source/portable/GCC/SAM/ARM_CM4F/port.c</itemPath>
                 </logicalFolder>
               </logicalFolder>
             </logicalFolder>
-            <logicalFolder name="f1" displayName="MemMang" projectFiles="true">
+            <logicalFolder name="f2" displayName="MemMang" projectFiles="true">
               <itemPath>../src/third_party/rtos/FreeRTOS/Source/portable/MemMang/heap_1.c</itemPath>
             </logicalFolder>
           </logicalFolder>
@@ -281,12 +342,12 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>EdbgTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>2.41</languageToolchainVersion>
+        <languageToolchainVersion>2.50</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="SAME54_DFP" vendor="Microchip" version="3.3.64"/>
         <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
+        <pack name="SAME54_DFP" vendor="Microchip" version="3.3.64"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -307,6 +368,7 @@
       </compileType>
       <makeCustomizationType>
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeUseCleanTarget>false</makeUseCleanTarget>
         <makeCustomizationPreStep></makeCustomizationPreStep>
         <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
         <makeCustomizationPostStep></makeCustomizationPostStep>
@@ -486,6 +548,7 @@
         <property key="firmware.toolpack"
                   value="Press to select which tool pack to use"/>
         <property key="firmware.update.action" value="firmware.update.use.latest"/>
+        <property key="freeze.timers" value="false"/>
         <property key="lastid" value=""/>
         <property key="memories.aux" value="false"/>
         <property key="memories.bootflash" value="true"/>
@@ -500,6 +563,7 @@
                   value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-fffff"/>
+        <property key="memories.rww" value="true"/>
         <property key="poweroptions.powerenable" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
