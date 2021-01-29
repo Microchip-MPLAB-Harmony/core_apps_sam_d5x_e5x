@@ -60,11 +60,12 @@ The following table shows the target hardware for the application projects.
 ## Running the Application
 
 1. Build and program the application using its IDE
-2. The LED is turned ON if writing and reading is successful on EEPROM media
+2. Press switch to start the operation
+3. The LED is turned ON if writing and reading is successful on EEPROM media
 
-    Refer to the following table for LED name:
+    Refer to the following table for Switch and LED name:
 
-    | Board | LED Name |
-    | ----- | -------- |
-    |  [SAM E54 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsame54-xpro) | LED0 |
+    | Board | Switch Name | LED Name |
+    | ----- | -------- | -------- |
+    |  [SAM E54 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsame54-xpro) | SW0 | LED0 |
     |||
