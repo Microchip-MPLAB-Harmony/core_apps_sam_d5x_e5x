@@ -90,7 +90,7 @@ const DRV_USART_PLIB_INTERFACE drvUsart1PlibAPI = {
     .read = (DRV_USART_PLIB_READ)SERCOM0_USART_Read,
     .readIsBusy = (DRV_USART_PLIB_READ_IS_BUSY)SERCOM0_USART_ReadIsBusy,
     .readCountGet = (DRV_USART_PLIB_READ_COUNT_GET)SERCOM0_USART_ReadCountGet,
-	.readAbort = (DRV_USART_PLIB_READ_ABORT)SERCOM0_USART_ReadAbort,
+    .readAbort = (DRV_USART_PLIB_READ_ABORT)SERCOM0_USART_ReadAbort,
     .writeCallbackRegister = (DRV_USART_PLIB_WRITE_CALLBACK_REG)SERCOM0_USART_WriteCallbackRegister,
     .write = (DRV_USART_PLIB_WRITE)SERCOM0_USART_Write,
     .writeIsBusy = (DRV_USART_PLIB_WRITE_IS_BUSY)SERCOM0_USART_WriteIsBusy,
@@ -145,6 +145,8 @@ const DRV_USART_INIT drvUsart1InitData =
     .remapStopBits = drvUsart1remapStopBits,
 
     .remapError = drvUsart1remapError,
+
+    .dataWidth = DRV_USART_DATA_8_BIT,
 };
 
 // </editor-fold>
@@ -160,7 +162,7 @@ const DRV_USART_PLIB_INTERFACE drvUsart0PlibAPI = {
     .read = (DRV_USART_PLIB_READ)SERCOM2_USART_Read,
     .readIsBusy = (DRV_USART_PLIB_READ_IS_BUSY)SERCOM2_USART_ReadIsBusy,
     .readCountGet = (DRV_USART_PLIB_READ_COUNT_GET)SERCOM2_USART_ReadCountGet,
-	.readAbort = (DRV_USART_PLIB_READ_ABORT)SERCOM2_USART_ReadAbort,
+    .readAbort = (DRV_USART_PLIB_READ_ABORT)SERCOM2_USART_ReadAbort,
     .writeCallbackRegister = (DRV_USART_PLIB_WRITE_CALLBACK_REG)SERCOM2_USART_WriteCallbackRegister,
     .write = (DRV_USART_PLIB_WRITE)SERCOM2_USART_Write,
     .writeIsBusy = (DRV_USART_PLIB_WRITE_IS_BUSY)SERCOM2_USART_WriteIsBusy,
@@ -215,6 +217,8 @@ const DRV_USART_INIT drvUsart0InitData =
     .remapStopBits = drvUsart0remapStopBits,
 
     .remapError = drvUsart0remapError,
+
+    .dataWidth = DRV_USART_DATA_8_BIT,
 };
 
 // </editor-fold>
@@ -263,6 +267,7 @@ SYSTEM_OBJECTS sysObj;
 
 void SYS_Initialize ( void* data )
 {
+
     NVMCTRL_Initialize( );
 
   
