@@ -49,7 +49,8 @@ The following table shows the target hardware for the application projects.
 ## Running the Application
 
 1. Build and program the application using its IDE
-2. LED is turned ON when the data read from SST26 flash matches with the data written in it
+2. Reset the device by power cycle
+3. LED is turned ON when the data read from SST26 flash matches with the data written in it
 
 Refer to the following table for LED name:
 
