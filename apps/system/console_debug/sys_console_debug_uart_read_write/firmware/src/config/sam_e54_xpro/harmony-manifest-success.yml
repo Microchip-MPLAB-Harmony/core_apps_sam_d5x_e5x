@@ -4,17 +4,16 @@
 
 
 project: sys_console_debug_uart_read_write
-creation_date: 2021-01-29T16:20:10.884+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
+creation_date: 2021-02-18T03:39:25.356+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
 operating_system: Windows 10
 mhc_mode: IDE            # [IDE|Standalone|Headless]
-mhc_version: v3.7.0-tc.1
+mhc_version: v3.7.0
 mplabx_version: v5.45        # if MPLAB X plugin only
 plugin_version: v3.6.2        # if MPLAB X plugin only
 compiler: XC32 (2.50)
 
 modules:
-    - {name: "csp", version: "unknown"}
-    - {name: "core", version: "v3.9.0-rc.1"}
-    - {name: "dev_packs", version: "v3.9.0-rc.1"}
-    - {name: "bsp", version: "v3.9.0-rc.3"}
-
+    - {name: "csp", version: "v3.9.0"}
+    - {name: "dev_packs", version: "v3.9.0"}
+    - {name: "core", version: "v3.9.0"}
+    - {name: "bsp", version: "v3.9.0"}
