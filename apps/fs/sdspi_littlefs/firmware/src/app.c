@@ -55,6 +55,7 @@
 #include "app.h"
 #include "bsp/bsp.h"
 #include "user.h"
+#include "definitions.h"
 // *****************************************************************************
 // *****************************************************************************
 // Section: Global Data Definitions
@@ -160,6 +161,7 @@ void APP_Tasks ( void )
             else
             {
                 /* Mount was successful. Unmount the disk, for testing. */
+                SYS_CONSOLE_PRINT("[%s] Mount success\r\n", __func__);
                 appData.state = APP_UNMOUNT_DISK;
             }
             break;
@@ -175,6 +177,7 @@ void APP_Tasks ( void )
             else
             {
                 /* UnMount was successful. Mount the disk again */
+                SYS_CONSOLE_PRINT("[%s] UnMount success\r\n", __func__);
                 appData.state = APP_MOUNT_DISK_AGAIN;
             }
             break;
@@ -189,6 +192,7 @@ void APP_Tasks ( void )
             else
             {
                 /* Mount was successful. Set current drive so that we do not have to use absolute path. */
+                SYS_CONSOLE_PRINT("[%s] Mount success\r\n", __func__);
                 appData.state = APP_SET_CURRENT_DRIVE;
             }
             break;
@@ -197,6 +201,7 @@ void APP_Tasks ( void )
             if(SYS_FS_CurrentDriveSet(SDCARD_MOUNT_NAME) == SYS_FS_RES_FAILURE)
             {
                 /* Error while setting current drive */
+                SYS_CONSOLE_PRINT("[%s] CurrentDriveSet fail\r\n", __func__);
                 appData.state = APP_ERROR;
             }
             else
@@ -211,6 +216,7 @@ void APP_Tasks ( void )
             if(appData.fileHandle == SYS_FS_HANDLE_INVALID)
             {
                 /* Could not open the file. Error out*/
+                SYS_CONSOLE_PRINT("[%s] FileOpen fail\r\n", __func__);
                 appData.state = APP_ERROR;
             }
             else
@@ -224,6 +230,7 @@ void APP_Tasks ( void )
             if(SYS_FS_DirectoryMake(SDCARD_DIR_NAME) == SYS_FS_RES_FAILURE)
             {
                 /* Error while creating a new drive */
+                SYS_CONSOLE_PRINT("[%s] DirectoryMake fail\r\n", __func__);
                 appData.state = APP_ERROR;
             }
             else
@@ -241,6 +248,7 @@ void APP_Tasks ( void )
             if(appData.fileHandle1 == SYS_FS_HANDLE_INVALID)
             {
                 /* Could not open the file. Error out*/
+                SYS_CONSOLE_PRINT("[%s] FileOpen fail\r\n", __func__);
                 appData.state = APP_ERROR;
             }
             else
@@ -256,6 +264,7 @@ void APP_Tasks ( void )
             {
                 /* There was an error while reading the file.
                  * Close the file and error out. */
+                SYS_CONSOLE_PRINT("[%s] FileRead fail\r\n", __func__);
                 SYS_FS_FileClose(appData.fileHandle);
                 appData.state = APP_ERROR;
             }
@@ -266,6 +275,7 @@ void APP_Tasks ( void )
                 {                    
                     /* Write was not successful. Close the file
                      * and error out.*/
+                    SYS_CONSOLE_PRINT("[%s] FileWrite fail\r\n", __func__);
                     SYS_FS_FileClose(appData.fileHandle1);
                     appData.state = APP_ERROR;
                 }
@@ -283,6 +293,7 @@ void APP_Tasks ( void )
             SYS_FS_FileClose(appData.fileHandle1);
 
             /* The test was successful. Lets idle. */
+            SYS_CONSOLE_PRINT("[%s] Test success\r\n", __func__);
             appData.state = APP_IDLE;
             break;
 

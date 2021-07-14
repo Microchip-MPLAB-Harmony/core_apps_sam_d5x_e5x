@@ -1,20 +1,22 @@
 /*******************************************************************************
- System Interrupts File
+  Console System Service Local Data Structures
 
   Company:
     Microchip Technology Inc.
 
   File Name:
-    interrupt.h
+    sys_console_uart.h
 
   Summary:
-    Interrupt vectors mapping
+    Console System Service local declarations and definitions for UART I/O
+    device.
 
   Description:
-    This file contains declarations of device vectors used by Harmony 3
- *******************************************************************************/
+    This file contains the Console System Service local declarations and
+    definitions for UART I/O device.
+*******************************************************************************/
 
-// DOM-IGNORE-BEGIN
+//DOM-IGNORE-BEGIN
 /*******************************************************************************
 * Copyright (C) 2018 Microchip Technology Inc. and its subsidiaries.
 *
@@ -36,36 +38,65 @@
 * FULLEST EXTENT ALLOWED BY LAW, MICROCHIP'S TOTAL LIABILITY ON ALL CLAIMS IN
 * ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY,
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
- *******************************************************************************/
+*******************************************************************************/
+//DOM-IGNORE-END
+
+#ifndef SYS_CONSOLE_UART_H
+#define SYS_CONSOLE_UART_H
+
+// *****************************************************************************
+// *****************************************************************************
+// Section: File includes
+// *****************************************************************************
+// *****************************************************************************
+
+#include "sys_console_local.h"
+#include "osal/osal.h"
+#include "system/console/src/sys_console_uart_definitions.h"
+
+// DOM-IGNORE-BEGIN
+#ifdef __cplusplus  // Provide C++ Compatibility
+
+    extern "C" {
+
+#endif
 // DOM-IGNORE-END
 
-#ifndef INTERRUPTS_H
-#define INTERRUPTS_H
-
 // *****************************************************************************
 // *****************************************************************************
-// Section: Included Files
-// *****************************************************************************
-// *****************************************************************************
-#include <stdint.h>
-
-
-// *****************************************************************************
-// *****************************************************************************
-// Section: Handler Routines
+// Section: Data Type Definitions
 // *****************************************************************************
 // *****************************************************************************
 
-void Reset_Handler (void);
-void NonMaskableInt_Handler (void);
-void HardFault_Handler (void);
-void xPortSysTickHandler (void);
-void DMAC_0_InterruptHandler (void);
-void DMAC_1_InterruptHandler (void);
-void SERCOM2_USART_InterruptHandler (void);
-void SERCOM4_SPI_InterruptHandler (void);
-void TC0_TimerInterruptHandler (void);
+typedef struct
+{
+    /* Pointer to USART APIs used by the console system service*/
+    const SYS_CONSOLE_UART_PLIB_INTERFACE* uartPLIB;
 
+    SYS_CONSOLE_STATUS status;
 
+    /* Mutex to protect access to the transfer objects */
+    OSAL_MUTEX_DECLARE(mutexTransferObjects);
 
-#endif // INTERRUPTS_H
+} CONSOLE_UART_DATA;
+
+void Console_UART_Initialize(uint32_t index, const void* initData);
+SYS_CONSOLE_STATUS Console_UART_Status(uint32_t index);
+void Console_UART_Tasks(uint32_t index, SYS_MODULE_OBJ object);
+ssize_t Console_UART_Read(uint32_t index, void* pRdBuffer, size_t count);
+ssize_t Console_UART_ReadCountGet(uint32_t index);
+ssize_t Console_UART_ReadFreeBufferCountGet(uint32_t index);
+ssize_t Console_UART_Write(uint32_t index, const void* pWrBuffer, size_t count );
+ssize_t Console_UART_WriteFreeBufferCountGet(uint32_t index);
+ssize_t Console_UART_WriteCountGet(uint32_t index);
+bool Console_UART_Flush(uint32_t index);
+
+// DOM-IGNORE-BEGIN
+#ifdef __cplusplus
+
+    }
+
+#endif
+// DOM-IGNORE-END
+
+#endif //#ifndef SYS_CONSOLE_UART_H
