@@ -224,7 +224,7 @@ static bool SYS_FS_GetDisk
 
             if (pathLength)
             {
-                strncpy((char *)buffer, (const char *)ptr, pathLength);
+                memcpy((char *)buffer, (const char *)ptr, pathLength);
                 pathLength ++;
             }
 
@@ -492,7 +492,7 @@ SYS_FS_RESULT SYS_FS_Mount
     (void)data;
 
     /* Validate the parameters. */
-    if ((devName == NULL) || (mountName == NULL) || ((filesystemtype != FAT) && (filesystemtype != MPFS2)))
+    if ((devName == NULL) || (mountName == NULL) || ((filesystemtype != FAT) && (filesystemtype != MPFS2) && (filesystemtype != LITTLEFS)))
     {
         errorValue = SYS_FS_ERROR_INVALID_PARAMETER;
         return SYS_FS_RES_FAILURE;
@@ -610,7 +610,6 @@ SYS_FS_RESULT SYS_FS_Mount
     {
         fileStatus = disk->fsFunctions->mount(disk->diskNumber);
         errorValue = (SYS_FS_ERROR)fileStatus;
-
         if (fileStatus == SYS_FS_ERROR_NO_FILESYSTEM)
         {
             fileStatus = 0;
@@ -2306,7 +2305,7 @@ SYS_FS_RESULT SYS_FS_CurrentDriveGet
     }
 
     strcpy(buffer, "/mnt/");
-    strncpy(buffer + 5, gSYSFSCurrentMountPoint.currentDisk->mountName, gSYSFSCurrentMountPoint.currentDisk->mountNameLength);
+    memcpy(buffer + 5, gSYSFSCurrentMountPoint.currentDisk->mountName, gSYSFSCurrentMountPoint.currentDisk->mountNameLength);
 
     return SYS_FS_RES_SUCCESS;
 }
