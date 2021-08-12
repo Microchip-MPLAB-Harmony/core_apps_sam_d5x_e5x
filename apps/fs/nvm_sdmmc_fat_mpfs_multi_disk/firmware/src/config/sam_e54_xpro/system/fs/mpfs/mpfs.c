@@ -55,6 +55,7 @@
   Section: Module-Only Globals and Functions
   ***************************************************************************/
 
+
 /* Array of File Objects. */
 static MPFS_FILE_OBJ CACHE_ALIGN gSysMpfsFileObj[SYS_FS_MAX_FILES];
 
@@ -217,7 +218,7 @@ static int MPFSFindFile
     return -1;
 }
 
-static bool MPFSDiskRead
+static bool MPFSDiskReadAligned
 (
     uint16_t diskNum,
     uint8_t *destination,
@@ -225,26 +226,49 @@ static bool MPFSDiskRead
     const uint32_t nBytes
 )
 {
-    SYS_FS_MEDIA_BLOCK_COMMAND_HANDLE commandHandle = SYS_FS_MEDIA_BLOCK_COMMAND_HANDLE_INVALID;
+	SYS_FS_MEDIA_BLOCK_COMMAND_HANDLE commandHandle = SYS_FS_MEDIA_BLOCK_COMMAND_HANDLE_INVALID;
     SYS_FS_MEDIA_COMMAND_STATUS commandStatus = SYS_FS_MEDIA_COMMAND_UNKNOWN;
+	
+	commandHandle = SYS_FS_MEDIA_BLOCK_COMMAND_HANDLE_INVALID;
+	commandStatus = SYS_FS_MEDIA_COMMAND_IN_PROGRESS;
 
-    commandHandle = SYS_FS_MEDIA_MANAGER_Read (diskNum, destination, source, nBytes);
+	commandHandle = SYS_FS_MEDIA_MANAGER_Read (diskNum, destination, source, nBytes);
 
-    if (commandHandle == SYS_FS_MEDIA_BLOCK_COMMAND_HANDLE_INVALID)
+	if (commandHandle == SYS_FS_MEDIA_BLOCK_COMMAND_HANDLE_INVALID)
+	{
+		return false;
+	}
+
+	commandStatus = SYS_FS_MEDIA_MANAGER_CommandStatusGet(diskNum, commandHandle);
+
+	while ( (commandStatus == SYS_FS_MEDIA_COMMAND_IN_PROGRESS) ||
+			(commandStatus == SYS_FS_MEDIA_COMMAND_QUEUED))
+	{
+		SYS_FS_MEDIA_MANAGER_TransferTask (diskNum);
+		commandStatus = SYS_FS_MEDIA_MANAGER_CommandStatusGet(diskNum, commandHandle);
+	}
+
+	if (commandStatus != SYS_FS_MEDIA_COMMAND_COMPLETED)
+	{
+		return false;
+	}
+	else
+	{
+		return true;
+	}
+}
+
+static bool MPFSDiskRead
+(
+    uint16_t diskNum,
+    uint8_t *destination,
+    uint8_t *source,
+    const uint32_t nBytes
+)
+{    
     {
-        return false;
+		return MPFSDiskReadAligned(diskNum, destination, source, nBytes);        
     }
-
-    commandStatus = SYS_FS_MEDIA_MANAGER_CommandStatusGet(diskNum, commandHandle);
-
-    while ( (commandStatus == SYS_FS_MEDIA_COMMAND_IN_PROGRESS) ||
-            (commandStatus == SYS_FS_MEDIA_COMMAND_QUEUED))
-    {
-        SYS_FS_MEDIA_MANAGER_TransferTask (diskNum);
-        commandStatus = SYS_FS_MEDIA_MANAGER_CommandStatusGet(diskNum, commandHandle);
-    }
-
-    return (commandStatus == SYS_FS_MEDIA_COMMAND_COMPLETED) ? true : false;
 }
 
 /* Wrapper for the MPFSDiskRead (). */
@@ -574,7 +598,7 @@ int MPFS_Stat
             else
             {
                 /* Populate the file details. */
-                strncpy (stat->lfname, file, fileLen);
+                memcpy (stat->lfname, file, fileLen);
                 stat->lfname[fileLen] = '\0';
             }
         }
@@ -586,7 +610,7 @@ int MPFS_Stat
         }
 
         /* Populate the file details. */
-        strncpy (stat->fname, file, fileLen);
+        memcpy (stat->fname, file, fileLen);
         stat->fname[fileLen] = '\0';
 
         stat->fattrib = fileRecord.flags;
@@ -749,7 +773,7 @@ int MPFS_DirRead
             else
             {
                 /* Populate the file details. */
-                strncpy (stat->lfname, (const char *)fileName, fileLen);
+                memcpy (stat->lfname, (const char *)fileName, fileLen);
                 stat->lfname[fileLen] = '\0';
             }
         }
@@ -760,7 +784,7 @@ int MPFS_DirRead
         }
 
         /* Populate the file details. */
-        strncpy (stat->fname, (const char *)fileName, fileLen);
+        memcpy (stat->fname, (const char *)fileName, fileLen);
         stat->fname[fileLen] = '\0';
 
         stat->fattrib = fileRecord.flags;

@@ -56,7 +56,7 @@
 */
 
 #include "user.h"
-#include "toolchain_specifics.h"
+#include "device.h"
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
@@ -112,6 +112,7 @@ extern "C" {
 
 
 
+
 #define SYS_FS_MEDIA_TYPE_IDX0 				SYS_FS_MEDIA_TYPE_SD_CARD
 #define SYS_FS_TYPE_IDX0 					FAT
 					
@@ -144,6 +145,7 @@ extern "C" {
 #define DRV_MEMORY_BUFFER_QUEUE_SIZE_IDX0    1
 #define DRV_MEMORY_DEVICE_START_ADDRESS      0x80000
 #define DRV_MEMORY_DEVICE_MEDIA_SIZE         512UL
+#define DRV_MEMORY_DEVICE_MEDIA_SIZE_BYTES   (DRV_MEMORY_DEVICE_MEDIA_SIZE * 1024)
 #define DRV_MEMORY_DEVICE_PROGRAM_SIZE       512
 #define DRV_MEMORY_DEVICE_ERASE_SIZE         8192
 
