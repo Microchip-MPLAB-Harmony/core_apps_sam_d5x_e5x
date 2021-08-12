@@ -58,7 +58,7 @@
 #pragma config BOD33USERLEVEL = 0x1c
 #pragma config BOD33_ACTION = RESET
 #pragma config BOD33_HYST = 0x2
-#pragma config NVMCTRL_BOOTPROT = 0xF
+#pragma config NVMCTRL_BOOTPROT = 0
 #pragma config NVMCTRL_SEESBLK = 0x0
 #pragma config NVMCTRL_SEEPSZ = 0x0
 #pragma config RAMECC_ECCDIS = SET
@@ -93,7 +93,7 @@ const DRV_SPI_PLIB_INTERFACE drvSPI0PlibAPI = {
     .writeRead = (DRV_SPI_PLIB_WRITE_READ)SERCOM4_SPI_WriteRead,
 
     /* SPI PLIB Transfer Status function */
-    .isBusy = (DRV_SPI_PLIB_IS_BUSY)SERCOM4_SPI_IsBusy,
+    .isTransmitterBusy = (DRV_SPI_PLIB_TRANSMITTER_IS_BUSY)SERCOM4_SPI_IsTransmitterBusy,
 
     /* SPI PLIB Callback Register */
     .callbackRegister = (DRV_SPI_PLIB_CALLBACK_REGISTER)SERCOM4_SPI_CallbackRegister,
@@ -151,7 +151,7 @@ const DRV_SPI_PLIB_INTERFACE drvSPI1PlibAPI = {
     .writeRead = (DRV_SPI_PLIB_WRITE_READ)SERCOM6_SPI_WriteRead,
 
     /* SPI PLIB Transfer Status function */
-    .isBusy = (DRV_SPI_PLIB_IS_BUSY)SERCOM6_SPI_IsBusy,
+    .isTransmitterBusy = (DRV_SPI_PLIB_TRANSMITTER_IS_BUSY)SERCOM6_SPI_IsTransmitterBusy,
 
     /* SPI PLIB Callback Register */
     .callbackRegister = (DRV_SPI_PLIB_CALLBACK_REGISTER)SERCOM6_SPI_CallbackRegister,
