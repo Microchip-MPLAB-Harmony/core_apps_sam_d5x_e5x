@@ -76,6 +76,15 @@ children:
         attributes: {id: source}
         children:
         - {type: Value, value: ../peripheral/sercom_u2201/templates/plib_sercom_usart_ring_buffer.h.ftl}
+  - type: Comment
+    attributes: {id: SERCOM_USART_RING_BUFFER_SIZE_CONFIG}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
   - type: File
     attributes: {id: SERCOM_USART_SOURCE}
     children:
