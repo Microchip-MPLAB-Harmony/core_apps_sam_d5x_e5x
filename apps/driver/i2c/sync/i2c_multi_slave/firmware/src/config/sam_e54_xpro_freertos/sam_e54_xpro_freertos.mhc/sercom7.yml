@@ -30,6 +30,15 @@ children:
         children:
         - {type: Value, value: 'true'}
   - type: Integer
+    attributes: {id: I2CS_SDASETUP_TIME_NS}
+    children:
+    - type: Attributes
+      children:
+      - type: Integer
+        attributes: {id: max}
+        children:
+        - {type: Value, value: '2050'}
+  - type: Integer
     attributes: {id: I2CS_SDASETUP_TIME_REG_VALUE}
     children:
     - type: Values
@@ -70,6 +79,13 @@ children:
         attributes: {id: visible}
         children:
         - {type: Value, value: 'true'}
+  - type: Integer
+    attributes: {id: I2C_CLOCK_SPEED_HZ}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: sercom7, value: '100000'}
   - type: Boolean
     attributes: {id: I2C_RUNSTDBY}
     children:
@@ -79,6 +95,13 @@ children:
         attributes: {id: visible}
         children:
         - {type: Value, value: 'true'}
+  - type: Integer
+    attributes: {id: I2C_SCLSM}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: sercom7, value: '0'}
   - type: KeyValueSet
     attributes: {id: I2C_SDAHOLD_TIME}
     children:
@@ -201,6 +224,13 @@ children:
         attributes: {id: visible}
         children:
         - {type: Value, value: 'false'}
+  - type: String
+    attributes: {id: USART_DATA_BITS}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: sercom7, value: DRV_USART_DATA_8_BIT}
   - type: KeyValueSet
     attributes: {id: USART_FORM}
     children:
@@ -214,6 +244,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: sercom7, value: '0'}
+  - type: Boolean
+    attributes: {id: USART_INTERRUPT_MODE_ENABLE}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: sercom7, value: 'true'}
   - type: Boolean
     attributes: {id: USART_LIN_MASTER_SUPPORTED}
     children:
@@ -248,6 +285,13 @@ children:
         attributes: {id: label}
         children:
         - {type: Value, value: '---'}
+  - type: Boolean
+    attributes: {id: USART_RING_BUFFER_MODE_ENABLE}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: sercom7, value: 'false'}
   - type: Boolean
     attributes: {id: USART_RUNSTDBY}
     children:
