@@ -58,7 +58,7 @@
 #pragma config BOD33USERLEVEL = 0x1c
 #pragma config BOD33_ACTION = RESET
 #pragma config BOD33_HYST = 0x2
-#pragma config NVMCTRL_BOOTPROT = 0xF
+#pragma config NVMCTRL_BOOTPROT = 0
 #pragma config NVMCTRL_SEESBLK = 0x0
 #pragma config NVMCTRL_SEEPSZ = 0x0
 #pragma config RAMECC_ECCDIS = SET
@@ -125,10 +125,6 @@ const DRV_USART_INIT drvUsart0InitData =
 
     /* USART Client Objects Pool */
     .clientObjPool = (uintptr_t)&drvUSART0ClientObjPool[0],
-
-    .dmaChannelTransmit = SYS_DMA_CHANNEL_NONE,
-
-    .dmaChannelReceive = SYS_DMA_CHANNEL_NONE,
 
     /* Combined size of transmit and receive buffer objects */
     .bufferObjPoolSize = DRV_USART_QUEUE_SIZE_IDX0,
