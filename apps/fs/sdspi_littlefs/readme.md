@@ -60,7 +60,7 @@ You can follow the README.md in [mklittlefs repo](https://github.com/MicrochipTe
 ### Steps flash the image to the SD card
 1. Download the tool [Etcher](https://www.balena.io/etcher/)
 2. Insert your SD card and launch Etcher
-3. Select the image (lfs_image.img).
+3. Select the image (lfs_image.img)
 4. Select the device corresponding to your SD card (Etcher proposes you the devices that are removable to avoid erasing your system disk)
 5. Click on the Flash! button
 
@@ -78,17 +78,24 @@ The following table shows the target hardware for the application projects.
 
 - To run the demo, the following additional hardware are required:
   - [I/O1 Xplained Pro Extension Kit](https://www.microchip.com/developmenttools/ProductDetails/ATIO1-XPRO)
-  - Micro-SD card formatted to FAT filesystem
+  - Micro-SD card formatted to LittleFS filesystem
 - Connect the [I/O1 Xplained Pro Extension Kit](https://www.microchip.com/developmenttools/ProductDetails/ATIO1-XPRO) to the EXT1 header
-- Copy a JPEG file in the SD Card with name FILE_TOO_LONG_NAME_EXAMPLE_123.JPG
 - Insert microSD card on the [I/O1 Xplained Pro Extension Kit](https://www.microchip.com/developmenttools/ProductDetails/ATIO1-XPRO)
 - Connect the Debug USB port on the board to the computer using a micro USB cable
 
 ## Running the Application
 
-1. Build and program the application using its IDE
-2. Press the switch to start the application
-3. The LED is turned ON if there was no error during creating the directory and copying the file into it
+1. Open the Terminal application (Ex.:Tera term) on the computer
+2. Connect to the EDBG Virtual COM port and configure the serial settings as follows:
+    - Baud : 115200
+    - Data : 8 Bits
+    - Parity : None
+    - Stop : 1 Bit
+    - Flow Control : None
+
+3. Build and program the application using its IDE
+4. Press the switch to start the application
+5. The LED is turned ON if there was no error during creating the directory and copying the file into it
 
     Refer to the following table for LED name:
 
@@ -97,5 +104,6 @@ The following table shows the target hardware for the application projects.
     |  [SAM E54 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsame54-xpro) | LED0 | SW0 |
     |||
 
-4. If LED is ON, Insert the SD Card on to your host PC
-5. SD Card should have the file **Dir1/FILE_TOO_LONG_NAME_EXAMPLE_123.JPG** and should match the original image
+6. Observe the following messages getting printed on the console
+
+    ![output_sdspi_littlefs](images/output_sdspi_littlefs.png)
