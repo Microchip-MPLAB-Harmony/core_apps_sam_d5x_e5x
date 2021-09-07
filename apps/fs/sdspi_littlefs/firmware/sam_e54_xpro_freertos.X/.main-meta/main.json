@@ -60,6 +60,7 @@
 			"MHC",
 			"Harmony",
 			"File System",
+			"littlefs",
 			"ATSAME54P20A",
 			"SAM D5x/E5x Family"
 		],
