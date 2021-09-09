@@ -8,6 +8,32 @@ nav_order: 99
 
 # Microchip MPLAB® Harmony 3 Release Notes
 
+## Harmony 3 peripheral library application examples for SAM D5X/E5X family  v3.2.0
+
+### Development kit and demo application support
+
+Following table provides number of peripheral library examples available for different development kits.
+
+| Development Kits  | MPLABx applications | KEIL applications |
+|:-----------------:|:-------------------:|:----------------:|
+| [SAM E54 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsame54-xpro) | 40 | 1 |
+
+### New Features
+
+- All MPLABx applications are updated to work with both MHC and MCC tools
+
+### Known Issues
+
+- None
+
+### Development Tools
+
+- [MPLAB® X IDE v5.50](https://www.microchip.com/mplab/mplab-x-ide)
+- MPLAB® X IDE plug-ins:
+  - MPLAB® Harmony Configurator (MHC) v3.8.0
+- [MPLAB® XC32 C/C++ Compiler v3.01](https://www.microchip.com/mplab/compilers)
+- [KEIL MDK v5.35 or above](https://www2.keil.com/mdk5)
+
 ## Harmony 3 peripheral library application examples for SAM D5X/E5X family  v3.1.0
 
 ### Development kit and demo application support
