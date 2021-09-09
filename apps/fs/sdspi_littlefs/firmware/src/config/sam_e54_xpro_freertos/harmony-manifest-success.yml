@@ -4,7 +4,7 @@
 
 
 project: sdspi_littlefs
-creation_date: 2021-08-12T18:15:24.664+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
+creation_date: 2021-09-09T18:17:15.304+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
 operating_system: Windows 10
 mhc_mode: IDE            # [IDE|Standalone|Headless]
 mhc_version: v3.8.0
@@ -18,4 +18,3 @@ modules:
     - {name: "core", version: "v3.10.0"}
     - {name: "bsp", version: "v3.10.0"}
     - {name: "CMSIS-FreeRTOS", version: "v10.3.1"}
-    - {name: "littlefs", version: "v2.4.1"}
