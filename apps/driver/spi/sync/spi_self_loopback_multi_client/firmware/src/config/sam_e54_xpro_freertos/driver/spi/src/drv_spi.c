@@ -538,12 +538,18 @@ bool DRV_SPI_WriteReadTransfer(const DRV_HANDLE handle,
             /* Active client allows de-asserting the chip select line in ISR routine */
             dObj->activeClient = (uintptr_t)clientObj;
 
-            if(clientObj->setup.dataBits != DRV_SPI_DATA_BITS_8)
+            if((clientObj->setup.dataBits > DRV_SPI_DATA_BITS_8) && (clientObj->setup.dataBits <= DRV_SPI_DATA_BITS_16))
             {
                 /* Both SPI and DMA PLIB expect size in terms of bytes, hence multiply transmit and receive sizes by 2 */
                 rxSize = rxSize << 1;
                 txSize = txSize << 1;
             }
+			else if ((clientObj->setup.dataBits > DRV_SPI_DATA_BITS_16) && (clientObj->setup.dataBits <= DRV_SPI_DATA_BITS_32))
+			{
+				/* Both SPI and DMA PLIB expect size in terms of bytes, hence multiply transmit and receive sizes by 2 */
+                rxSize = rxSize << 2;
+                txSize = txSize << 2;
+			}
 
             if (dObj->spiPlib->writeRead(pTransmitData, txSize, pReceiveData, rxSize) == true)
             {
