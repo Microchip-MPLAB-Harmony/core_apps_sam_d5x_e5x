@@ -614,7 +614,7 @@ typedef struct
     /* Pointer to the buffer used during sending commands and receiving responses
      * on the SPI bus. Buffer must be cache line aligned when using DMA with cache or
      * the buffer must be in coherent memory region */
-    volatile CACHE_ALIGN  uint8_t       cmdRespBuffer[CACHE_LINE_SIZE];
+    volatile CACHE_ALIGN  uint8_t       cmdRespBuffer[CACHE_ALIGNED_SIZE_GET(32)];
 
     /* Flag to indicate this object is in use  */
     bool                                inUse;
