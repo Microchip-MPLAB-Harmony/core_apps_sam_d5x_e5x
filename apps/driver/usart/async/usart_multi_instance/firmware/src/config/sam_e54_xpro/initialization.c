@@ -273,9 +273,9 @@ void SYS_Initialize ( void* data )
     SERCOM2_USART_Initialize();
 
 	BSP_Initialize();
-    EVSYS_Initialize();
-
     SERCOM0_USART_Initialize();
+
+    EVSYS_Initialize();
 
 
     sysObj.drvUsart1 = DRV_USART_Initialize(DRV_USART_INDEX_1, (SYS_MODULE_INIT *)&drvUsart1InitData);
