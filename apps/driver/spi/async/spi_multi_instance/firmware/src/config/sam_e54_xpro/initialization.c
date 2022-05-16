@@ -102,7 +102,7 @@ const DRV_SPI_PLIB_INTERFACE drvSPI1PlibAPI = {
     .callbackRegister = (DRV_SPI_PLIB_CALLBACK_REGISTER)SERCOM6_SPI_CallbackRegister,
 };
 
-const uint32_t drvSPI1remapDataBits[]= { 0x0, 0x1, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF };
+const uint32_t drvSPI1remapDataBits[]= { 0x0, 0x1, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF };
 const uint32_t drvSPI1remapClockPolarity[] = { 0x0, 0x20000000 };
 const uint32_t drvSPI1remapClockPhase[] = { 0x10000000, 0x0 };
 
@@ -186,7 +186,7 @@ const DRV_SPI_PLIB_INTERFACE drvSPI0PlibAPI = {
     .callbackRegister = (DRV_SPI_PLIB_CALLBACK_REGISTER)SERCOM4_SPI_CallbackRegister,
 };
 
-const uint32_t drvSPI0remapDataBits[]= { 0x0, 0x1, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF };
+const uint32_t drvSPI0remapDataBits[]= { 0x0, 0x1, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF };
 const uint32_t drvSPI0remapClockPolarity[] = { 0x0, 0x20000000 };
 const uint32_t drvSPI0remapClockPhase[] = { 0x10000000, 0x0 };
 
