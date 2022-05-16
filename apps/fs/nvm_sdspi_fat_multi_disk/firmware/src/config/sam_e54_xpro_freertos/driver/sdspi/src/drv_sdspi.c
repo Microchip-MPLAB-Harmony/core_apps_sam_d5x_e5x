@@ -84,7 +84,7 @@ static const DRV_SDSPI_CMD_OBJ gDrvSDSPICmdTable[] =
 static DRV_SDSPI_OBJ gDrvSDSPIObj[DRV_SDSPI_INSTANCES_NUMBER];
 
 /* Dummy data transmitted by TX DMA, common to all driver instances. */
-static CACHE_ALIGN uint8_t  txCommonDummyData[CACHE_LINE_SIZE];
+static CACHE_ALIGN uint8_t  txCommonDummyData[CACHE_ALIGNED_SIZE_GET(4)];
 
 // *****************************************************************************
 // *****************************************************************************
