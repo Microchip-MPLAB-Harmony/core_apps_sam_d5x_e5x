@@ -1,19 +1,21 @@
 /*******************************************************************************
-  Interface definition of CMCC PLIB.
+  SST26 Driver SPI Interface Implementation
 
   Company:
     Microchip Technology Inc.
 
   File Name:
-    plib_cmcc.h
+    drv_sst26_spi_interface.h
 
   Summary:
-    Interface definition of the CMCC(Cortex M Cache Controller) Peripheral Library
+    SST26 Driver PLIB Interface implementation
 
   Description:
-    This file defines the interface for the CMCC Plib.
+    This interface file segregates the SST26 protocol from the underlying
+    hardware layer implementation.
 *******************************************************************************/
 
+// DOM-IGNORE-BEGIN
 /*******************************************************************************
 * Copyright (C) 2019 Microchip Technology Inc. and its subsidiaries.
 *
@@ -35,40 +37,33 @@
 * FULLEST EXTENT ALLOWED BY LAW, MICROCHIP'S TOTAL LIABILITY ON ALL CLAIMS IN
 * ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY,
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
-*******************************************************************************/
+ *******************************************************************************/
+// DOM-IGNORE-END
 
-#ifndef PLIB_CMCC_H    // Guards against multiple inclusion
-#define PLIB_CMCC_H
+#ifndef _DRV_SST26_SPI_INTERFACE_H
+#define _DRV_SST26_SPI_INTERFACE_H
 
+// *****************************************************************************
+// *****************************************************************************
+// Section: Included Files
+// *****************************************************************************
+// *****************************************************************************
 
-#ifdef __cplusplus // Provide C++ Compatibility
-	extern "C" {
-#endif
+#include "drv_sst26_local.h"
 
 
 // *****************************************************************************
 // *****************************************************************************
-// Section: Interface
+// Section: Data Type Definitions
 // *****************************************************************************
 // *****************************************************************************
+void _DRV_SST26_SPIPlibCallbackHandler(uintptr_t context );
 
-#define CMCC_NO_OF_WAYS     (4U)
-#define CMCC_LINE_PER_WAY   (64U)
-#define CMCC_LINE_SIZE      (16U)
-#define CMCC_WAY_SIZE       (1024U)
+void _DRV_SST26_InterfaceInit(DRV_SST26_OBJECT* dObj, DRV_SST26_INIT* sst26Init);
 
-/***************************** CMCC API *******************************/
-void CMCC_Disable (void );
-void CMCC_EnableDCache (void );
-void CMCC_DisableDCache (void );
+bool _DRV_SST26_SPIWriteRead(
+    DRV_SST26_OBJECT* dObj,
+    DRV_SST26_TRANSFER_OBJ* transferObj
+);
 
-void CMCC_EnableICache (void );
-void CMCC_DisableICache (void );
-
-void CMCC_InvalidateAll (void );
-
-#ifdef __cplusplus  // Provide C++ Compatibility
-    }
-#endif
-
-#endif
+#endif //#ifndef _DRV_SST26_SPI_INTERFACE_H
