@@ -108,7 +108,7 @@ extern "C" {
 #define SYS_FS_PRIORITY                   1
 
 
-#define SYS_FS_LFS_MAX_SS                 SYS_FS_MEDIA_MAX_BLOCK_SIZE
+#define SYS_FS_LFS_MAX_SS                	SYS_FS_MEDIA_MAX_BLOCK_SIZE
 
 
 

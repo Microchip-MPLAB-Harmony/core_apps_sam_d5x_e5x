@@ -1902,14 +1902,14 @@ children:
       - type: String
         attributes: {id: value}
         children:
-        - {type: Value, value: '2048'}
+        - {type: Value, value: '8192'}
   - type: Integer
     attributes: {id: XC32_HEAP_SIZE}
     children:
     - type: Values
       children:
-      - type: User
-        attributes: {value: '2048'}
+      - type: Dynamic
+        attributes: {id: core, value: '8192'}
   - type: Boolean
     attributes: {id: systickEnable}
     children:
