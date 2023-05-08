@@ -81,10 +81,10 @@
     Application strings and buffers are be defined outside this structure.
 */
 
-APP_DATA appData;
+static APP_DATA appData;
 
 /* Application data buffer */
-uint8_t BUFFER_ATTRIBUTES dataBuffer[APP_DATA_LEN];
+static uint8_t BUFFER_ATTRIBUTES dataBuffer[APP_DATA_LEN];
 
 // *****************************************************************************
 // *****************************************************************************

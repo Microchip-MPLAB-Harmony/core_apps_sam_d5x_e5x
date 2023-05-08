@@ -89,10 +89,10 @@
     Application strings and buffers are be defined outside this structure.
 */
 
-APP_DATA appData;
+static APP_DATA appData;
 
 /* Application data buffer.*/
-uint8_t CACHE_ALIGN dataBuffer[BUFFER_SIZE];
+static uint8_t CACHE_ALIGN dataBuffer[BUFFER_SIZE];
 
 static const char messageBuffer[] =
 "\n\r-------------------------------------------------------------------"

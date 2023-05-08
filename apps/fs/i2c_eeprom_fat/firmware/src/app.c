@@ -81,10 +81,10 @@
     Application strings and buffers are be defined outside this structure.
 */
 
-APP_DATA CACHE_ALIGN appData;
+static APP_DATA CACHE_ALIGN appData;
 
 /* Work buffer used by FAT FS during Format */
-uint8_t CACHE_ALIGN work[SYS_FS_FAT_MAX_SS];
+static uint8_t CACHE_ALIGN work[SYS_FS_FAT_MAX_SS];
 
 // *****************************************************************************
 // *****************************************************************************
