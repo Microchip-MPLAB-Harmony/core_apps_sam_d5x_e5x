@@ -53,6 +53,7 @@
 #include "driver/sdmmc/drv_sdmmc.h"
 #include "driver/sdmmc/src/drv_sdmmc_local.h"
 #include <string.h>
+#include "driver/sdmmc/src/drv_sdmmc_file_system.h"
 
 static DRV_SDMMC_OBJ gDrvSDMMCObj[DRV_SDMMC_INSTANCES_NUMBER];
 
@@ -145,6 +146,7 @@ static DRV_SDMMC_BUFFER_OBJ* lDRV_SDMMC_FreeBufferObjectGet(DRV_SDMMC_CLIENT_OBJ
     }
     return NULL;
 }
+/* MISRA C-2012 Rule 11.3 deviated:12 Deviation record ID -  H3_MISRAC_2012_R_11_3_DR_1 */
 
 static bool lDRV_SDMMC_BufferObjectAddToList(
     DRV_SDMMC_OBJ* dObj,
@@ -344,6 +346,7 @@ static void lDRV_SDMMC_TimerCallback (
     *timeoutFlag = true;
 }
 
+/* MISRA C-2012 Rule 14.3 deviated:2 Deviation record ID -  H3_MISRAC_2012_R_14_3_DR_1 */
 static void lDRV_SDMMC_InitCardContext ( uint32_t drvIndex, DRV_SDHOST_CARD_CTXT* cardCtxt )
 {
     cardCtxt->isAttached            = false;
@@ -455,7 +458,8 @@ static void lDRV_SDMMC_ParseCSD (
         cardCtxt->discCapacity = ((cSizeVal + 1U) * (1UL << (cSizeMult + 2U)) * (1UL << readBlockLength)) / 512U;
     }
 }
-
+/* MISRA C-2012 Rule 16.1, 16.3 and 16.5 deviated below.
+  Deviation record ID -  H3_MISRAC_2012_R_16_1_DR_1, H3_MISRAC_2012_R_16_3_DR_1 & H3_MISRAC_2012_R_16_5_DR_1 */
 
 
 static void lDRV_SDMMC_CommandSend (
@@ -1351,18 +1355,14 @@ static void lDRV_SDMMC_MediaInitialize (
     }
 }
 
+/* MISRAC 2012 deviation block end */
 // *****************************************************************************
 // *****************************************************************************
 // Section: Driver Interface Function Definitions
 // *****************************************************************************
 // *****************************************************************************
 
-__WEAK void DRV_SDMMC_RegisterWithSysFs(
-    const SYS_MODULE_INDEX drvIndex
-)
-{
-
-}
+/* MISRA C-2012 Rule 11.8 deviated:2 Deviation record ID -  H3_MISRAC_2012_R_11_8_DR_1 */
 
 SYS_MODULE_OBJ DRV_SDMMC_Initialize (
     const SYS_MODULE_INDEX drvIndex,
@@ -1389,12 +1389,12 @@ SYS_MODULE_OBJ DRV_SDMMC_Initialize (
     /* Initialize the driver object's structure members */
     (void) memset (dObj, 0, sizeof(DRV_SDMMC_OBJ));
 
-    if(OSAL_MUTEX_Create(&dObj->mutex) != OSAL_RESULT_TRUE)
+    if(OSAL_MUTEX_Create(&dObj->mutex) != OSAL_RESULT_SUCCESS)
     {
         return SYS_MODULE_OBJ_INVALID;
     }
 
-    if(OSAL_MUTEX_Create(&dObj->mutexClientObjects) != OSAL_RESULT_TRUE)
+    if(OSAL_MUTEX_Create(&dObj->mutexClientObjects) != OSAL_RESULT_SUCCESS)
     {
         return SYS_MODULE_OBJ_INVALID;
     }
@@ -1473,7 +1473,7 @@ DRV_HANDLE DRV_SDMMC_Open (
     dObj = &gDrvSDMMCObj[drvIndex];
 
     /* Guard against multiple threads trying to open the driver */
-    if (OSAL_MUTEX_Lock(&dObj->mutexClientObjects , OSAL_WAIT_FOREVER ) == OSAL_RESULT_FALSE)
+    if (OSAL_MUTEX_Lock(&dObj->mutexClientObjects , OSAL_WAIT_FOREVER ) == OSAL_RESULT_FAIL)
     {
         return DRV_HANDLE_INVALID;
     }
@@ -1553,7 +1553,7 @@ void DRV_SDMMC_Close (
     dObj = (DRV_SDMMC_OBJ* )&gDrvSDMMCObj[clientObj->drvIndex];
 
     /* Guard against multiple threads trying to open/close the driver */
-    if (OSAL_MUTEX_Lock(&dObj->mutexClientObjects , OSAL_WAIT_FOREVER ) == OSAL_RESULT_FALSE)
+    if (OSAL_MUTEX_Lock(&dObj->mutexClientObjects , OSAL_WAIT_FOREVER ) == OSAL_RESULT_FAIL)
     {
         return;
     }
@@ -1573,7 +1573,7 @@ void DRV_SDMMC_Close (
 
 }
 
-void DRV_SDMMC_SetupXfer(
+static void DRV_SDMMC_SetupXfer(
     const DRV_HANDLE handle,
     DRV_SDMMC_COMMAND_HANDLE* commandHandle,
     void* buffer,
@@ -1632,7 +1632,7 @@ void DRV_SDMMC_SetupXfer(
         }
     }
 
-    if (OSAL_MUTEX_Lock(&dObj->mutex, OSAL_WAIT_FOREVER) != OSAL_RESULT_TRUE)
+    if (OSAL_MUTEX_Lock(&dObj->mutex, OSAL_WAIT_FOREVER) != OSAL_RESULT_SUCCESS)
     {
         return;
     }
@@ -1755,6 +1755,7 @@ SYS_MEDIA_GEOMETRY* DRV_SDMMC_GeometryGet (
 
     return mediaGeometryObj;
 }
+/* MISRA C-2012 Rule 11.1 deviated:1 Deviation record ID -  H3_MISRAC_2012_R_11_1_DR_1 */
 
 void DRV_SDMMC_EventHandlerSet (
     const DRV_HANDLE handle,
@@ -1771,7 +1772,7 @@ void DRV_SDMMC_EventHandlerSet (
     {
         dObj = (DRV_SDMMC_OBJ* )&gDrvSDMMCObj[clientObj->drvIndex];
 
-        if (OSAL_MUTEX_Lock(&dObj->mutex, OSAL_WAIT_FOREVER) == OSAL_RESULT_TRUE)
+        if (OSAL_MUTEX_Lock(&dObj->mutex, OSAL_WAIT_FOREVER) == OSAL_RESULT_SUCCESS)
         {
             /* Set the event handler */
             clientObj->eventHandler = (DRV_SDMMC_EVENT_HANDLER)eventHandler;
@@ -1780,6 +1781,9 @@ void DRV_SDMMC_EventHandlerSet (
         }
     }
 }
+/* MISRAC 2012 deviation block end */
+
+/* MISRAC 2012 deviation block end */
 
 bool DRV_SDMMC_IsAttached (
     const DRV_HANDLE handle
@@ -1833,10 +1837,9 @@ void DRV_SDMMC_Tasks( SYS_MODULE_OBJ object )
     DRV_SDMMC_EVENT evtStatus = DRV_SDMMC_EVENT_COMMAND_COMPLETE;
     uint32_t response = 0;
     static bool cardAttached = true;
-
     dObj = &gDrvSDMMCObj[object];
 
-    if (OSAL_MUTEX_Lock(&dObj->mutex, OSAL_WAIT_FOREVER) != OSAL_RESULT_TRUE)
+    if (OSAL_MUTEX_Lock(&dObj->mutex, OSAL_WAIT_FOREVER) != OSAL_RESULT_SUCCESS)
     {
         SYS_ASSERT(false, "SDMMC Driver: OSAL_MUTEX_Lock failed");
     }
@@ -2396,8 +2399,12 @@ void DRV_SDMMC_Tasks( SYS_MODULE_OBJ object )
             break;
     }
 
-    if (OSAL_MUTEX_Unlock(&dObj->mutex) != OSAL_RESULT_TRUE)
+    if (OSAL_MUTEX_Unlock(&dObj->mutex) != OSAL_RESULT_SUCCESS)
     {
         SYS_ASSERT(false, "SDMMC Driver: OSAL_MUTEX_Unlock failed");
     }
 }
+
+/* MISRAC 2012 deviation block end */
+
+/* MISRAC 2012 deviation block end */

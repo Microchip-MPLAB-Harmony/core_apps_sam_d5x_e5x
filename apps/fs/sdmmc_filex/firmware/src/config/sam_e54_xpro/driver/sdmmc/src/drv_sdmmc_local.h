@@ -157,6 +157,7 @@
 
 #define DRV_SDMMC_GET_CSD_VERSION(csdPtr)   ((csdPtr[14] >> 6) & (3U))
 
+/* MISRA C-2012 Rule 5.4 deviated:2 Deviation record ID -  H3_MISRAC_2012_R_5_4_DR_1 */
 
 
 #define DRV_SDMMC_EXT_CSD_CMD_SET_NORMAL            (1UL<<0)
@@ -214,6 +215,10 @@
 
 #define DRV_SDMMC_CLOCK_FREQ_DS_26_MHZ         (26000000)
 #define DRV_SDMMC_CLOCK_FREQ_HS_52_MHZ         (52000000)
+
+
+
+/* MISRAC 2012 deviation block end */
 
 // *****************************************************************************
 /* SDMMC Read/Write/Erase Region Index Numbers
