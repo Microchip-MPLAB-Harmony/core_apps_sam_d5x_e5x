@@ -52,6 +52,7 @@
 
 #include "configuration.h"
 #include "definitions.h"
+#include "sys_tasks.h"
 
 
 // *****************************************************************************
@@ -62,9 +63,9 @@
 /* Handle for the APP_USART_ECHO_Tasks. */
 TaskHandle_t xAPP_USART_ECHO_Tasks;
 
-void _APP_USART_ECHO_Tasks(  void *pvParameters  )
+static void lAPP_USART_ECHO_Tasks(  void *pvParameters  )
 {   
-    while(1)
+    while(true)
     {
         APP_USART_ECHO_Tasks();
     }
@@ -99,7 +100,7 @@ void SYS_Tasks ( void )
 
     /* Maintain the application's state machine. */
         /* Create OS Thread for APP_USART_ECHO_Tasks. */
-    xTaskCreate((TaskFunction_t) _APP_USART_ECHO_Tasks,
+    (void) xTaskCreate((TaskFunction_t) lAPP_USART_ECHO_Tasks,
                 "APP_USART_ECHO_Tasks",
                 1024,
                 NULL,
