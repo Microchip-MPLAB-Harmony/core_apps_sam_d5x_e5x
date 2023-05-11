@@ -86,7 +86,7 @@ extern "C" {
 #define SYS_TIME_HW_COUNTER_PERIOD                  (0xFFFFU)
 #define SYS_TIME_HW_COUNTER_HALF_PERIOD             (SYS_TIME_HW_COUNTER_PERIOD>>1)
 #define SYS_TIME_CPU_CLOCK_FREQUENCY                (120000000)
-#define SYS_TIME_COMPARE_UPDATE_EXECUTION_CYCLES    (188)
+#define SYS_TIME_COMPARE_UPDATE_EXECUTION_CYCLES    (232)
 
 
 
@@ -96,7 +96,7 @@ extern "C" {
 // *****************************************************************************
 // *****************************************************************************
 /* SDMMC Driver Global Configuration Options */
-#define DRV_SDMMC_INSTANCES_NUMBER                       1
+#define DRV_SDMMC_INSTANCES_NUMBER                       (1U)
 
 
 /*** SDMMC Driver Instance 0 Configuration ***/
@@ -111,7 +111,7 @@ extern "C" {
 /* SDMMC Driver Instance 0 RTOS Configurations*/
 #define DRV_SDMMC_STACK_SIZE_IDX0                         1024
 #define DRV_SDMMC_PRIORITY_IDX0                           1
-#define DRV_SDMMC_RTOS_DELAY_IDX0                         10
+#define DRV_SDMMC_RTOS_DELAY_IDX0                         10U
 
 
 
