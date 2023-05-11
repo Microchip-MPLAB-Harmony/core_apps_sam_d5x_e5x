@@ -52,6 +52,7 @@
 
 #include "configuration.h"
 #include "definitions.h"
+#include "sys_tasks.h"
 
 
 // *****************************************************************************
@@ -62,9 +63,9 @@
 /* Handle for the APP_I2C_EEPROM_Tasks. */
 TaskHandle_t xAPP_I2C_EEPROM_Tasks;
 
-void _APP_I2C_EEPROM_Tasks(  void *pvParameters  )
+static void lAPP_I2C_EEPROM_Tasks(  void *pvParameters  )
 {   
-    while(1)
+    while(true)
     {
         APP_I2C_EEPROM_Tasks();
     }
@@ -72,9 +73,9 @@ void _APP_I2C_EEPROM_Tasks(  void *pvParameters  )
 /* Handle for the APP_I2C_TEMP_SENSOR_Tasks. */
 TaskHandle_t xAPP_I2C_TEMP_SENSOR_Tasks;
 
-void _APP_I2C_TEMP_SENSOR_Tasks(  void *pvParameters  )
+static void lAPP_I2C_TEMP_SENSOR_Tasks(  void *pvParameters  )
 {   
-    while(1)
+    while(true)
     {
         APP_I2C_TEMP_SENSOR_Tasks();
     }
@@ -110,7 +111,7 @@ void SYS_Tasks ( void )
 
     /* Maintain the application's state machine. */
         /* Create OS Thread for APP_I2C_EEPROM_Tasks. */
-    xTaskCreate((TaskFunction_t) _APP_I2C_EEPROM_Tasks,
+    (void) xTaskCreate((TaskFunction_t) lAPP_I2C_EEPROM_Tasks,
                 "APP_I2C_EEPROM_Tasks",
                 1024,
                 NULL,
@@ -118,7 +119,7 @@ void SYS_Tasks ( void )
                 &xAPP_I2C_EEPROM_Tasks);
 
     /* Create OS Thread for APP_I2C_TEMP_SENSOR_Tasks. */
-    xTaskCreate((TaskFunction_t) _APP_I2C_TEMP_SENSOR_Tasks,
+    (void) xTaskCreate((TaskFunction_t) lAPP_I2C_TEMP_SENSOR_Tasks,
                 "APP_I2C_TEMP_SENSOR_Tasks",
                 1024,
                 NULL,
