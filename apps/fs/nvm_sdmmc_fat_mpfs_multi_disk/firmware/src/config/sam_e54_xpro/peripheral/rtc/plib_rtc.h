@@ -114,6 +114,7 @@ typedef uint32_t TAMPER_CHANNEL;
 
 
 void RTC_Initialize(void);
+bool RTC_PeriodicIntervalHasCompleted ( RTC_PERIODIC_INT_MASK period );
 void RTC_RTCCClockSyncEnable ( void );
 void RTC_RTCCClockSyncDisable ( void );
 bool RTC_RTCCTimeSet (struct tm * initialTime );
