@@ -97,7 +97,7 @@ static void DRV_SDSPI_TimerCallback( uintptr_t context )
 
 */
 
-void _DRV_SDSPI_SPIPlibCallbackHandler( uintptr_t context )
+void DRV_SDSPI_SPIPlibCallbackHandler( uintptr_t context )
 {
     DRV_SDSPI_OBJ* dObj = (DRV_SDSPI_OBJ *)context;
 
@@ -106,7 +106,7 @@ void _DRV_SDSPI_SPIPlibCallbackHandler( uintptr_t context )
     /* Only block transfers wait on semaphore. Post the semaphore and unblock the thread*/
     if (dObj->sdcardSPITransferType == DRV_SDSPI_SPI_TRANSFER_TYPE_BLOCK)
     {
-        OSAL_SEM_PostISR( &dObj->transferDone);
+        	(void) OSAL_SEM_PostISR( &dObj->transferDone);
     }
 }
 
@@ -127,7 +127,7 @@ void _DRV_SDSPI_SPIPlibCallbackHandler( uintptr_t context )
 
 */
 
-void _DRV_SDSPI_RX_DMA_CallbackHandler(
+void DRV_SDSPI_RX_DMA_CallbackHandler(
     SYS_DMA_TRANSFER_EVENT event,
     uintptr_t context
 )
@@ -146,7 +146,7 @@ void _DRV_SDSPI_RX_DMA_CallbackHandler(
     /* Only block transfers wait on semaphore. Post the semaphore and unblock the thread*/
     if (dObj->sdcardSPITransferType == DRV_SDSPI_SPI_TRANSFER_TYPE_BLOCK)
     {
-        OSAL_SEM_PostISR( &dObj->transferDone);
+        (void) OSAL_SEM_PostISR( &dObj->transferDone);
     }
 }
 
@@ -163,7 +163,7 @@ void _DRV_SDSPI_RX_DMA_CallbackHandler(
 
 */
 
-void _DRV_SDSPI_TX_DMA_CallbackHandler(
+void DRV_SDSPI_TX_DMA_CallbackHandler(
     SYS_DMA_TRANSFER_EVENT event,
     uintptr_t context
 )
@@ -185,7 +185,7 @@ void _DRV_SDSPI_TX_DMA_CallbackHandler(
 
 */
 
-static bool _DRV_SDSPI_DMA_Write(
+static bool lDRV_SDSPI_DMA_Write(
     DRV_SDSPI_OBJ* dObj,
     void* pWriteBuffer,
     uint32_t nBytes
@@ -199,7 +199,7 @@ static bool _DRV_SDSPI_DMA_Write(
         SYS_DMA_DESTINATION_ADDRESSING_MODE_FIXED
     );
 
-    SYS_DMA_ChannelTransfer(
+    (void) SYS_DMA_ChannelTransfer(
         dObj->rxDMAChannel,
         (const void *)dObj->rxAddress,      /* Source Address */
         (const void*)&dObj->rxDummyData,    /* Destination Address */
@@ -207,13 +207,13 @@ static bool _DRV_SDSPI_DMA_Write(
     );
 
     /* Setup DMA Transmit channel to transmit the write buffer */
-    SYS_DMA_AddressingModeSetup(
+    (void) SYS_DMA_AddressingModeSetup(
         dObj->txDMAChannel,
         SYS_DMA_SOURCE_ADDRESSING_MODE_INCREMENTED,
         SYS_DMA_DESTINATION_ADDRESSING_MODE_FIXED
     );
 
-    SYS_DMA_ChannelTransfer(
+    (void) SYS_DMA_ChannelTransfer(
         dObj->txDMAChannel,
         (const void *)pWriteBuffer,         /* Source Address */
         (const void*)dObj->txAddress,       /* Destination Address */
@@ -236,7 +236,7 @@ static bool _DRV_SDSPI_DMA_Write(
 
 */
 
-static bool _DRV_SDSPI_DMA_Read(
+static bool lDRV_SDSPI_DMA_Read(
     DRV_SDSPI_OBJ* dObj,
     void* pReadBuffer,
     uint32_t nBytes
@@ -251,7 +251,7 @@ static bool _DRV_SDSPI_DMA_Read(
         SYS_DMA_DESTINATION_ADDRESSING_MODE_INCREMENTED
     );
 
-    SYS_DMA_ChannelTransfer(
+    (void) SYS_DMA_ChannelTransfer(
         dObj->rxDMAChannel,
         (const void *)dObj->rxAddress,      /* Source Address */
         (const void*)pReadBuffer,           /* Destination Address */
@@ -266,7 +266,7 @@ static bool _DRV_SDSPI_DMA_Read(
         SYS_DMA_DESTINATION_ADDRESSING_MODE_FIXED
     );
 
-    SYS_DMA_ChannelTransfer(
+    (void) SYS_DMA_ChannelTransfer(
         dObj->txDMAChannel,
         (const void *)dObj->txDummyData,        /* Source Address */
         (const void*)dObj->txAddress,           /* Destination Address */
@@ -290,7 +290,7 @@ static bool _DRV_SDSPI_DMA_Read(
     complete.
 */
 
-bool _DRV_SDSPI_SPIBlockWrite(
+bool DRV_SDSPI_SPIBlockWrite(
     DRV_SDSPI_OBJ* dObj,
     void* pWriteBuffer
 )
@@ -305,7 +305,7 @@ bool _DRV_SDSPI_SPIBlockWrite(
     /* If enabled, used DMA for block transfers */
     if ((dObj->txDMAChannel != SYS_DMA_CHANNEL_NONE) && (dObj->rxDMAChannel != SYS_DMA_CHANNEL_NONE ))
     {
-        if (_DRV_SDSPI_DMA_Write(dObj, pWriteBuffer, _DRV_SDSPI_MEDIA_BLOCK_SIZE) == false)
+        if (lDRV_SDSPI_DMA_Write(dObj, pWriteBuffer, DRV_SDSPI_MEDIA_BLOCK_SIZE) == false)
         {
             SYS_PORT_PinSet(dObj->chipSelectPin);
             return isSuccess;
@@ -313,14 +313,14 @@ bool _DRV_SDSPI_SPIBlockWrite(
     }
     else
     {
-        if (dObj->spiPlib->write (pWriteBuffer, _DRV_SDSPI_MEDIA_BLOCK_SIZE) == false)
+        if (dObj->spiPlib->write_t (pWriteBuffer, DRV_SDSPI_MEDIA_BLOCK_SIZE) == false)
         {
             SYS_PORT_PinSet(dObj->chipSelectPin);
             return isSuccess;
         }
     }
 
-    if (OSAL_SEM_Pend( &dObj->transferDone, OSAL_WAIT_FOREVER ) == OSAL_RESULT_TRUE)
+    if (OSAL_SEM_Pend( &dObj->transferDone, OSAL_WAIT_FOREVER ) == OSAL_RESULT_SUCCESS)
     {
         if (dObj->spiTransferStatus == DRV_SDSPI_SPI_TRANSFER_STATUS_COMPLETE)
         {
@@ -329,7 +329,10 @@ bool _DRV_SDSPI_SPIBlockWrite(
     }
 
     /* Make sure all the bytes have shifted out before de-asserting the CS */
-    while(dObj->spiPlib->isTransmitterBusy());
+    while(dObj->spiPlib->isTransmitterBusy())
+    {
+        /* Do Nothing */
+    }
 
     SYS_PORT_PinSet(dObj->chipSelectPin);
     return isSuccess;
@@ -347,7 +350,7 @@ bool _DRV_SDSPI_SPIBlockWrite(
     This is a blocking implementation. This function does not block on a semaphore.
 */
 
-bool _DRV_SDSPI_SPIWrite(
+bool DRV_SDSPI_SPIWrite(
     DRV_SDSPI_OBJ* dObj,
     void* pWriteBuffer,
     uint32_t nBytes
@@ -363,7 +366,7 @@ bool _DRV_SDSPI_SPIWrite(
     /* If enabled, used DMA */
     if ((dObj->txDMAChannel != SYS_DMA_CHANNEL_NONE) && (dObj->rxDMAChannel != SYS_DMA_CHANNEL_NONE ))
     {
-        if (_DRV_SDSPI_DMA_Write(dObj, pWriteBuffer, nBytes) == false)
+        if (lDRV_SDSPI_DMA_Write(dObj, pWriteBuffer, nBytes) == false)
         {
             SYS_PORT_PinSet(dObj->chipSelectPin);
             return isSuccess;
@@ -371,7 +374,7 @@ bool _DRV_SDSPI_SPIWrite(
     }
     else
     {
-        if (dObj->spiPlib->write (pWriteBuffer, nBytes) == false)
+        if (dObj->spiPlib->write_t (pWriteBuffer, nBytes) == false)
         {
             SYS_PORT_PinSet(dObj->chipSelectPin);
             return isSuccess;
@@ -379,7 +382,10 @@ bool _DRV_SDSPI_SPIWrite(
     }
 
     /* Busy wait for the transfer to complete */
-    while (dObj->spiTransferStatus == DRV_SDSPI_SPI_TRANSFER_STATUS_IN_PROGRESS);
+    while (dObj->spiTransferStatus == DRV_SDSPI_SPI_TRANSFER_STATUS_IN_PROGRESS)
+    {
+        /*Do Nothing */
+    }
 
     if (dObj->spiTransferStatus == DRV_SDSPI_SPI_TRANSFER_STATUS_COMPLETE)
     {
@@ -387,7 +393,10 @@ bool _DRV_SDSPI_SPIWrite(
     }
 
     /* Make sure all the bytes have shifted out before de-asserting the CS */
-    while(dObj->spiPlib->isTransmitterBusy());
+    while(dObj->spiPlib->isTransmitterBusy())
+    {
+        /* Do Nothing */
+    }
 
     SYS_PORT_PinSet(dObj->chipSelectPin);
     return isSuccess;
@@ -408,7 +417,7 @@ bool _DRV_SDSPI_SPIWrite(
     complete.
 */
 
-bool _DRV_SDSPI_SPIBlockRead(
+bool DRV_SDSPI_SPIBlockRead(
     DRV_SDSPI_OBJ* dObj,
     void* pReadBuffer
 )
@@ -423,7 +432,7 @@ bool _DRV_SDSPI_SPIBlockRead(
     /* If enabled, used DMA for block transfers */
     if ((dObj->txDMAChannel != SYS_DMA_CHANNEL_NONE) && (dObj->rxDMAChannel != SYS_DMA_CHANNEL_NONE ))
     {
-        if (_DRV_SDSPI_DMA_Read(dObj, pReadBuffer, _DRV_SDSPI_MEDIA_BLOCK_SIZE) == false)
+        if (lDRV_SDSPI_DMA_Read(dObj, pReadBuffer, DRV_SDSPI_MEDIA_BLOCK_SIZE) == false)
         {
             SYS_PORT_PinSet(dObj->chipSelectPin);
             return isSuccess;
@@ -431,14 +440,14 @@ bool _DRV_SDSPI_SPIBlockRead(
     }
     else
     {
-        if (dObj->spiPlib->read(pReadBuffer, _DRV_SDSPI_MEDIA_BLOCK_SIZE) == false)
+        if (dObj->spiPlib->read_t(pReadBuffer, DRV_SDSPI_MEDIA_BLOCK_SIZE) == false)
         {
             SYS_PORT_PinSet(dObj->chipSelectPin);
             return isSuccess;
         }
     }
 
-    if (OSAL_SEM_Pend( &dObj->transferDone, OSAL_WAIT_FOREVER ) == OSAL_RESULT_TRUE)
+    if (OSAL_SEM_Pend( &dObj->transferDone, OSAL_WAIT_FOREVER ) == OSAL_RESULT_SUCCESS)
     {
         if (dObj->spiTransferStatus == DRV_SDSPI_SPI_TRANSFER_STATUS_COMPLETE)
         {
@@ -447,12 +456,16 @@ bool _DRV_SDSPI_SPIBlockRead(
     }
 
     /* Make sure all the bytes have shifted out before de-asserting the CS */
-    while(dObj->spiPlib->isTransmitterBusy());
+    while(dObj->spiPlib->isTransmitterBusy())
+    {
+        /* Do Nothing */
+    }
 
     SYS_PORT_PinSet(dObj->chipSelectPin);
 
     return isSuccess;
 }
+
 
 // *****************************************************************************
 /* SD Card SPI read
@@ -466,7 +479,7 @@ bool _DRV_SDSPI_SPIBlockRead(
     This is a blocking implementation. This function does not block on a semaphore.
 */
 
-bool _DRV_SDSPI_SPIRead(
+bool DRV_SDSPI_SPIRead(
     DRV_SDSPI_OBJ* dObj,
     void* pReadBuffer,
     uint32_t nBytes
@@ -482,7 +495,7 @@ bool _DRV_SDSPI_SPIRead(
     /* If enabled, used DMA */
     if ((dObj->txDMAChannel != SYS_DMA_CHANNEL_NONE) && (dObj->rxDMAChannel != SYS_DMA_CHANNEL_NONE ))
     {
-        if (_DRV_SDSPI_DMA_Read(dObj, pReadBuffer, nBytes) == false)
+        if (lDRV_SDSPI_DMA_Read(dObj, pReadBuffer, nBytes) == false)
         {
             SYS_PORT_PinSet(dObj->chipSelectPin);
             return isSuccess;
@@ -490,7 +503,7 @@ bool _DRV_SDSPI_SPIRead(
     }
     else
     {
-        if (dObj->spiPlib->read (pReadBuffer, nBytes) == false)
+        if (dObj->spiPlib->read_t (pReadBuffer, nBytes) == false)
         {
             SYS_PORT_PinSet(dObj->chipSelectPin);
             return isSuccess;
@@ -498,7 +511,10 @@ bool _DRV_SDSPI_SPIRead(
     }
 
     /* Busy wait for the transfer to complete */
-    while (dObj->spiTransferStatus == DRV_SDSPI_SPI_TRANSFER_STATUS_IN_PROGRESS);
+    while (dObj->spiTransferStatus == DRV_SDSPI_SPI_TRANSFER_STATUS_IN_PROGRESS)
+    {
+        /* Do Nothing */
+    }
 
     if (dObj->spiTransferStatus == DRV_SDSPI_SPI_TRANSFER_STATUS_COMPLETE)
     {
@@ -506,14 +522,17 @@ bool _DRV_SDSPI_SPIRead(
     }
 
     /* Make sure all the bytes have shifted out before de-asserting the CS */
-    while(dObj->spiPlib->isTransmitterBusy());
+    while(dObj->spiPlib->isTransmitterBusy())
+    {
+        /* Do Nothing */
+    }
 
     SYS_PORT_PinSet(dObj->chipSelectPin);
 
     return isSuccess;
 }
 
-bool _DRV_SDSPI_SPIWriteWithChipSelectDisabled(
+bool DRV_SDSPI_SPIWriteWithChipSelectDisabled(
     DRV_SDSPI_OBJ* dObj,
     void* pWriteBuffer,
     uint32_t nBytes
@@ -529,21 +548,24 @@ bool _DRV_SDSPI_SPIWriteWithChipSelectDisabled(
     /* If enabled, used DMA */
     if ((dObj->txDMAChannel != SYS_DMA_CHANNEL_NONE) && (dObj->rxDMAChannel != SYS_DMA_CHANNEL_NONE ))
     {
-        if (_DRV_SDSPI_DMA_Write(dObj, pWriteBuffer, nBytes) == false)
+        if (lDRV_SDSPI_DMA_Write(dObj, pWriteBuffer, nBytes) == false)
         {
             return isSuccess;
         }
     }
     else
     {
-        if (dObj->spiPlib->write (pWriteBuffer, nBytes) == false)
+        if (dObj->spiPlib->write_t (pWriteBuffer, nBytes) == false)
         {
             return isSuccess;
         }
     }
 
     /* Busy wait for the transfer to complete */
-    while (dObj->spiTransferStatus == DRV_SDSPI_SPI_TRANSFER_STATUS_IN_PROGRESS);
+    while (dObj->spiTransferStatus == DRV_SDSPI_SPI_TRANSFER_STATUS_IN_PROGRESS)
+    {
+        /* Do Nothing */
+    }
 
     if (dObj->spiTransferStatus == DRV_SDSPI_SPI_TRANSFER_STATUS_COMPLETE)
     {
@@ -566,7 +588,7 @@ bool _DRV_SDSPI_SPIWriteWithChipSelectDisabled(
   Remarks:
 
 */
-bool _DRV_SDSPI_CardDetectPollingTimerStart(
+bool DRV_SDSPI_CardDetectPollingTimerStart(
     DRV_SDSPI_OBJ* const dObj,
     uint32_t period
 )
@@ -598,7 +620,7 @@ bool _DRV_SDSPI_CardDetectPollingTimerStart(
   Remarks:
 
 */
-bool _DRV_SDSPI_CmdResponseTimerStart(
+bool DRV_SDSPI_CmdResponseTimerStart(
     DRV_SDSPI_OBJ* const dObj,
     uint32_t period
 )
@@ -629,13 +651,13 @@ bool _DRV_SDSPI_CmdResponseTimerStart(
 
 */
 
-bool _DRV_SDSPI_CmdResponseTimerStop( DRV_SDSPI_OBJ* const dObj )
+bool DRV_SDSPI_CmdResponseTimerStop( DRV_SDSPI_OBJ* const dObj )
 {
     bool isSuccess = false;
 
     if (dObj->cmdRespTmrHandle != SYS_TIME_HANDLE_INVALID)
     {
-        SYS_TIME_TimerDestroy(dObj->cmdRespTmrHandle);
+        (void) SYS_TIME_TimerDestroy(dObj->cmdRespTmrHandle);
         isSuccess = true;
     }
 
@@ -655,7 +677,7 @@ bool _DRV_SDSPI_CmdResponseTimerStop( DRV_SDSPI_OBJ* const dObj )
 
 */
 
-bool _DRV_SDSPI_TimerStart(
+bool DRV_SDSPI_TimerStart(
     DRV_SDSPI_OBJ* const dObj,
     uint32_t period
 )
@@ -687,13 +709,13 @@ bool _DRV_SDSPI_TimerStart(
 
 */
 
-bool _DRV_SDSPI_TimerStop( DRV_SDSPI_OBJ* const dObj )
+bool DRV_SDSPI_TimerStop( DRV_SDSPI_OBJ* const dObj )
 {
     bool isSuccess = false;
 
     if (dObj->timerHandle != SYS_TIME_HANDLE_INVALID)
     {
-        SYS_TIME_TimerDestroy(dObj->timerHandle);
+        (void) SYS_TIME_TimerDestroy(dObj->timerHandle);
         isSuccess = true;
     }
 
@@ -714,28 +736,22 @@ bool _DRV_SDSPI_TimerStop( DRV_SDSPI_OBJ* const dObj )
 
 */
 
-bool _DRV_SDSPI_SPISpeedSetup(
+bool DRV_SDSPI_SPISpeedSetup(
     DRV_SDSPI_OBJ* const dObj,
     uint32_t clockFrequency
 )
 {
     bool isSuccess = false;
-    DRV_SDSPI_TRANSFER_SETUP sdspiSetup;
     DRV_SDSPI_TRANSFER_SETUP setupRemap;
 
     /* SD Card reads the data on the rising edge of SCK, which means SPI Mode 0
      * and 3 => CPOL = 0, CPHA = 0 and CPOL = 1, CPHA = 1 are supported */
 
-    sdspiSetup.baudRateInHz = clockFrequency;
-    sdspiSetup.clockPhase = DRV_SDSPI_CLOCK_PHASE_VALID_LEADING_EDGE;
-    sdspiSetup.clockPolarity = DRV_SDSPI_CLOCK_POLARITY_IDLE_LOW;
-    sdspiSetup.dataBits = DRV_SDSPI_DATA_BITS_8;
+    setupRemap.baudRateInHz = clockFrequency;
 
-    setupRemap = sdspiSetup;
-
-    setupRemap.clockPolarity = (DRV_SDSPI_CLOCK_POLARITY)dObj->remapClockPolarity[sdspiSetup.clockPolarity];
-    setupRemap.clockPhase = (DRV_SDSPI_CLOCK_PHASE)dObj->remapClockPhase[sdspiSetup.clockPhase];
-    setupRemap.dataBits = (DRV_SDSPI_DATA_BITS)dObj->remapDataBits[sdspiSetup.dataBits];
+    setupRemap.clockPolarity = (DRV_SDSPI_CLOCK_POLARITY)dObj->remapClockPolarity[DRV_SDSPI_CLOCK_POLARITY_IDLE_LOW];
+    setupRemap.clockPhase = (DRV_SDSPI_CLOCK_PHASE)dObj->remapClockPhase[DRV_SDSPI_CLOCK_PHASE_VALID_LEADING_EDGE];
+    setupRemap.dataBits = (DRV_SDSPI_DATA_BITS)dObj->remapDataBits[DRV_SDSPI_DATA_BITS_8];
 
     if ((setupRemap.clockPhase != DRV_SDSPI_CLOCK_PHASE_INVALID) &&
         (setupRemap.clockPolarity != DRV_SDSPI_CLOCK_POLARITY_INVALID) &&

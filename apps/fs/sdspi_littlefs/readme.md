@@ -9,22 +9,16 @@ has_toc: false
 
 # LittleFS filesystem using SD Card media
 
-This application shows an example of using the MPLAB Harmony File System to access and modify the contents of a SD card using the SDSPI driver and the SPI PLIB.
+This application shows an example of using the LittleFS File System to access SD card using the SDSPI driver and the SPI PLIB.
 
 ## Description
 
 ### File System Operations on the SD Card
 
-- The application opens a file named **FILE_TOO_LONG_NAME_EXAMPLE_123.JPG** on the SD card
-- Reads the content of the file and creates a directory named **Dir1**
-- Inside the directory, writes the copied content into another file **Dir1/FILE_TOO_LONG_NAME_EXAMPLE_123.JPG**
-
-The image file could be any arbitrary JPEG (image) file chosen by the user and then renamed to** FILE_TOO_LONG_NAME_EXAMPLE_123.JPG**.
-
-
-### Note
-
-Since the application creates a directory named **Dir1**, it is important that the a folder with the same name does not exist on the SD card. If a directory named **Dir1** is already present on the SD card, the application will fail.
+- Performs a SYS_FS_FormatDisk
+- Opens a **newfile.txt** on the SD Card
+- Write and reads back 4KB of data on **newfile.txt**
+- Verifies the Data Read back
 
 ### File system layer uses:
 
@@ -43,27 +37,6 @@ To build the application, refer to the following table and open the project usin
 | ----------------- | ---------------------------------------------- |
 | sam_e54_xpro_freertos.X | MPLABX project for [SAM E54 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsame54-xpro) |
 |||
-
-## Prepare the LittleFS image SD card
-
-User can use the tool **mklittlefs** to create the LittleFS FileSystem image with the JPEG file(FILE_TOO_LONG_NAME_EXAMPLE_123.JPG)  and use the tool [Etcher](https://www.balena.io/etcher/) to flash the image to the SD card
-You can follow the README.md in [mklittlefs repo](https://github.com/MicrochipTech/mklittlefs) to compile and bulid the **mklittlefs** tools, or use the prebuild tools to create the LittleFS image file for the tests.
-
-### Steps to use mklittlefs to create the LittleFS image with the JPEG file (FILE_TOO_LONG_NAME_EXAMPLE_123.JPG)
-1. Download the [prebuild](https://github.com/MicrochipTech/mklittlefs/tree/master/prebuild) mklittlefs tool
-2. On Windows PC, unzip **i686-w64-mingw32-mklittlefs-1ee4877.zip** (If your PC is using other OS, you can unzip other prebuild tool)
-3. Go to directory *i686-w64-mingw32-mklittlefs-1ee4877/mklittlefs/*
-4. create directory *src_folder*
-5. Copy a JPG file to the path *i686-w64-mingw32-mklittlefs-1ee4877/mklittlefs/src_folder* and rename to **FILE_TOO_LONG_NAME_EXAMPLE_123.JPG**
-6. Run command **mklittlefs.exe -c src_folder -d 5 -a -b 512 -p 16 -s 1073741824 lfs_image.img**  
-
-### Steps flash the image to the SD card
-1. Download the tool [Etcher](https://www.balena.io/etcher/)
-2. Insert your SD card and launch Etcher
-3. Select the image (lfs_image.img)
-4. Select the device corresponding to your SD card (Etcher proposes you the devices that are removable to avoid erasing your system disk)
-5. Click on the Flash! button
-
 
 ## Setting up the hardware
 
@@ -95,7 +68,7 @@ The following table shows the target hardware for the application projects.
 
 3. Build and program the application using its IDE
 4. Press the switch to start the application
-5. The LED is turned ON if there was no error during creating the directory and copying the file into it
+5. The LED is turned ON if data has successfully been written and read back from file "newfile.txt"
 
     Refer to the following table for LED name:
 

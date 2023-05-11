@@ -20,7 +20,7 @@
 
 //DOM-IGNORE-BEGIN
 /*******************************************************************************
-* Copyright (C) 2018 Microchip Technology Inc. and its subsidiaries.
+* Copyright (C) 2020 Microchip Technology Inc. and its subsidiaries.
 *
 * Subject to your compliance with these terms, you may use Microchip software
 * and any derivatives exclusively with Microchip products. It is your
@@ -56,7 +56,9 @@
 #include <stdbool.h>
 #include <stddef.h>
 #include <stdlib.h>
+#include <string.h>
 #include "configuration.h"
+#include "bsp/bsp.h"
 #include "system/fs/sys_fs.h"
 
 // DOM-IGNORE-BEGIN
@@ -73,6 +75,8 @@ extern "C" {
 // *****************************************************************************
 // *****************************************************************************
 
+#define BUFFER_SIZE                (4096U)
+
 // *****************************************************************************
 /* Application states
 
@@ -86,44 +90,54 @@ extern "C" {
 
 typedef enum
 {
-    /* Application's state machine's initial state. */
-    /* The app mounts the disk */
     APP_WAIT_SWITCH_PRESS = 0,
-            
+    /* The app mounts the disk */
     APP_MOUNT_DISK,
 
-    /* The app unmounts the disk */
-    APP_UNMOUNT_DISK,
+    /* The app formats the disk. */
+    APP_FORMAT_DISK,
 
-    /* The app mounts the disk again */
-    APP_MOUNT_DISK_AGAIN,
+    /* The app opens the file */
+    APP_OPEN_FILE,
 
-        /* Set the current drive */
-    APP_SET_CURRENT_DRIVE,
+    /* The app writes data to the file */
+    APP_WRITE_TO_FILE,
 
-    /* The app opens the file to read */
-    APP_OPEN_FIRST_FILE,
+    /* The app performs a file sync operation. */
+    APP_FLUSH_FILE,
 
-        /* Create directory */
-    APP_CREATE_DIRECTORY,
+    /* The app checks the file status */
+    APP_READ_FILE_STAT,
 
-        /* The app opens the file to write */
-    APP_OPEN_SECOND_FILE,
+    /* The app checks the file size */
+    APP_READ_FILE_SIZE,
 
-    /* The app reads from a file and writes to another file */
-    APP_READ_WRITE_TO_FILE,
+    /* The app does a file seek to the end of the file. */
+    APP_DO_FILE_SEEK,
 
-    /* The app closes the file*/
+    /* The app checks for EOF */
+    APP_CHECK_EOF,
+
+    /* The app does another file seek, to move file pointer to the beginning of
+     * the file. */
+    APP_DO_ANOTHER_FILE_SEEK,
+
+    /* The app reads and verifies the written data. */
+    APP_READ_FILE_CONTENT,
+
+    /* The app closes the file. */
     APP_CLOSE_FILE,
 
-    /* The app closes the file and idles */
+    /* The app unmounts the disk. */
+    APP_UNMOUNT_DISK,
+
+    /* The app idles */
     APP_IDLE,
 
     /* An app error has occurred */
     APP_ERROR
 
 } APP_STATES;
-
 
 // *****************************************************************************
 /* Application Data
@@ -140,16 +154,22 @@ typedef enum
 
 typedef struct
 {
-    /* SYS_FS File handle for 1st file */
-    SYS_FS_HANDLE               fileHandle;
-
-    /* SYS_FS File handle for 2nd file */
-    SYS_FS_HANDLE               fileHandle1;
+    /* SYS_FS File handle */
+    SYS_FS_HANDLE fileHandle;
 
     /* Application's current state */
-    APP_STATES                  state;           
+    APP_STATES state;
 
-    int32_t                     nBytesRead;
+    /* Read Buffer */
+    uint8_t readBuffer[BUFFER_SIZE];
+
+    /* Write Buffer*/
+    uint8_t writeBuffer[BUFFER_SIZE];
+
+    SYS_FS_FSTAT fileStatus;
+
+    long fileSize;
+
 } APP_DATA;
 
 
@@ -241,8 +261,3 @@ void APP_Tasks( void );
 }
 #endif
 //DOM-IGNORE-END
-
-/*******************************************************************************
- End of File
- */
-

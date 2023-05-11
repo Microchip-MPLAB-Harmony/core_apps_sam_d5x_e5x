@@ -62,12 +62,11 @@
 // *****************************************************************************
 // *****************************************************************************
 
-#define SDCARD_MOUNT_NAME    "/mnt/mydrive"
-#define SDCARD_DEV_NAME      "/dev/mmcblka1"
-#define SDCARD_FILE_NAME     "FILE_TOO_LONG_NAME_EXAMPLE_123.JPG"
-#define SDCARD_DIR_NAME      "Dir1"
+#define APP_MOUNT_NAME       "/mnt/mydrive"
+#define APP_DEVICE_NAME      "/dev/mmcblka1"
+#define APP_FS_TYPE          LITTLEFS
 
-#define APP_DATA_LEN         512
+#define APP_FILE_NAME        "newfile.txt"
 
 // *****************************************************************************
 /* Application Data
@@ -84,9 +83,10 @@
     Application strings and buffers are be defined outside this structure.
 */
 
-APP_DATA appData;
+APP_DATA CACHE_ALIGN appData;
 
-static uint8_t BUFFER_ATTRIBUTES readWriteBuffer[APP_DATA_LEN];
+/* Work buffer used by FAT FS during Format */
+uint8_t CACHE_ALIGN work[SYS_FS_LFS_MAX_SS];
 
 // *****************************************************************************
 // *****************************************************************************
@@ -124,13 +124,16 @@ static uint8_t BUFFER_ATTRIBUTES readWriteBuffer[APP_DATA_LEN];
 
 void APP_Initialize ( void )
 {
-    /* Place the App state machine in its initial state. */
-    appData.state = APP_WAIT_SWITCH_PRESS; 
-    
-    /* Wait for the switch status to return to the default "not pressed" state */
-    while(SWITCH_GET() == SWITCH_STATUS_PRESSED);
-}
+    uint32_t i;
 
+    /* Initialize the app state to wait for media attach. */
+    appData.state = APP_WAIT_SWITCH_PRESS;
+
+    for (i = 0; i < BUFFER_SIZE; i++)
+    {
+        appData.writeBuffer[i] = i;
+    }
+}
 
 /******************************************************************************
   Function:
@@ -142,178 +145,274 @@ void APP_Initialize ( void )
 
 void APP_Tasks ( void )
 {
+    SYS_FS_FORMAT_PARAM opt;
+    
     /* Check the application's current state. */
     switch ( appData.state )
     {
         case APP_WAIT_SWITCH_PRESS:
+        {
             if (SWITCH_GET() == SWITCH_STATUS_PRESSED)
             {
                 appData.state = APP_MOUNT_DISK;
             }
             break;
+        }
         case APP_MOUNT_DISK:
-            if(SYS_FS_Mount(SDCARD_DEV_NAME, SDCARD_MOUNT_NAME, LITTLEFS, 0, NULL) != 0)
+        {
+            /* Mount the disk */
+            if(SYS_FS_Mount(APP_DEVICE_NAME, APP_MOUNT_NAME, APP_FS_TYPE, 0, NULL) != 0)
             {
-                /* The disk could not be mounted. Try
-                 * mounting again until success. */
+                /* The disk could not be mounted. Try mounting again until
+                 * the operation succeeds. */
                 appData.state = APP_MOUNT_DISK;
+
             }
             else
             {
-                /* Mount was successful. Unmount the disk, for testing. */
+                /* Mount was successful. Format the disk. */
                 SYS_CONSOLE_PRINT("[%s] Mount success\r\n", __func__);
-                appData.state = APP_UNMOUNT_DISK;
+                appData.state = APP_FORMAT_DISK;
             }
             break;
+        }
 
-        case APP_UNMOUNT_DISK:
-            if(SYS_FS_Unmount(SDCARD_MOUNT_NAME) != 0)
-            {
-                /* The disk could not be un mounted. Try
-                 * un mounting again untill success. */
+        case APP_FORMAT_DISK:
+        {
+            opt.fmt = SYS_FS_FORMAT_FAT;
+            opt.au_size = 0;
 
-                appData.state = APP_UNMOUNT_DISK;
-            }
-            else
+            if (SYS_FS_DriveFormat (APP_MOUNT_NAME, &opt, (void *)work, SYS_FS_LFS_MAX_SS) != SYS_FS_RES_SUCCESS)
             {
-                /* UnMount was successful. Mount the disk again */
-                SYS_CONSOLE_PRINT("[%s] UnMount success\r\n", __func__);
-                appData.state = APP_MOUNT_DISK_AGAIN;
-            }
-            break;
-
-        case APP_MOUNT_DISK_AGAIN:
-            if(SYS_FS_Mount(SDCARD_DEV_NAME, SDCARD_MOUNT_NAME, LITTLEFS, 0, NULL) != 0)
-            {
-                /* The disk could not be mounted. Try
-                 * mounting again until success. */
-                appData.state = APP_MOUNT_DISK_AGAIN;
-            }
-            else
-            {
-                /* Mount was successful. Set current drive so that we do not have to use absolute path. */
-                SYS_CONSOLE_PRINT("[%s] Mount success\r\n", __func__);
-                appData.state = APP_SET_CURRENT_DRIVE;
-            }
-            break;
-
-        case APP_SET_CURRENT_DRIVE:
-            if(SYS_FS_CurrentDriveSet(SDCARD_MOUNT_NAME) == SYS_FS_RES_FAILURE)
-            {
-                /* Error while setting current drive */
-                SYS_CONSOLE_PRINT("[%s] CurrentDriveSet fail\r\n", __func__);
+                /* Format of the disk failed. */
+                SYS_CONSOLE_PRINT("[%s] Format fail\r\n", __func__);
                 appData.state = APP_ERROR;
             }
             else
             {
-                /* Open a file for reading. */
-                appData.state = APP_OPEN_FIRST_FILE;
+                /* Format succeeded. Open a file. */
+                SYS_CONSOLE_PRINT("[%s] Format success\r\n", __func__);
+                appData.state = APP_OPEN_FILE;
             }
             break;
+        }
 
-        case APP_OPEN_FIRST_FILE:
-            appData.fileHandle = SYS_FS_FileOpen(SDCARD_FILE_NAME, (SYS_FS_FILE_OPEN_READ));
+        case APP_OPEN_FILE:
+        {
+            SYS_CONSOLE_PRINT("[%s] Start Testing\r\n", __func__);
+            appData.fileHandle = SYS_FS_FileOpen(APP_MOUNT_NAME"/"APP_FILE_NAME, (SYS_FS_FILE_OPEN_WRITE_PLUS));
             if(appData.fileHandle == SYS_FS_HANDLE_INVALID)
             {
-                /* Could not open the file. Error out*/
+                /* File open unsuccessful */
                 SYS_CONSOLE_PRINT("[%s] FileOpen fail\r\n", __func__);
                 appData.state = APP_ERROR;
             }
             else
             {
-                /* Create a directory. */
-                appData.state = APP_CREATE_DIRECTORY;
+                /* File open was successful. Write to the file. */
+                appData.state = APP_WRITE_TO_FILE;
             }
             break;
+        }
 
-        case APP_CREATE_DIRECTORY:
-            if(SYS_FS_DirectoryMake(SDCARD_DIR_NAME) == SYS_FS_RES_FAILURE)
+        case APP_WRITE_TO_FILE:
+        {
+            if(SYS_FS_FileWrite (appData.fileHandle, (void *)appData.writeBuffer, BUFFER_SIZE) == -1)
             {
-                /* Error while creating a new drive */
-                SYS_CONSOLE_PRINT("[%s] DirectoryMake fail\r\n", __func__);
+                /* Failed to write to the file. */
+                SYS_CONSOLE_PRINT("[%s] FileWrite fail\r\n", __func__);
                 appData.state = APP_ERROR;
             }
             else
             {
-                /* Open a second file for writing. */
-                appData.state = APP_OPEN_SECOND_FILE;
+                /* File write was successful. */
+                appData.state = APP_FLUSH_FILE;
             }
             break;
+        }
 
-        case APP_OPEN_SECOND_FILE:
-            /* Open a second file inside "Dir1" */
-            appData.fileHandle1 = SYS_FS_FileOpen(SDCARD_DIR_NAME"/"SDCARD_FILE_NAME,
-                    (SYS_FS_FILE_OPEN_WRITE));
-                       
-            if(appData.fileHandle1 == SYS_FS_HANDLE_INVALID)
+        case APP_FLUSH_FILE:
+        {
+            if (SYS_FS_FileSync(appData.fileHandle) != 0)
             {
-                /* Could not open the file. Error out*/
-                SYS_CONSOLE_PRINT("[%s] FileOpen fail\r\n", __func__);
+                /* Could not flush the contents of the file. Error out. */
+                SYS_CONSOLE_PRINT("[%s] FileSync fail\r\n", __func__);
                 appData.state = APP_ERROR;
             }
             else
-            {                
-                /* Read from one file and write to another file */
-                appData.state = APP_READ_WRITE_TO_FILE;
+            {
+                /* Check the file status */
+                appData.state = APP_READ_FILE_STAT;
             }
             break;
-        case APP_READ_WRITE_TO_FILE:
-            appData.nBytesRead = SYS_FS_FileRead(appData.fileHandle, (void *)readWriteBuffer, APP_DATA_LEN);
-            
-            if (appData.nBytesRead == -1)
+        }
+
+        case APP_READ_FILE_STAT:
+        {
+            if(SYS_FS_FileStat(APP_MOUNT_NAME"/"APP_FILE_NAME, &appData.fileStatus) == SYS_FS_RES_FAILURE)
             {
-                /* There was an error while reading the file.
-                 * Close the file and error out. */
+                /* Reading file status was a failure */
+                SYS_CONSOLE_PRINT("[%s] FileStat fail\r\n", __func__);
+                appData.state = APP_ERROR;
+            }
+            else
+            {
+                /* Read file size */
+                appData.state = APP_READ_FILE_SIZE;
+            }
+            break;
+        }
+
+        case APP_READ_FILE_SIZE:
+        {
+            appData.fileSize = SYS_FS_FileSize(appData.fileHandle);
+            if(appData.fileSize == -1)
+            {
+                /* Reading file size was a failure */
+                SYS_CONSOLE_PRINT("[%s] FileSize fail\r\n", __func__);
+                appData.state = APP_ERROR;
+            }
+            else
+            {
+                if(appData.fileSize == appData.fileStatus.fsize)
+                {
+                    appData.state = APP_DO_FILE_SEEK;
+                }
+                else
+                {
+                    SYS_CONSOLE_PRINT("[%s] FileSize fail\r\n", __func__);
+                    appData.state = APP_ERROR;
+                }
+            }
+            break;
+        }
+
+        case APP_DO_FILE_SEEK:
+        {
+            if(SYS_FS_FileSeek( appData.fileHandle, appData.fileSize, SYS_FS_SEEK_SET ) == -1)
+            {
+                /* File seek caused an error */
+                SYS_CONSOLE_PRINT("[%s] FileSeek fail\r\n", __func__);
+                appData.state = APP_ERROR;
+            }
+            else
+            {
+                /* Check for End of file */
+                appData.state = APP_CHECK_EOF;
+            }
+            break;
+        }
+
+        case APP_CHECK_EOF:
+        {
+            if(SYS_FS_FileEOF( appData.fileHandle ) == false )
+            {
+                /* Either, EOF is not reached or there was an error
+                   In any case, for the application, its an error condition */
+                SYS_CONSOLE_PRINT("[%s] FileEOF fail\r\n", __func__);
+                appData.state = APP_ERROR;
+            }
+            else
+            {
+                appData.state = APP_DO_ANOTHER_FILE_SEEK;
+            }
+            break;
+        }
+
+        case APP_DO_ANOTHER_FILE_SEEK:
+        {
+            /* Move file pointer to begining of file */
+            if(SYS_FS_FileSeek( appData.fileHandle, 0, SYS_FS_SEEK_SET ) == -1)
+            {
+                /* File seek caused an error */
+                SYS_CONSOLE_PRINT("[%s] FileSeek fail\r\n", __func__);
+                appData.state = APP_ERROR;
+            }
+            else
+            {
+                /* Check for original file content */
+                appData.state = APP_READ_FILE_CONTENT;
+            }
+            break;
+        }
+
+        case APP_READ_FILE_CONTENT:
+        {
+            if(SYS_FS_FileRead(appData.fileHandle, (void *)appData.readBuffer, appData.fileSize) == -1)
+            {
+                
+                /* There was an error while reading the file. Close the file
+                 * and error out. */
                 SYS_CONSOLE_PRINT("[%s] FileRead fail\r\n", __func__);
                 SYS_FS_FileClose(appData.fileHandle);
                 appData.state = APP_ERROR;
             }
             else
             {
-                /* If read was success, try writing to the new file */
-                if(SYS_FS_FileWrite(appData.fileHandle1, (const void *)readWriteBuffer, appData.nBytesRead) == -1)
-                {                    
-                    /* Write was not successful. Close the file
-                     * and error out.*/
-                    SYS_CONSOLE_PRINT("[%s] FileWrite fail\r\n", __func__);
-                    SYS_FS_FileClose(appData.fileHandle1);
+                if ((appData.fileSize != BUFFER_SIZE) || (memcmp(appData.readBuffer, appData.writeBuffer, BUFFER_SIZE) != 0))
+                {
+                    /* The written and the read data dont match. */
+                    SYS_CONSOLE_PRINT("[%s] FileRead fail\r\n", __func__);
                     appData.state = APP_ERROR;
                 }
-                else if(SYS_FS_FileEOF(appData.fileHandle) == 1)    /* Test for end of file */
-                {                                        
-                    /* Continue the read and write process, until the end of file is reached */
+                else
+                {
+                    /* The test was successful. */
                     appData.state = APP_CLOSE_FILE;
                 }
             }
             break;
+        }
 
         case APP_CLOSE_FILE:
-            /* Close both files */
-            SYS_FS_FileClose(appData.fileHandle);
-            SYS_FS_FileClose(appData.fileHandle1);
-
-            /* The test was successful. Lets idle. */
-            SYS_CONSOLE_PRINT("[%s] Test success\r\n", __func__);
-            appData.state = APP_IDLE;
+        {
+            /* Close the file */
+            if (SYS_FS_FileClose(appData.fileHandle) != 0)
+            {
+                SYS_CONSOLE_PRINT("[%s] FileClose fail\r\n", __func__);
+                appData.state = APP_ERROR;
+            }
+            else
+            {
+                appData.state = APP_UNMOUNT_DISK;
+            }
             break;
+        }
+
+        case APP_UNMOUNT_DISK:
+        {
+            /* Unmount the disk */
+            if (SYS_FS_Unmount(APP_MOUNT_NAME) != 0)
+            {
+                SYS_CONSOLE_PRINT("[%s] Unmount fail\r\n", __func__);
+                appData.state = APP_ERROR;
+            }
+            else
+            {
+                SYS_CONSOLE_PRINT("[%s] Test success\r\n", __func__);
+                appData.state = APP_IDLE;
+            }
+            break;
+        }
 
         case APP_IDLE:
+        {
             /* The application comes here when the demo has completed
-             * successfully. Glow LED1. */
+             * successfully. Glow LED. */
             LED_ON();
+
             break;
+        }
 
         case APP_ERROR:
-            /* The application comes here when the demo has failed. */
+        {
+            /* The application comes here when the demo has failed.*/
             break;
+        }
 
         default:
+        {
             break;
+        }
     }
-}
-
-
-
-/*******************************************************************************
- End of File
- */
+} //End of APP_Tasks
