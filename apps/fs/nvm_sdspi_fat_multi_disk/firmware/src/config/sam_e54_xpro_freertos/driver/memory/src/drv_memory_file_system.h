@@ -1,20 +1,23 @@
-/*******************************************************************************
- System Interrupts File
+/******************************************************************************
+  MEMORY Driver File System Interface Implementation
 
   Company:
     Microchip Technology Inc.
 
   File Name:
-    interrupt.h
+    drv_memory_file_system.h
 
   Summary:
-    Interrupt vectors mapping
+    MEMORY Driver Interface Definition
 
   Description:
-    This file contains declarations of device vectors used by Harmony 3
- *******************************************************************************/
+    The MEMORY Driver provides a interface to access the MEMORY on the PIC32
+    microcontroller. This file implements the MEMORY Driver file system interface.
+    This file should be included in the project if MEMORY driver functionality with
+    File system is needed.
+*******************************************************************************/
 
-// DOM-IGNORE-BEGIN
+//DOM-IGNORE-BEGIN
 /*******************************************************************************
 * Copyright (C) 2018 Microchip Technology Inc. and its subsidiaries.
 *
@@ -36,42 +39,43 @@
 * FULLEST EXTENT ALLOWED BY LAW, MICROCHIP'S TOTAL LIABILITY ON ALL CLAIMS IN
 * ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY,
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
- *******************************************************************************/
+*******************************************************************************/
+//DOM-IGNORE-END
+#ifndef DRV_MEMORY_FILE_SYSTEM_H
+#define DRV_MEMORY_FILE_SYSTEM_H
+
+// *****************************************************************************
+// *****************************************************************************
+// Section: Include Files
+// *****************************************************************************
+// *****************************************************************************
+
+#include "driver/memory/src/drv_memory_local.h"
+#include "system/fs/sys_fs_media_manager.h"
+
+// DOM-IGNORE-BEGIN
+#ifdef __cplusplus  // Provide C++ Compatibility
+    extern "C" {
+#endif
 // DOM-IGNORE-END
 
-#ifndef INTERRUPTS_H
-#define INTERRUPTS_H
-
 // *****************************************************************************
 // *****************************************************************************
-// Section: Included Files
+// Section: Global objects
 // *****************************************************************************
 // *****************************************************************************
-#include <stdint.h>
-
 
 
 // *****************************************************************************
 // *****************************************************************************
-// Section: Handler Routines
+// Section: MEMORY Driver File system interface Routines
 // *****************************************************************************
 // *****************************************************************************
 
-void Reset_Handler (void);
-void NonMaskableInt_Handler (void);
-void HardFault_Handler (void);
-void MemoryManagement_Handler (void);
-void BusFault_Handler (void);
-void UsageFault_Handler (void);
-void vPortSVCHandler (void);
-void DebugMonitor_Handler (void);
-void xPortPendSVHandler (void);
-void xPortSysTickHandler (void);
-void DMAC_0_InterruptHandler (void);
-void DMAC_1_InterruptHandler (void);
-void SERCOM4_SPI_InterruptHandler (void);
-void TC0_TimerInterruptHandler (void);
+void DRV_MEMORY_RegisterWithSysFs( const SYS_MODULE_INDEX drvIndex, uint8_t mediaType);
 
+#ifdef __cplusplus
+}
+#endif
 
-
-#endif // INTERRUPTS_H
+#endif //#ifndef DRV_MEMORY_FILE_SYSTEM_H
