@@ -55,12 +55,12 @@
 // ****************************************************************************
 // ****************************************************************************
 #pragma config BOD33_DIS = SET
-#pragma config BOD33USERLEVEL = 0x1c
+#pragma config BOD33USERLEVEL = 0x1cU
 #pragma config BOD33_ACTION = RESET
-#pragma config BOD33_HYST = 0x2
+#pragma config BOD33_HYST = 0x2U
 #pragma config NVMCTRL_BOOTPROT = 0
-#pragma config NVMCTRL_SEESBLK = 0x0
-#pragma config NVMCTRL_SEEPSZ = 0x0
+#pragma config NVMCTRL_SEESBLK = 0x0U
+#pragma config NVMCTRL_SEEPSZ = 0x0U
 #pragma config RAMECC_ECCDIS = SET
 #pragma config WDT_ENABLE = CLEAR
 #pragma config WDT_ALWAYSON = CLEAR
@@ -68,7 +68,7 @@
 #pragma config WDT_WINDOW = CYC8192
 #pragma config WDT_EWOFFSET = CYC8192
 #pragma config WDT_WEN = CLEAR
-#pragma config NVMCTRL_REGION_LOCKS = 0xffffffff
+#pragma config NVMCTRL_REGION_LOCKS = 0xffffffffU
 
 
 
@@ -78,31 +78,35 @@
 // Section: Driver Initialization Data
 // *****************************************************************************
 // *****************************************************************************
+/* Following MISRA-C rules are deviated in the below code block */
+/* MISRA C-2012 Rule 11.1 */
+/* MISRA C-2012 Rule 11.3 */
+/* MISRA C-2012 Rule 11.8 */
 // <editor-fold defaultstate="collapsed" desc="DRV_USART Instance 1 Initialization Data">
 
 static DRV_USART_CLIENT_OBJ drvUSART1ClientObjPool[DRV_USART_CLIENTS_NUMBER_IDX1];
 
 
-const DRV_USART_PLIB_INTERFACE drvUsart1PlibAPI = {
+static const DRV_USART_PLIB_INTERFACE drvUsart1PlibAPI = {
     .readCallbackRegister = (DRV_USART_PLIB_READ_CALLBACK_REG)SERCOM0_USART_ReadCallbackRegister,
-    .read = (DRV_USART_PLIB_READ)SERCOM0_USART_Read,
+    .read_t = (DRV_USART_PLIB_READ)SERCOM0_USART_Read,
     .readIsBusy = (DRV_USART_PLIB_READ_IS_BUSY)SERCOM0_USART_ReadIsBusy,
     .readCountGet = (DRV_USART_PLIB_READ_COUNT_GET)SERCOM0_USART_ReadCountGet,
     .readAbort = (DRV_USART_PLIB_READ_ABORT)SERCOM0_USART_ReadAbort,
     .writeCallbackRegister = (DRV_USART_PLIB_WRITE_CALLBACK_REG)SERCOM0_USART_WriteCallbackRegister,
-    .write = (DRV_USART_PLIB_WRITE)SERCOM0_USART_Write,
+    .write_t = (DRV_USART_PLIB_WRITE)SERCOM0_USART_Write,
     .writeIsBusy = (DRV_USART_PLIB_WRITE_IS_BUSY)SERCOM0_USART_WriteIsBusy,
     .writeCountGet = (DRV_USART_PLIB_WRITE_COUNT_GET)SERCOM0_USART_WriteCountGet,
     .errorGet = (DRV_USART_PLIB_ERROR_GET)SERCOM0_USART_ErrorGet,
     .serialSetup = (DRV_USART_PLIB_SERIAL_SETUP)SERCOM0_USART_SerialSetup
 };
 
-const uint32_t drvUsart1remapDataWidth[] = { 0x5, 0x6, 0x7, 0x0, 0x1 };
-const uint32_t drvUsart1remapParity[] = { 0x2, 0x0, 0x80000, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF };
-const uint32_t drvUsart1remapStopBits[] = { 0x0, 0xFFFFFFFF, 0x40 };
-const uint32_t drvUsart1remapError[] = { 0x4, 0x0, 0x2 };
+static const uint32_t drvUsart1remapDataWidth[] = { 0x5, 0x6, 0x7, 0x0, 0x1 };
+static const uint32_t drvUsart1remapParity[] = { 0x2, 0x0, 0x80000, 0xFFFFFFFFU, 0xFFFFFFFFU, 0xFFFFFFFFU };
+static const uint32_t drvUsart1remapStopBits[] = { 0x0, 0xFFFFFFFFU, 0x40 };
+static const uint32_t drvUsart1remapError[] = { 0x4, 0x0, 0x2 };
 
-const DRV_USART_INIT drvUsart1InitData =
+static const DRV_USART_INIT drvUsart1InitData =
 {
     .usartPlib = &drvUsart1PlibAPI,
 
@@ -138,26 +142,26 @@ const DRV_USART_INIT drvUsart1InitData =
 static DRV_USART_CLIENT_OBJ drvUSART0ClientObjPool[DRV_USART_CLIENTS_NUMBER_IDX0];
 
 
-const DRV_USART_PLIB_INTERFACE drvUsart0PlibAPI = {
+static const DRV_USART_PLIB_INTERFACE drvUsart0PlibAPI = {
     .readCallbackRegister = (DRV_USART_PLIB_READ_CALLBACK_REG)SERCOM2_USART_ReadCallbackRegister,
-    .read = (DRV_USART_PLIB_READ)SERCOM2_USART_Read,
+    .read_t = (DRV_USART_PLIB_READ)SERCOM2_USART_Read,
     .readIsBusy = (DRV_USART_PLIB_READ_IS_BUSY)SERCOM2_USART_ReadIsBusy,
     .readCountGet = (DRV_USART_PLIB_READ_COUNT_GET)SERCOM2_USART_ReadCountGet,
     .readAbort = (DRV_USART_PLIB_READ_ABORT)SERCOM2_USART_ReadAbort,
     .writeCallbackRegister = (DRV_USART_PLIB_WRITE_CALLBACK_REG)SERCOM2_USART_WriteCallbackRegister,
-    .write = (DRV_USART_PLIB_WRITE)SERCOM2_USART_Write,
+    .write_t = (DRV_USART_PLIB_WRITE)SERCOM2_USART_Write,
     .writeIsBusy = (DRV_USART_PLIB_WRITE_IS_BUSY)SERCOM2_USART_WriteIsBusy,
     .writeCountGet = (DRV_USART_PLIB_WRITE_COUNT_GET)SERCOM2_USART_WriteCountGet,
     .errorGet = (DRV_USART_PLIB_ERROR_GET)SERCOM2_USART_ErrorGet,
     .serialSetup = (DRV_USART_PLIB_SERIAL_SETUP)SERCOM2_USART_SerialSetup
 };
 
-const uint32_t drvUsart0remapDataWidth[] = { 0x5, 0x6, 0x7, 0x0, 0x1 };
-const uint32_t drvUsart0remapParity[] = { 0x2, 0x0, 0x80000, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF };
-const uint32_t drvUsart0remapStopBits[] = { 0x0, 0xFFFFFFFF, 0x40 };
-const uint32_t drvUsart0remapError[] = { 0x4, 0x0, 0x2 };
+static const uint32_t drvUsart0remapDataWidth[] = { 0x5, 0x6, 0x7, 0x0, 0x1 };
+static const uint32_t drvUsart0remapParity[] = { 0x2, 0x0, 0x80000, 0xFFFFFFFFU, 0xFFFFFFFFU, 0xFFFFFFFFU };
+static const uint32_t drvUsart0remapStopBits[] = { 0x0, 0xFFFFFFFFU, 0x40 };
+static const uint32_t drvUsart0remapError[] = { 0x4, 0x0, 0x2 };
 
-const DRV_USART_INIT drvUsart0InitData =
+static const DRV_USART_INIT drvUsart0InitData =
 {
     .usartPlib = &drvUsart0PlibAPI,
 
@@ -190,6 +194,7 @@ const DRV_USART_INIT drvUsart0InitData =
 // </editor-fold>
 
 
+
 // *****************************************************************************
 // *****************************************************************************
 // Section: System Data
@@ -219,7 +224,7 @@ SYSTEM_OBJECTS sysObj;
 // *****************************************************************************
 // *****************************************************************************
 
-
+/* MISRAC 2012 deviation block end */
 
 /*******************************************************************************
   Function:
@@ -233,6 +238,8 @@ SYSTEM_OBJECTS sysObj;
 
 void SYS_Initialize ( void* data )
 {
+    /* MISRAC 2012 deviation block start */
+    /* MISRA C-2012 Rule 2.2 deviated in this file.  Deviation record ID -  H3_MISRAC_2012_R_2_2_DR_1 */
 
     NVMCTRL_Initialize( );
 
@@ -254,6 +261,12 @@ void SYS_Initialize ( void* data )
 
 	BSP_Initialize();
 
+
+    /* MISRAC 2012 deviation block start */
+    /* Following MISRA-C rules deviated in this block  */
+    /* MISRA C-2012 Rule 11.3 - Deviation record ID - H3_MISRAC_2012_R_11_3_DR_1 */
+    /* MISRA C-2012 Rule 11.8 - Deviation record ID - H3_MISRAC_2012_R_11_8_DR_1 */
+
     sysObj.drvUsart1 = DRV_USART_Initialize(DRV_USART_INDEX_1, (SYS_MODULE_INIT *)&drvUsart1InitData);
 
     sysObj.drvUsart0 = DRV_USART_Initialize(DRV_USART_INDEX_0, (SYS_MODULE_INIT *)&drvUsart0InitData);
@@ -261,11 +274,15 @@ void SYS_Initialize ( void* data )
 
 
 
+    /* MISRAC 2012 deviation block end */
     APP_USART_USB_CLICK_BOARD_Initialize();
     APP_USART_USB_DEBUG_PORT_Initialize();
 
 
     NVIC_Initialize();
+
+
+    /* MISRAC 2012 deviation block end */
 
 }
 
