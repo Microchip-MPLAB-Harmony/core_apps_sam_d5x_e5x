@@ -1,25 +1,21 @@
-/*******************************************************************************
- System Tasks File
+/******************************************************************************
+  SDMMC Driver File System Interface Implementation
+
+  Company:
+    Microchip Technology Inc.
 
   File Name:
-    tasks.c
+    drv_sdmmc_file_system.h
 
   Summary:
-    This file contains source code necessary to maintain system's polled tasks.
+    SDMMC Driver File System Interface Implementation
 
   Description:
-    This file contains source code necessary to maintain system's polled tasks.
-    It implements the "SYS_Tasks" function that calls the individual "Tasks"
-    functions for all polled MPLAB Harmony modules in the system.
+    This file registers the SDMMC Driver capabilities with the file system
+    interface.
+*******************************************************************************/
 
-  Remarks:
-    This file requires access to the systemObjects global data structure that
-    contains the object handles to all MPLAB Harmony module objects executing
-    polled in the system.  These handles are passed into the individual module
-    "Tasks" functions to identify the instance of the module to maintain.
- *******************************************************************************/
-
-// DOM-IGNORE-BEGIN
+//DOM-IGNORE-BEGIN
 /*******************************************************************************
 * Copyright (C) 2018 Microchip Technology Inc. and its subsidiaries.
 *
@@ -41,63 +37,41 @@
 * FULLEST EXTENT ALLOWED BY LAW, MICROCHIP'S TOTAL LIABILITY ON ALL CLAIMS IN
 * ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY,
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
- *******************************************************************************/
+*******************************************************************************/
+//DOM-IGNORE-END
+#ifndef DRV_SDMMC_FILE_SYSTEM_H
+#define DRV_SDMMC_FILE_SYSTEM_H
+// *****************************************************************************
+// *****************************************************************************
+// Section: Include Files
+// *****************************************************************************
+// *****************************************************************************
+
+#include "driver/sdmmc/drv_sdmmc.h"
+#include "system/fs/sys_fs_media_manager.h"
+
+// DOM-IGNORE-BEGIN
+#ifdef __cplusplus  // Provide C++ Compatibility
+    extern "C" {
+#endif
 // DOM-IGNORE-END
-
 // *****************************************************************************
 // *****************************************************************************
-// Section: Included Files
+// Section: Global objects
 // *****************************************************************************
 // *****************************************************************************
-
-#include "configuration.h"
-#include "definitions.h"
-#include "sys_tasks.h"
-
-
 
 
 // *****************************************************************************
 // *****************************************************************************
-// Section: System "Tasks" Routine
+// Section: SDMMC Driver File system interface Routines
 // *****************************************************************************
 // *****************************************************************************
 
-/*******************************************************************************
-  Function:
-    void SYS_Tasks ( void )
+void DRV_SDMMC_RegisterWithSysFs( const SYS_MODULE_INDEX drvIndex);
 
-  Remarks:
-    See prototype in system/common/sys_module.h.
-*/
-void SYS_Tasks ( void )
-{
-    /* Maintain system services */
-    
-SYS_FS_Tasks();
-
-DRV_SDMMC_Tasks(sysObj.drvSDMMC0);
-
-
-
-
-
-    /* Maintain Device Drivers */
-    
-
-    /* Maintain Middleware & Other Libraries */
-    
-
-    /* Maintain the application's state machine. */
-        /* Call Application task APP. */
-    APP_Tasks();
-
-
-
-
+#ifdef __cplusplus
 }
+#endif
 
-/*******************************************************************************
- End of File
- */
-
+#endif //#ifndef DRV_SDMMC_FILE_SYSTEM_H
