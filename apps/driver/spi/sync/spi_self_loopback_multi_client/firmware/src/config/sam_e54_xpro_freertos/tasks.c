@@ -52,6 +52,7 @@
 
 #include "configuration.h"
 #include "definitions.h"
+#include "sys_tasks.h"
 
 
 // *****************************************************************************
@@ -62,34 +63,34 @@
 /* Handle for the APP_MONITOR_Tasks. */
 TaskHandle_t xAPP_MONITOR_Tasks;
 
-void _APP_MONITOR_Tasks(  void *pvParameters  )
+static void lAPP_MONITOR_Tasks(  void *pvParameters  )
 {   
-    while(1)
+    while(true)
     {
         APP_MONITOR_Tasks();
-        vTaskDelay(100 / portTICK_PERIOD_MS);
+        vTaskDelay(100U / portTICK_PERIOD_MS);
     }
 }
 /* Handle for the APP_CLIENT1_Tasks. */
 TaskHandle_t xAPP_CLIENT1_Tasks;
 
-void _APP_CLIENT1_Tasks(  void *pvParameters  )
+static void lAPP_CLIENT1_Tasks(  void *pvParameters  )
 {   
-    while(1)
+    while(true)
     {
         APP_CLIENT1_Tasks();
-        vTaskDelay(1 / portTICK_PERIOD_MS);
+        vTaskDelay(1U / portTICK_PERIOD_MS);
     }
 }
 /* Handle for the APP_CLIENT2_Tasks. */
 TaskHandle_t xAPP_CLIENT2_Tasks;
 
-void _APP_CLIENT2_Tasks(  void *pvParameters  )
+static void lAPP_CLIENT2_Tasks(  void *pvParameters  )
 {   
-    while(1)
+    while(true)
     {
         APP_CLIENT2_Tasks();
-        vTaskDelay(1 / portTICK_PERIOD_MS);
+        vTaskDelay(1U / portTICK_PERIOD_MS);
     }
 }
 
@@ -122,7 +123,7 @@ void SYS_Tasks ( void )
 
     /* Maintain the application's state machine. */
         /* Create OS Thread for APP_MONITOR_Tasks. */
-    xTaskCreate((TaskFunction_t) _APP_MONITOR_Tasks,
+    (void) xTaskCreate((TaskFunction_t) lAPP_MONITOR_Tasks,
                 "APP_MONITOR_Tasks",
                 1024,
                 NULL,
@@ -130,7 +131,7 @@ void SYS_Tasks ( void )
                 &xAPP_MONITOR_Tasks);
 
     /* Create OS Thread for APP_CLIENT1_Tasks. */
-    xTaskCreate((TaskFunction_t) _APP_CLIENT1_Tasks,
+    (void) xTaskCreate((TaskFunction_t) lAPP_CLIENT1_Tasks,
                 "APP_CLIENT1_Tasks",
                 1024,
                 NULL,
@@ -138,7 +139,7 @@ void SYS_Tasks ( void )
                 &xAPP_CLIENT1_Tasks);
 
     /* Create OS Thread for APP_CLIENT2_Tasks. */
-    xTaskCreate((TaskFunction_t) _APP_CLIENT2_Tasks,
+    (void) xTaskCreate((TaskFunction_t) lAPP_CLIENT2_Tasks,
                 "APP_CLIENT2_Tasks",
                 1024,
                 NULL,

@@ -91,7 +91,7 @@ extern "C" {
 #define DRV_SPI_CLIENTS_NUMBER_IDX0           2
 
 /* SPI Driver Common Configuration Options */
-#define DRV_SPI_INSTANCES_NUMBER              1
+#define DRV_SPI_INSTANCES_NUMBER              (1U)
 
 
 
