@@ -16,8 +16,8 @@
         <TargetCommonOption>
           <Device>ATSAME54P20A</Device>
           <Vendor>Microchip</Vendor>
-          <PackID>Atmel.SAME54_DFP.1.1.134</PackID>
-          <PackURL>http://packs.download.atmel.com/</PackURL>
+          <PackID>Microchip.SAME54_DFP.3.7.122</PackID>
+          <PackURL>https://packs.download.microchip.com/</PackURL>
           <Cpu>IRAM(0x20000000,0x40000) IRAM2(0x20000000,0x8000) IRAM3(0x20000000,0x8000) IRAM4(0x47000000,0x2000) IROM(0x00000000,0x100000) CPUTYPE("Cortex-M4") FPU2 CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile></StartupFile>
@@ -186,6 +186,7 @@
             <RvdsVP>2</RvdsVP>
             <RvdsMve>0</RvdsMve>
             <RvdsCdeCp>0</RvdsCdeCp>
+            <nBranchProt>0</nBranchProt>
             <hadIRAM2>1</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
@@ -407,6 +408,11 @@
               <FileName>drv_sdmmc_definitions.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\src\config\sam_e54_xpro_freertos_keil\driver\sdmmc\drv_sdmmc_definitions.h</FilePath>
+            </File>
+            <File>
+              <FileName>drv_sdmmc_file_system.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\src\config\sam_e54_xpro_freertos_keil\driver\sdmmc\src\drv_sdmmc_file_system.h</FilePath>
             </File>
             <File>
               <FileName>device_cache.h</FileName>
@@ -1264,6 +1270,11 @@
               <FilePath>..\src\config\sam_e54_xpro_freertos_keil\configuration.h</FilePath>
             </File>
             <File>
+              <FileName>sys_tasks.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\src\config\sam_e54_xpro_freertos_keil\sys_tasks.h</FilePath>
+            </File>
+            <File>
               <FileName>sys_debug.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\src\config\sam_e54_xpro_freertos_keil\system\debug\sys_debug.h</FilePath>
@@ -1479,11 +1490,6 @@
     <Layers>
       <Layer>
         <LayName>&lt;Project Info&gt;</LayName>
-        <LayDesc></LayDesc>
-        <LayUrl></LayUrl>
-        <LayKeys></LayKeys>
-        <LayCat></LayCat>
-        <LayLic></LayLic>
         <LayTarg>0</LayTarg>
         <LayPrjMark>1</LayPrjMark>
       </Layer>

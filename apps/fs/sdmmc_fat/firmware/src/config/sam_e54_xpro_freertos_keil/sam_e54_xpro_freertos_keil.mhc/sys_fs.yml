@@ -29,6 +29,13 @@ children:
         attributes: {id: visible}
         children:
         - {type: Value, value: 'true'}
+  - type: Boolean
+    attributes: {id: SYS_FS_FILEX_FX_STANDALONE_ENABLE}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: sys_fs, value: 'true'}
   - type: Integer
     attributes: {id: SYS_FS_MAX_FILES}
     children:
