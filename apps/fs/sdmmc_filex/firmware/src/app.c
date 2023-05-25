@@ -66,7 +66,7 @@
 
 #define APP_FILE_NAME        "newfile.txt"
 const uint8_t fileWriteData[] = "FILEX filesystem demo using SD CARD Media";
-SYS_FS_FORMAT_PARAM opt = {0};
+static SYS_FS_FORMAT_PARAM opt = {0};
 
 // *****************************************************************************
 /* Application Data
