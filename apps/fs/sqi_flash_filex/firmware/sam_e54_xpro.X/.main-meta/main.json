@@ -3,11 +3,11 @@
 	"category": "com.microchip.ide.project",
 	"content": {
 		"metaDataVersion": "1.1.0",
-		"name": "com.microchip.mcu32.mplabx.project.core_apps_sam_d5x_e5x_system_console_debug_sys_console_debug_usb_read_write_sam_e54_xpro",
+		"name": "com.microchip.mcu32.mplabx.project.core_apps_sam_d5x_e5x_fs_sqi_flash_filex_sam_e54_xpro",
 		"version": "3.4.0",
-		"displayName": "Console Debug System Service using USB Example for SAM D5x/E5x Family",
-		"projectName": "sys_console_debug_usb_read_write_sam_e54_xpro",
-		"shortDescription": "This example application demonstrates the USB based console and debug system service.",
+		"displayName": "FILEX filesystem using SST26 Media Example for SAM D5x/E5x Family",
+		"projectName": "fs_sqi_flash_filex_sam_e54_xpro",
+		"shortDescription": "This application shows an example of using the FILEX File System to access SQI based SST26 flash media",
 		"ide": {
 			"name": "MPLABX",
 			"semverRange": ">=6.5.0"
@@ -44,24 +44,26 @@
 			],
 			[
 				"Harmony",
-				"System Services",
-				"CONSOLE_DEBUG"
+				"Middleware",
+				"File System (FS)",
+				"SDMMC_FAT",
+				"FileX"
+			],
+			[
+				"File System (FS)",
+				"SDMMC_FAT"
 			]
 		],
 		"peripherals": [
-			"CONSOLE_DEBUG"
+			"SDMMC_FAT"
 		],
 		"keywords": [
 			"MHC",
 			"Harmony",
+			"File System",
 			"ATSAME54P20A",
 			"SAM D5x/E5x Family",
-			"UART",
-			"Console",
-			"Serial Communication",
-			"USART",
-			"SERCOM",
-			"FLEXCOM"
+			"FileX"
 		],
 		"additionalData": {
 			"longDescription": {
