@@ -82,6 +82,7 @@
           <itemPath>../src/config/sam_e54_xpro_freertos/configuration.h</itemPath>
           <itemPath>../src/config/sam_e54_xpro_freertos/interrupts.h</itemPath>
           <itemPath>../src/config/sam_e54_xpro_freertos/device_vectors.h</itemPath>
+          <itemPath>../src/config/sam_e54_xpro_freertos/sys_tasks.h</itemPath>
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="f2" displayName="FreeRTOS" projectFiles="true">

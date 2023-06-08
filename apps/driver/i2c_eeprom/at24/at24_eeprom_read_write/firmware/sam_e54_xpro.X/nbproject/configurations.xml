@@ -73,6 +73,7 @@
           <itemPath>../src/config/sam_e54_xpro/configuration.h</itemPath>
           <itemPath>../src/config/sam_e54_xpro/interrupts.h</itemPath>
           <itemPath>../src/config/sam_e54_xpro/device_vectors.h</itemPath>
+          <itemPath>../src/config/sam_e54_xpro/sys_tasks.h</itemPath>
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="f2" displayName="packs" projectFiles="true">
