@@ -69,7 +69,7 @@
 #define NVM_FILE_NAME        "abc.txt"
 
 #define APP_DATA_LEN         13 // HELLO WORLD !
-#define APP_TIMESTAMP_LEN    38 // File Modified on [dd/mm/yy hh:mm:ss]
+#define APP_TIMESTAMP_LEN    92 // File Modified on [dd/mm/yy hh:mm:ss]
 
 // *****************************************************************************
 /* Application Data
