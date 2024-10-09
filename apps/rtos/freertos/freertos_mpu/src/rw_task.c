@@ -98,7 +98,7 @@ void RW_TASK_Initialize ( void )
   Remarks:
     See prototype in rw_task.h.
  */
-extern volatile uint8_t ucSharedMemory[32];
+
 
 void RW_TASK_Tasks ( void )
 {

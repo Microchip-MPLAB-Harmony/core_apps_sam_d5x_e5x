@@ -242,13 +242,13 @@ static void ProcessMemoryManagementException(uint32_t * fault_args, unsigned int
     (void)printf(" LR/EXC_RETURN = 0x%X, Bit 2: %d\r\n", lr_value, (lr_value & 0x4U)>>2 );
 
     /* Do not over-write the below lines during regeneration */
-    if ((((stacked_pc & 0xF800) >> 11) == 0x1d00) || (((stacked_pc & 0xF800) >> 11) == 0x1e00) || (((stacked_pc & 0xF800) >> 11) == 0x1f00))
+    if ((((stacked_pc & 0xF800U) >> 11U) == 0x1dU) || (((stacked_pc & 0xF800U) >> 11U) == 0x1eU) || (((stacked_pc & 0xF800U) >> 11U) == 0x1fU))
     {
-        stacked_pc += 4;
+        stacked_pc += 4U;
     }
     else
     {
-        stacked_pc += 2;
+        stacked_pc += 2U;
     }
     
     fault_args[6] = stacked_pc;

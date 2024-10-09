@@ -50,8 +50,7 @@
 
     Application strings and buffers are be defined outside this structure.
 */
-extern volatile uint8_t ucSharedMemory[32];
-extern volatile uint8_t fault_testing[32];
+
 
 // *****************************************************************************
 // *****************************************************************************

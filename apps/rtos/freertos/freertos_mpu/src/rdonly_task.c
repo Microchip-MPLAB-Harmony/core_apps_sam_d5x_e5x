@@ -99,8 +99,7 @@ void RDONLY_TASK_Initialize ( void )
   Remarks:
     See prototype in rdonly_task.h.
  */
-extern volatile uint8_t ucSharedMemory[32];
-extern volatile uint8_t fault_testing[32];
+
 
 void RDONLY_TASK_Tasks ( void )
 {
