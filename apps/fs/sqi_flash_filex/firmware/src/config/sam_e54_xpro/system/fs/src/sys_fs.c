@@ -546,7 +546,7 @@ SYS_FS_RESULT SYS_FS_Mount
         return SYS_FS_RES_FAILURE;
     }
 
-    /* Clear the error value when mount is sucessful */
+    /* Clear the error value when mount is successful */
     errorValue = SYS_FS_ERROR_OK;
 
     /* Verify if the requested file system is supported by SYS_FS */
@@ -642,7 +642,6 @@ SYS_FS_RESULT SYS_FS_Mount
     if (disk->fsFunctions->chdrive != NULL)
     {
         (void) disk->fsFunctions->chdrive(disk->diskNumber);
-        fileStatus = (int)SYS_FS_ERROR_OK;
     }
     else
     {
@@ -1176,9 +1175,10 @@ int32_t SYS_FS_FileSeek
 {
     int fileStatus = -1;
     SYS_FS_OBJ *obj = (SYS_FS_OBJ *)handle;
-    long tell = 0;
+    uint32_t tell = 0;
     uint32_t size = 0;
-    int temp = 0;
+    uint32_t temp = 0;
+    uint32_t offset1 = (uint32_t)offset;
     OSAL_RESULT osalResult = OSAL_RESULT_FAIL;
 
     /* Check if the handle is valid. */
@@ -1218,17 +1218,17 @@ int32_t SYS_FS_FileSeek
     if (osalResult == OSAL_RESULT_SUCCESS)
     {
         /* SYS_FS_SEEK_SET case. */
-        temp = offset;
+        temp = offset1;
 
         if (whence == SYS_FS_SEEK_CUR)
         {
-            tell = (long)obj->mountPoint->fsFunctions->tell(obj->nativeFSFileObj);
-            temp = (offset + tell);
+            tell = obj->mountPoint->fsFunctions->tell(obj->nativeFSFileObj);
+            temp = (offset1 + tell);
         }
         else if (whence == SYS_FS_SEEK_END)
         {
             size = obj->mountPoint->fsFunctions->size(obj->nativeFSFileObj);
-            temp = (offset + (int)size);
+            temp = (offset1 + size);
         }
         else
         {
@@ -1992,7 +1992,7 @@ SYS_FS_RESULT SYS_FS_DirSearch
         }
 
         /* Firstly, match the file attribute with the requested attribute */
-		if (((stat->fattrib & (uint8_t)attr) != 0U) ||
+        if (((stat->fattrib & (uint8_t)attr) != 0U) ||
             (attr == SYS_FS_ATTR_FILE))
         {
             if((stat->lfname != NULL) && (stat->lfname[0] != '\0'))
