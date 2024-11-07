@@ -1,9 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <configurationDescriptor version="65">
   <logicalFolder name="root" displayName="root" projectFiles="true">
-    <logicalFolder name="HeaderFiles"
-                   displayName="Header Files"
-                   projectFiles="true">
+    <logicalFolder name="HeaderFiles" displayName="Header Files" projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
         <logicalFolder name="default" displayName="default" projectFiles="true">
           <logicalFolder name="driver" displayName="driver" projectFiles="true">
@@ -87,9 +85,7 @@
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="packs" displayName="packs" projectFiles="true">
-        <logicalFolder name="ATSAME54P20A_DFP"
-                       displayName="ATSAME54P20A_DFP"
-                       projectFiles="true">
+        <logicalFolder name="ATSAME54P20A_DFP" displayName="ATSAME54P20A_DFP" projectFiles="true">
           <logicalFolder name="component" displayName="component" projectFiles="true">
             <itemPath>../src/packs/ATSAME54P20A_DFP/component/gmac.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/component/qspi.h</itemPath>
@@ -220,24 +216,18 @@
       </logicalFolder>
       <itemPath>../src/app.h</itemPath>
     </logicalFolder>
-    <logicalFolder name="ExternalFiles"
-                   displayName="Important Files"
-                   projectFiles="true">
+    <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="true">
       <itemPath>Makefile</itemPath>
       <itemPath>sam_e54_xpro.mc3</itemPath>
     </logicalFolder>
-    <logicalFolder name="LinkerScript"
-                   displayName="Linker Files"
-                   projectFiles="true">
+    <logicalFolder name="LinkerScript" displayName="Linker Files" projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
         <logicalFolder name="default" displayName="default" projectFiles="true">
           <itemPath>../src/config/default/ATSAME54P20A.ld</itemPath>
         </logicalFolder>
       </logicalFolder>
     </logicalFolder>
-    <logicalFolder name="SourceFiles"
-                   displayName="Source Files"
-                   projectFiles="true">
+    <logicalFolder name="SourceFiles" displayName="Source Files" projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
         <logicalFolder name="default" displayName="default" projectFiles="true">
           <logicalFolder name="driver" displayName="driver" projectFiles="true">
@@ -309,15 +299,15 @@
       <toolsSet>
         <developmentServer>localhost</developmentServer>
         <targetDevice>ATSAME54P20A</targetDevice>
-        <targetHeader></targetHeader>
-        <targetPluginBoard></targetPluginBoard>
+        <targetHeader/>
+        <targetPluginBoard/>
         <platformTool>EdbgTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
         <languageToolchainVersion>4.45</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="SAME54_DFP" vendor="Microchip" version="3.8.234"/>
+        <pack name="SAME54_DFP" vendor="Microchip" version="3.9.244"/>
         <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
       </packs>
       <ScriptingSettings>
@@ -332,7 +322,7 @@
         <loading>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
           <parseOnProdLoad>false</parseOnProdLoad>
-          <alternateLoadableFile></alternateLoadableFile>
+          <alternateLoadableFile/>
         </loading>
         <subordinates>
         </subordinates>
@@ -340,9 +330,9 @@
       <makeCustomizationType>
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
         <makeUseCleanTarget>false</makeUseCleanTarget>
-        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPreStep/>
         <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
-        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPostStep/>
         <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
         <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
         <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
@@ -356,8 +346,7 @@
         <property key="enable-symbols" value="true"/>
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
-        <property key="extra-include-directories"
-                  value="../src;../src/config/default;../src/packs/ATSAME54P20A_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include"/>
+        <property key="extra-include-directories" value="../src;../src/config/default;../src/packs/ATSAME54P20A_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -456,8 +445,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
-        <property key="extra-include-directories"
-                  value="../src;../src/config/default;../src/packs/ATSAME54P20A_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include"/>
+        <property key="extra-include-directories" value="../src;../src/config/default;../src/packs/ATSAME54P20A_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -502,10 +490,8 @@
         <property key="event.recorder.debugger.behavior" value="Running"/>
         <property key="event.recorder.enabled" value="false"/>
         <property key="event.recorder.scvd.files" value=""/>
-        <property key="firmware.path"
-                  value="Press to browse for a specific firmware version"/>
-        <property key="firmware.toolpack"
-                  value="Press to select which tool pack to use"/>
+        <property key="firmware.path" value="Press to browse for a specific firmware version"/>
+        <property key="firmware.toolpack" value="Press to select which tool pack to use"/>
         <property key="firmware.update.action" value="firmware.update.use.latest"/>
         <property key="freeze.timers" value="false"/>
         <property key="lastid" value=""/>
@@ -519,17 +505,14 @@
         <property key="memories.exclude.configurationmemory" value="true"/>
         <property key="memories.flashdata" value="true"/>
         <property key="memories.id" value="true"/>
-        <property key="memories.instruction.ram.ranges"
-                  value="${memories.instruction.ram.ranges}"/>
+        <property key="memories.instruction.ram.ranges" value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-fffff"/>
         <property key="poweroptions.powerenable" value="false"/>
-        <property key="programmerToGoFilePath"
-                  value="C:/h3_core_apps/core_apps_sam_d5x_e5x/apps/driver/sdmmc/async/sdio_read_write/sam_e54_xpro.X/debug/default/sam_e54_xpro_ptg"/>
+        <property key="programmerToGoFilePath" value="C:/h3_core_apps/core_apps_sam_d5x_e5x/apps/driver/sdmmc/async/sdio_read_write/sam_e54_xpro.X/debug/default/sam_e54_xpro_ptg"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
-        <property key="programoptions.preservedataflash.ranges"
-                  value="${memories.dataflash.default}"/>
+        <property key="programoptions.preservedataflash.ranges" value="${memories.dataflash.default}"/>
         <property key="programoptions.preserveeeprom" value="false"/>
         <property key="programoptions.preserveeeprom.ranges" value=""/>
         <property key="programoptions.preserveprogram.ranges" value=""/>
@@ -540,10 +523,8 @@
         <property key="script.log_level" value="1"/>
         <property key="script.reset_delay" value="0"/>
         <property key="script.show_output" value="false"/>
-        <property key="toolpack.updateoptions"
-                  value="toolpack.updateoptions.uselatestoolpack"/>
-        <property key="toolpack.updateoptions.packversion"
-                  value="Press to select which tool pack to use"/>
+        <property key="toolpack.updateoptions" value="toolpack.updateoptions.uselatestoolpack"/>
+        <property key="toolpack.updateoptions.packversion" value="Press to select which tool pack to use"/>
         <property key="voltagevalue" value=""/>
       </EdbgTool>
       <Tool>
@@ -559,10 +540,8 @@
         <property key="event.recorder.debugger.behavior" value="Running"/>
         <property key="event.recorder.enabled" value="false"/>
         <property key="event.recorder.scvd.files" value=""/>
-        <property key="firmware.path"
-                  value="Press to browse for a specific firmware version"/>
-        <property key="firmware.toolpack"
-                  value="Press to select which tool pack to use"/>
+        <property key="firmware.path" value="Press to browse for a specific firmware version"/>
+        <property key="firmware.toolpack" value="Press to select which tool pack to use"/>
         <property key="firmware.update.action" value="firmware.update.use.latest"/>
         <property key="freeze.timers" value="false"/>
         <property key="lastid" value=""/>
@@ -576,15 +555,13 @@
         <property key="memories.exclude.configurationmemory" value="true"/>
         <property key="memories.flashdata" value="true"/>
         <property key="memories.id" value="true"/>
-        <property key="memories.instruction.ram.ranges"
-                  value="${memories.instruction.ram.ranges}"/>
+        <property key="memories.instruction.ram.ranges" value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-fffff"/>
         <property key="poweroptions.powerenable" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
-        <property key="programoptions.preservedataflash.ranges"
-                  value="${memories.dataflash.default}"/>
+        <property key="programoptions.preservedataflash.ranges" value="${memories.dataflash.default}"/>
         <property key="programoptions.preserveeeprom" value="false"/>
         <property key="programoptions.preserveeeprom.ranges" value=""/>
         <property key="programoptions.preserveprogram.ranges" value=""/>
@@ -595,10 +572,8 @@
         <property key="script.log_level" value="1"/>
         <property key="script.reset_delay" value="0"/>
         <property key="script.show_output" value="false"/>
-        <property key="toolpack.updateoptions"
-                  value="toolpack.updateoptions.uselatestoolpack"/>
-        <property key="toolpack.updateoptions.packversion"
-                  value="Press to select which tool pack to use"/>
+        <property key="toolpack.updateoptions" value="toolpack.updateoptions.uselatestoolpack"/>
+        <property key="toolpack.updateoptions.packversion" value="Press to select which tool pack to use"/>
         <property key="voltagevalue" value=""/>
       </Tool>
     </conf>
