@@ -60,8 +60,11 @@
 // Section: RTOS "Tasks" Routine
 // *****************************************************************************
 // *****************************************************************************
+
 /* Handle for the APP_MONITOR_Tasks. */
 TaskHandle_t xAPP_MONITOR_Tasks;
+
+
 
 static void lAPP_MONITOR_Tasks(  void *pvParameters  )
 {   
@@ -71,8 +74,11 @@ static void lAPP_MONITOR_Tasks(  void *pvParameters  )
         vTaskDelay(100U / portTICK_PERIOD_MS);
     }
 }
+
 /* Handle for the APP_CLIENT1_Tasks. */
 TaskHandle_t xAPP_CLIENT1_Tasks;
+
+
 
 static void lAPP_CLIENT1_Tasks(  void *pvParameters  )
 {   
@@ -82,8 +88,11 @@ static void lAPP_CLIENT1_Tasks(  void *pvParameters  )
         vTaskDelay(1U / portTICK_PERIOD_MS);
     }
 }
+
 /* Handle for the APP_CLIENT2_Tasks. */
 TaskHandle_t xAPP_CLIENT2_Tasks;
+
+
 
 static void lAPP_CLIENT2_Tasks(  void *pvParameters  )
 {   
@@ -122,30 +131,33 @@ void SYS_Tasks ( void )
     
 
     /* Maintain the application's state machine. */
-        /* Create OS Thread for APP_MONITOR_Tasks. */
-    (void) xTaskCreate((TaskFunction_t) lAPP_MONITOR_Tasks,
-                "APP_MONITOR_Tasks",
-                1024,
-                NULL,
-                1,
-                &xAPP_MONITOR_Tasks);
+    
+    /* Create OS Thread for APP_MONITOR_Tasks. */
+    (void) xTaskCreate(
+           (TaskFunction_t) lAPP_MONITOR_Tasks,
+           "APP_MONITOR_Tasks",
+           1024,
+           NULL,
+           1U ,
+           &xAPP_MONITOR_Tasks);
 
     /* Create OS Thread for APP_CLIENT1_Tasks. */
-    (void) xTaskCreate((TaskFunction_t) lAPP_CLIENT1_Tasks,
-                "APP_CLIENT1_Tasks",
-                1024,
-                NULL,
-                1,
-                &xAPP_CLIENT1_Tasks);
+    (void) xTaskCreate(
+           (TaskFunction_t) lAPP_CLIENT1_Tasks,
+           "APP_CLIENT1_Tasks",
+           1024,
+           NULL,
+           1U ,
+           &xAPP_CLIENT1_Tasks);
 
     /* Create OS Thread for APP_CLIENT2_Tasks. */
-    (void) xTaskCreate((TaskFunction_t) lAPP_CLIENT2_Tasks,
-                "APP_CLIENT2_Tasks",
-                1024,
-                NULL,
-                1,
-                &xAPP_CLIENT2_Tasks);
-
+    (void) xTaskCreate(
+           (TaskFunction_t) lAPP_CLIENT2_Tasks,
+           "APP_CLIENT2_Tasks",
+           1024,
+           NULL,
+           1U ,
+           &xAPP_CLIENT2_Tasks);
 
 
 
