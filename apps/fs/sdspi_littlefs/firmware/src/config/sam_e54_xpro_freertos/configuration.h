@@ -109,6 +109,7 @@ extern "C" {
 
 
 #define SYS_FS_LFS_MAX_SS                  SYS_FS_MEDIA_MAX_BLOCK_SIZE
+#define SYS_FS_LFS_ALIGNED_BUFFER_LEN     2048U
 
 
 
