@@ -69,9 +69,9 @@ TaskHandle_t xRDONLY_TASK_Tasks;
 /* Buffer that the task being created will use as its stack.  Note this is
 an array of StackType_t variables.  The size of StackType_t is dependent on
 the RTOS port. */
-StackType_t xTask0Stack[ 4096 / sizeof(StackType_t) ] __attribute__((aligned(4096)));
-volatile uint8_t ucSharedMemory[32] __attribute__((aligned(32)));
-volatile uint8_t fault_testing[32] __attribute__((aligned(32)));
+static StackType_t xTask0Stack[ 4096 / sizeof(StackType_t) ] __attribute__((aligned(4096)));
+uint8_t ucSharedMemory[32] __attribute__((aligned(32)));
+uint8_t fault_testing[32] __attribute__((aligned(32)));
 
 static void lRDONLY_TASK_Tasks(  void *pvParameters  )
 {   
@@ -90,7 +90,7 @@ TaskHandle_t xRW_TASK_Tasks;
 /* Buffer that the task being created will use as its stack.  Note this is
 an array of StackType_t variables.  The size of StackType_t is dependent on
 the RTOS port. */
-StackType_t xTask1Stack[ 4096 / sizeof(StackType_t) ] __attribute__((aligned(4096)));
+static StackType_t xTask1Stack[ 4096 / sizeof(StackType_t) ] __attribute__((aligned(4096)));
 
 static void lRW_TASK_Tasks(  void *pvParameters  )
 {   
@@ -148,15 +148,15 @@ void SYS_Tasks ( void )
    {
        (TaskFunction_t) lRDONLY_TASK_Tasks, /* pvTaskCode - the function that implements the task. */
        "RDONLY_TASK_Tasks", /* pcName */
-       4096 / sizeof(StackType_t), /* usStackDepth - defined in words, not bytes. */
+       4096U / sizeof(StackType_t), /* usStackDepth - defined in words, not bytes. */
        NULL, /* pvParameters - not being used in this case. */
-       1 , /* uxPriority*/
+       1U , /* uxPriority*/
        xTask0Stack, /* puxStackBuffer - the array to use as the task stack. */
        /* xRegions - MPU regions*/
        {
            /* Base - address Length - Parameters */
-           { (void*)ucSharedMemory , 0x20 , portMPU_REGION_PRIVILEGED_READ_WRITE_UNPRIV_READ_ONLY | portMPU_REGION_EXECUTE_NEVER },
-           { (void*)fault_testing , 0x20 , portMPU_REGION_READ_WRITE | portMPU_REGION_EXECUTE_NEVER },
+           { (void*)ucSharedMemory , 32 , portMPU_REGION_PRIVILEGED_READ_WRITE_UNPRIV_READ_ONLY | portMPU_REGION_EXECUTE_NEVER },
+           { (void*)fault_testing , 32 , portMPU_REGION_READ_WRITE | portMPU_REGION_EXECUTE_NEVER },
            { 0, 0, 0 }
        }
        
@@ -171,14 +171,14 @@ void SYS_Tasks ( void )
    {
        (TaskFunction_t) lRW_TASK_Tasks, /* pvTaskCode - the function that implements the task. */
        "RW_TASK_Tasks", /* pcName */
-       4096 / sizeof(StackType_t), /* usStackDepth - defined in words, not bytes. */
+       4096U / sizeof(StackType_t), /* usStackDepth - defined in words, not bytes. */
        NULL, /* pvParameters - not being used in this case. */
-       1 , /* uxPriority*/
+       1U , /* uxPriority*/
        xTask1Stack, /* puxStackBuffer - the array to use as the task stack. */
        /* xRegions - MPU regions*/
        {
            /* Base - address Length - Parameters */
-           { (void*)ucSharedMemory , 0x20 , portMPU_REGION_READ_WRITE | portMPU_REGION_EXECUTE_NEVER },
+           { (void*)ucSharedMemory , 32 , portMPU_REGION_READ_WRITE | portMPU_REGION_EXECUTE_NEVER },
            { 0, 0, 0 },
            { 0, 0, 0 }
        }
@@ -196,7 +196,7 @@ void SYS_Tasks ( void )
            "PRIV_TASK_Tasks",
            1024,
            NULL,
-           1  | portPRIVILEGE_BIT ,
+           1U  | portPRIVILEGE_BIT ,
            &xPRIV_TASK_Tasks);
 
 
