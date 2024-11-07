@@ -25,11 +25,11 @@ extern "C" {
 
 /* Results of FILEX IO Functions */
 typedef enum {
-    RES_OK = 0,     /* 0: Successful */
-    RES_ERROR,      /* 1: R/W Error */
-    RES_WRPRT,      /* 2: Write Protected */
-    RES_NOTRDY,     /* 3: Not Ready */
-    RES_PARERR      /* 4: Invalid Parameter */
+    RESULT_OK = 0,     /* 0: Successful */
+    RESULT_ERROR,      /* 1: R/W Error */
+    RESULT_WRPRT,      /* 2: Write Protected */
+    RESULT_NOTRDY,     /* 3: Not Ready */
+    RESULT_PARERR      /* 4: Invalid Parameter */
 } FILEX_IO_RESULT;
 
 typedef struct {

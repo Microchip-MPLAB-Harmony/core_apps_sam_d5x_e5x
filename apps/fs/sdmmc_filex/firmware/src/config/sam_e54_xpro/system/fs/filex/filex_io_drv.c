@@ -43,12 +43,12 @@ void filexIoEventHandler
 
 static FILEX_IO_RESULT filexIoCheckCommandStatus(uint8_t pdrv)
 {
-    FILEX_IO_RESULT result = RES_ERROR;
+    FILEX_IO_RESULT result = RESULT_ERROR;
 
     /* Buffer is invalid report error */
     if (gSysFsDiskData[pdrv].commandHandle == SYS_FS_MEDIA_BLOCK_COMMAND_HANDLE_INVALID)
     {
-        result = RES_PARERR;
+        result = RESULT_PARERR;
     }
     else
     {
@@ -63,7 +63,7 @@ static FILEX_IO_RESULT filexIoCheckCommandStatus(uint8_t pdrv)
         if (gSysFsDiskData[pdrv].commandStatus == SYS_FS_MEDIA_COMMAND_COMPLETED)
         {
             /* Buffer processed successfully */
-            result = RES_OK;
+            result = RESULT_OK;
         }
     }
 
@@ -78,7 +78,7 @@ static FILEX_IO_RESULT disk_read_aligned
     uint32_t sector_count   /* Number of sectors to read (1..128) */
 )
 {
-    FILEX_IO_RESULT result = RES_ERROR;
+    FILEX_IO_RESULT result = RESULT_ERROR;
 
     gSysFsDiskData[pdrv].commandStatus = SYS_FS_MEDIA_COMMAND_IN_PROGRESS;
 
@@ -97,7 +97,7 @@ static FILEX_IO_RESULT disk_read_aligned
 
 void filex_io_drv_entry(FX_MEDIA *media_ptr)
 {
-    FILEX_IO_RESULT result = RES_ERROR;
+    FILEX_IO_RESULT result = RESULT_ERROR;
     uint8_t *ptrdrv = (uint8_t *)media_ptr->fx_media_driver_info;
     uint8_t pdrv = *ptrdrv;
 
@@ -124,7 +124,7 @@ void filex_io_drv_entry(FX_MEDIA *media_ptr)
                 result = disk_read_aligned(pdrv, (uint8_t *)media_ptr->fx_media_driver_buffer, (uint32_t)(media_ptr -> fx_media_driver_logical_sector + media_ptr -> fx_media_hidden_sectors), (uint32_t)media_ptr->fx_media_driver_sectors);
             }
 
-            if (result == RES_OK)
+            if (result == RESULT_OK)
             {
                 /* Success  */
                 media_ptr -> fx_media_driver_status =  FX_SUCCESS;
@@ -153,7 +153,7 @@ void filex_io_drv_entry(FX_MEDIA *media_ptr)
                 result = filexIoCheckCommandStatus(pdrv);
             }
 
-            if (result == RES_OK)
+            if (result == RESULT_OK)
             {
                 /* Success  */
                 media_ptr -> fx_media_driver_status =  FX_SUCCESS;
@@ -172,7 +172,7 @@ void filex_io_drv_entry(FX_MEDIA *media_ptr)
                 result = disk_read_aligned(pdrv, (uint8_t *)media_ptr->fx_media_driver_buffer, 0, 1);
             }
 
-            if (result == RES_OK)
+            if (result == RESULT_OK)
             {
                 /* Success  */
                 media_ptr -> fx_media_driver_status =  FX_SUCCESS;
@@ -201,7 +201,7 @@ void filex_io_drv_entry(FX_MEDIA *media_ptr)
                 result = filexIoCheckCommandStatus(pdrv);
             }
 
-            if (result == RES_OK)
+            if (result == RESULT_OK)
             {
                 /* Success  */
                 media_ptr -> fx_media_driver_status =  FX_SUCCESS;
