@@ -88,7 +88,7 @@ extern "C" {
 #define SYS_FS_AUTOMOUNT_ENABLE           false
 #define SYS_FS_MAX_FILES                  (1U)
 #define SYS_FS_MAX_FILE_SYSTEM_TYPE       (1U)
-#define SYS_FS_MEDIA_MAX_BLOCK_SIZE       (512)
+#define SYS_FS_MEDIA_MAX_BLOCK_SIZE       (512U)
 #define SYS_FS_MEDIA_MANAGER_BUFFER_SIZE  (2048U)
 #define SYS_FS_USE_LFN                    (1)
 #define SYS_FS_FILE_NAME_LEN              (255U)
@@ -116,7 +116,7 @@ extern "C" {
 /* Memory Driver Instance 0 Configuration */
 #define DRV_MEMORY_INDEX_0                   0
 #define DRV_MEMORY_CLIENTS_NUMBER_IDX0       1
-#define DRV_MEMORY_BUFFER_QUEUE_SIZE_IDX0    1
+#define DRV_MEMORY_BUF_Q_SIZE_IDX0    1
 
 /* AT24 Driver Configuration Options */
 
@@ -125,8 +125,8 @@ extern "C" {
 #define DRV_AT24_INDEX                         (0)
 #define DRV_AT24_CLIENTS_NUMBER_IDX            (1)
 #define DRV_AT24_INT_SRC_IDX                   (SERCOM7_IRQn)
-#define DRV_AT24_EEPROM_FLASH_SIZE             (262144)
-#define DRV_AT24_EEPROM_PAGE_SIZE              (256)
+#define DRV_AT24_EEPROM_FLASH_SIZE             (262144U)
+#define DRV_AT24_EEPROM_PAGE_SIZE              (256U)
 #define DRV_AT24_WRITE_BUFFER_SIZE             (258)
 /* Memory Driver Global Configuration Options */
 #define DRV_MEMORY_INSTANCES_NUMBER          (1U)
