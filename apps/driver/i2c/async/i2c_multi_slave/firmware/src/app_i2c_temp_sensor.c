@@ -60,7 +60,7 @@
 // *****************************************************************************
 // *****************************************************************************
 #define APP_TEMP_I2C_CLOCK_SPEED                    400000
-#define APP_TEMP_SLAVE_ADDR                         0x004B
+#define APP_TEMP_SLAVE_ADDR                         0x004F
 #define APP_TEMP_TEMPERATURE_REG_ADDR               0x00
 #define APP_TEMP_SAMPLING_TIME                      1000
 
