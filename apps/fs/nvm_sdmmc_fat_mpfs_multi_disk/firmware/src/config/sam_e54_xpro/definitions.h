@@ -56,8 +56,8 @@
 #include "peripheral/nvic/plib_nvic.h"
 #include "peripheral/cmcc/plib_cmcc.h"
 #include "driver/memory/drv_memory.h"
-#include "peripheral/tc/plib_tc0.h"
 #include "peripheral/rtc/plib_rtc.h"
+#include "peripheral/tc/plib_tc0.h"
 #include "peripheral/sdhc/plib_sdhc1.h"
 #include "system/time/sys_time.h"
 #include "driver/memory/drv_memory_nvmctrl.h"
@@ -86,13 +86,13 @@ extern "C" {
 // DOM-IGNORE-END
 
 /* Device Information */
-#define DEVICE_NAME			 "ATSAME54P20A"
-#define DEVICE_ARCH			 "CORTEX-M4"
-#define DEVICE_FAMILY		 "SAME"
-#define DEVICE_SERIES		 "SAME54"
+#define DEVICE_NAME          "ATSAME54P20A"
+#define DEVICE_ARCH          "CORTEX-M4"
+#define DEVICE_FAMILY        "SAME"
+#define DEVICE_SERIES        "SAME54"
 
 /* CPU clock frequency */
-#define CPU_CLOCK_FREQUENCY 120000000
+#define CPU_CLOCK_FREQUENCY 120000000U
 
 // *****************************************************************************
 // *****************************************************************************

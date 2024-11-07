@@ -48,7 +48,6 @@
 #include "device.h"
 
 
-
 // ****************************************************************************
 // ****************************************************************************
 // Section: Configuration Bits
@@ -79,16 +78,17 @@
 // *****************************************************************************
 // *****************************************************************************
 /* Following MISRA-C rules are deviated in the below code block */
-/* MISRA C-2012 Rule 11.1 */
-/* MISRA C-2012 Rule 11.3 */
-/* MISRA C-2012 Rule 11.8 */
+/* MISRA C-2012 Rule 7.2 - Deviation record ID - H3_MISRAC_2012_R_7_2_DR_1 */
+/* MISRA C-2012 Rule 11.1 - Deviation record ID - H3_MISRAC_2012_R_11_1_DR_1 */
+/* MISRA C-2012 Rule 11.3 - Deviation record ID - H3_MISRAC_2012_R_11_3_DR_1 */
+/* MISRA C-2012 Rule 11.8 - Deviation record ID - H3_MISRAC_2012_R_11_8_DR_1 */
 // <editor-fold defaultstate="collapsed" desc="DRV_MEMORY Instance 0 Initialization Data">
 
 static uint8_t gDrvMemory0EraseBuffer[NVMCTRL_ERASE_BUFFER_SIZE] CACHE_ALIGN;
 
 static DRV_MEMORY_CLIENT_OBJECT gDrvMemory0ClientObject[DRV_MEMORY_CLIENTS_NUMBER_IDX0];
 
-static DRV_MEMORY_BUFFER_OBJECT gDrvMemory0BufferObject[DRV_MEMORY_BUFFER_QUEUE_SIZE_IDX0];
+static DRV_MEMORY_BUFFER_OBJECT gDrvMemory0BufferObject[DRV_MEMORY_BUF_Q_SIZE_IDX0];
 
 static const DRV_MEMORY_DEVICE_INTERFACE drvMemory0DeviceAPI = {
     .Open               = DRV_NVMCTRL_Open,
@@ -111,7 +111,7 @@ static const DRV_MEMORY_INIT drvMemory0InitData =
     .ewBuffer                   = &gDrvMemory0EraseBuffer[0],
     .clientObjPool              = (uintptr_t)&gDrvMemory0ClientObject[0],
     .bufferObj                  = (uintptr_t)&gDrvMemory0BufferObject[0],
-    .queueSize                  = DRV_MEMORY_BUFFER_QUEUE_SIZE_IDX0,
+    .queueSize                  = DRV_MEMORY_BUF_Q_SIZE_IDX0,
     .nClientsMax                = DRV_MEMORY_CLIENTS_NUMBER_IDX0
 };
 
@@ -119,10 +119,10 @@ static const DRV_MEMORY_INIT drvMemory0InitData =
 // <editor-fold defaultstate="collapsed" desc="DRV_SDMMC Instance 0 Initialization Data">
 
 /* SDMMC Client Objects Pool */
-static DRV_SDMMC_CLIENT_OBJ drvSDMMC0ClientObjPool[DRV_SDMMC_CLIENTS_NUMBER_IDX0];
+static DRV_SDMMC_CLIENT_OBJ drvSDMMC0ClientObjPool[DRV_SDMMC_IDX0_CLIENTS_NUMBER];
 
 /* SDMMC Transfer Objects Pool */
-static DRV_SDMMC_BUFFER_OBJ drvSDMMC0BufferObjPool[DRV_SDMMC_QUEUE_SIZE_IDX0];
+static DRV_SDMMC_BUFFER_OBJ drvSDMMC0BufferObjPool[DRV_SDMMC_IDX0_QUEUE_SIZE];
 
 static const DRV_SDMMC_PLIB_API drvSDMMC0PlibAPI = {
     .sdhostCallbackRegister = (DRV_SDMMC_PLIB_CALLBACK_REGISTER)SDHC1_CallbackRegister,
@@ -150,15 +150,15 @@ static const DRV_SDMMC_INIT drvSDMMC0InitData =
 {
     .sdmmcPlib                      = &drvSDMMC0PlibAPI,
     .bufferObjPool                  = (uintptr_t)&drvSDMMC0BufferObjPool[0],
-    .bufferObjPoolSize              = DRV_SDMMC_QUEUE_SIZE_IDX0,
+    .bufferObjPoolSize              = DRV_SDMMC_IDX0_QUEUE_SIZE,
     .clientObjPool                  = (uintptr_t)&drvSDMMC0ClientObjPool[0],
-    .numClients                     = DRV_SDMMC_CLIENTS_NUMBER_IDX0,
-    .protocol                       = DRV_SDMMC_PROTOCOL_SUPPORT_IDX0,
-    .cardDetectionMethod            = DRV_SDMMC_CARD_DETECTION_METHOD_IDX0,
+    .numClients                     = DRV_SDMMC_IDX0_CLIENTS_NUMBER,
+    .protocol                       = DRV_SDMMC_IDX0_PROTOCOL_SUPPORT,
+    .cardDetectionMethod            = DRV_SDMMC_IDX0_CARD_DETECTION_METHOD,
     .cardDetectionPollingIntervalMs = 0,
     .isWriteProtectCheckEnabled     = false,
-    .speedMode                      = DRV_SDMMC_CONFIG_SPEED_MODE_IDX0,
-    .busWidth                       = DRV_SDMMC_CONFIG_BUS_WIDTH_IDX0,
+    .speedMode                      = DRV_SDMMC_IDX0_CONFIG_SPEED_MODE,
+    .busWidth                       = DRV_SDMMC_IDX0_CONFIG_BUS_WIDTH,
 	.sleepWhenIdle 					= false,
     .isFsEnabled                    = true,
 };
@@ -339,6 +339,7 @@ static const SYS_TIME_INIT sysTimeInitData =
 
 void SYS_Initialize ( void* data )
 {
+
     /* MISRAC 2012 deviation block start */
     /* MISRA C-2012 Rule 2.2 deviated in this file.  Deviation record ID -  H3_MISRAC_2012_R_2_2_DR_1 */
 
@@ -354,14 +355,13 @@ void SYS_Initialize ( void* data )
 
     EVSYS_Initialize();
 
-    TC0_TimerInitialize();
-
     RTC_Initialize();
+
+    TC0_TimerInitialize();
 
 	SDHC1_Initialize();
 
 	BSP_Initialize();
-
 
     /* MISRAC 2012 deviation block start */
     /* Following MISRA-C rules deviated in this block  */
@@ -393,9 +393,7 @@ void SYS_Initialize ( void* data )
 
 
     /* MISRAC 2012 deviation block end */
-
 }
-
 
 /*******************************************************************************
  End of File
