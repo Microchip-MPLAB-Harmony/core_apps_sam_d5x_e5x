@@ -189,7 +189,7 @@ static void __attribute__((noreturn)) ProcessDebugMonitorException(uint32_t * fa
     }
 }
 
-static void ProcessMemoryManagementException(uint32_t * fault_args, unsigned int lr_value)
+static void __attribute__((noreturn)) ProcessMemoryManagementException(uint32_t * fault_args, unsigned int lr_value)
 {
     uint32_t stacked_r0;
     uint32_t stacked_r1;
@@ -241,17 +241,13 @@ static void ProcessMemoryManagementException(uint32_t * fault_args, unsigned int
     (void)printf("- Misc\r\n");
     (void)printf(" LR/EXC_RETURN = 0x%X, Bit 2: %d\r\n", lr_value, (lr_value & 0x4U)>>2 );
 
-    /* Do not over-write the below lines during regeneration */
-    if ((((stacked_pc & 0xF800U) >> 11U) == 0x1dU) || (((stacked_pc & 0xF800U) >> 11U) == 0x1eU) || (((stacked_pc & 0xF800U) >> 11U) == 0x1fU))
+    #if defined(__DEBUG) || defined(__DEBUG_D) && defined(__XC32)
+    __builtin_software_breakpoint();
+    #endif
+    while (true)
     {
-        stacked_pc += 4U;
+        // Do Nothing
     }
-    else
-    {
-        stacked_pc += 2U;
-    }
-    
-    fault_args[6] = stacked_pc;
 }
 
 static void __attribute__((noreturn)) ProcessBusFaultException(uint32_t * fault_args, unsigned int lr_value)
