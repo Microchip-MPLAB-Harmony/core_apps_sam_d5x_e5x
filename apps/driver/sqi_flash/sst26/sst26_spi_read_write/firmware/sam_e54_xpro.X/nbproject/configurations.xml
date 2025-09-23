@@ -216,9 +216,22 @@
       <itemPath>../src/app.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="true">
+      <logicalFolder name="sst26_spi_read_write_sam_e54_xpro_sam_e54_xpro" displayName="sst26_spi_read_write_sam_e54_xpro_sam_e54_xpro" projectFiles="true">
+        <itemPath>sst26_spi_read_write_sam_e54_xpro_sam_e54_xpro/mcc-config.mc4</itemPath>
+        <logicalFolder name="components" displayName="components" projectFiles="true">
+          <itemPath>sst26_spi_read_write_sam_e54_xpro_sam_e54_xpro/components/BSP_SAM_E54_Xplained_Pro.yml</itemPath>
+          <itemPath>sst26_spi_read_write_sam_e54_xpro_sam_e54_xpro/components/HarmonyCore.yml</itemPath>
+          <itemPath>sst26_spi_read_write_sam_e54_xpro_sam_e54_xpro/components/cmsis.yml</itemPath>
+          <itemPath>sst26_spi_read_write_sam_e54_xpro_sam_e54_xpro/components/core.yml</itemPath>
+          <itemPath>sst26_spi_read_write_sam_e54_xpro_sam_e54_xpro/components/dfp.yml</itemPath>
+          <itemPath>sst26_spi_read_write_sam_e54_xpro_sam_e54_xpro/components/drv_sst26.yml</itemPath>
+          <itemPath>sst26_spi_read_write_sam_e54_xpro_sam_e54_xpro/components/evsys.yml</itemPath>
+          <itemPath>sst26_spi_read_write_sam_e54_xpro_sam_e54_xpro/components/nvmctrl.yml</itemPath>
+          <itemPath>sst26_spi_read_write_sam_e54_xpro_sam_e54_xpro/components/qspi.yml</itemPath>
+        </logicalFolder>
+      </logicalFolder>
       <itemPath>Makefile</itemPath>
       <itemPath>../src/config/sam_e54_xpro/harmony-manifest-success.yml</itemPath>
-      <itemPath>sst26_spi_read_write_sam_e54_xpro.mc3</itemPath>
       <itemPath>../src/config/sam_e54_xpro/pin_configurations.csv</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript" displayName="Linker Files" projectFiles="true">
@@ -305,7 +318,7 @@
         <targetPluginBoard/>
         <platformTool>EdbgTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.45</languageToolchainVersion>
+        <languageToolchainVersion>4.60</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
