@@ -1,0 +1,86 @@
+configVersion: 1.0.0
+componentName: drv_at24
+coreVersion: 5.8.2
+device: ATSAME54P20A
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: drv_at24
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: CMSIS_5
+  type: package
+  version: 5.9.0
+- dependencyPackage: ''
+  name: bsp
+  type: package
+  version: v3.23.0
+- dependencyPackage: ''
+  name: core
+  type: package
+  version: v3.15.5
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.23.0
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments:
+    children:
+    - children:
+      - attributes:
+          id: drv_at24_I2C_dependency
+        children:
+        - children:
+          - attributes:
+              id: targetComponentID
+            children:
+            - type: Value
+              value: sercom7
+            type: String
+          - attributes:
+              id: targetAttachmentID
+            children:
+            - type: Value
+              value: SERCOM7_I2C
+            type: String
+          type: Attributes
+        type: DirectDependency
+      type: Attachments
+    type: drv_at24
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: drv_at24
+          x: '214'
+          y: '64'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    DRV_AT24_PLIB:
+      attributes:
+        id: DRV_AT24_PLIB
+      children:
+      - children:
+        - attributes:
+            id: drv_at24
+            value: SERCOM7
+          type: Dynamic
+        type: Values
+      type: String
+    I2C_EEPROM_ADDDRESS:
+      attributes:
+        id: I2C_EEPROM_ADDDRESS
+      children:
+      - children:
+        - attributes:
+            value: '86'
+          type: User
+        type: Values
+      type: Hex
+  userData: {}
