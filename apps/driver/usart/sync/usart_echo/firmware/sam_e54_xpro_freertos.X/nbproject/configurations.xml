@@ -242,9 +242,24 @@
       <itemPath>../src/app_usart_echo.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="true">
+      <logicalFolder name="sync_usart_echo_sam_e54_xpro_freertos_sam_e54_xpro_freertos" displayName="sync_usart_echo_sam_e54_xpro_freertos_sam_e54_xpro_freertos" projectFiles="true">
+        <itemPath>sync_usart_echo_sam_e54_xpro_freertos_sam_e54_xpro_freertos/mcc-config.mc4</itemPath>
+        <logicalFolder name="components" displayName="components" projectFiles="true">
+          <itemPath>sync_usart_echo_sam_e54_xpro_freertos_sam_e54_xpro_freertos/components/BSP_SAM_E54_Xplained_Pro.yml</itemPath>
+          <itemPath>sync_usart_echo_sam_e54_xpro_freertos_sam_e54_xpro_freertos/components/FreeRTOS.yml</itemPath>
+          <itemPath>sync_usart_echo_sam_e54_xpro_freertos_sam_e54_xpro_freertos/components/HarmonyCore.yml</itemPath>
+          <itemPath>sync_usart_echo_sam_e54_xpro_freertos_sam_e54_xpro_freertos/components/cmsis.yml</itemPath>
+          <itemPath>sync_usart_echo_sam_e54_xpro_freertos_sam_e54_xpro_freertos/components/core.yml</itemPath>
+          <itemPath>sync_usart_echo_sam_e54_xpro_freertos_sam_e54_xpro_freertos/components/dfp.yml</itemPath>
+          <itemPath>sync_usart_echo_sam_e54_xpro_freertos_sam_e54_xpro_freertos/components/drv_usart.yml</itemPath>
+          <itemPath>sync_usart_echo_sam_e54_xpro_freertos_sam_e54_xpro_freertos/components/drv_usart_0.yml</itemPath>
+          <itemPath>sync_usart_echo_sam_e54_xpro_freertos_sam_e54_xpro_freertos/components/evsys.yml</itemPath>
+          <itemPath>sync_usart_echo_sam_e54_xpro_freertos_sam_e54_xpro_freertos/components/nvmctrl.yml</itemPath>
+          <itemPath>sync_usart_echo_sam_e54_xpro_freertos_sam_e54_xpro_freertos/components/sercom2.yml</itemPath>
+        </logicalFolder>
+      </logicalFolder>
       <itemPath>Makefile</itemPath>
       <itemPath>../src/config/sam_e54_xpro_freertos/harmony-manifest-success.yml</itemPath>
-      <itemPath>sync_usart_echo_sam_e54_xpro_freertos.mc3</itemPath>
       <itemPath>../src/config/sam_e54_xpro_freertos/pin_configurations.csv</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript" displayName="Linker Files" projectFiles="true">
@@ -357,7 +372,7 @@
         <targetPluginBoard/>
         <platformTool>EdbgTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.45</languageToolchainVersion>
+        <languageToolchainVersion>4.60</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
