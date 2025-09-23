@@ -1,0 +1,128 @@
+configVersion: 1.0.0
+componentName: drv_sdmmc_0
+coreVersion: 5.8.2
+device: ATSAME54P20A
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: drv_sdmmc_0
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: CMSIS_5
+  type: package
+  version: 5.9.0
+- dependencyPackage: ''
+  name: bsp
+  type: package
+  version: v3.23.0
+- dependencyPackage: ''
+  name: core
+  type: package
+  version: v3.15.5
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.23.0
+- dependencyPackage: ''
+  name: filex
+  type: package
+  version: v6.4.0_rel
+- dependencyPackage: ''
+  name: littlefs
+  type: package
+  version: v2.9.3
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments:
+    children:
+    - children:
+      - attributes:
+          id: drv_sdmmc_SDHC_dependency
+        children:
+        - children:
+          - attributes:
+              id: targetComponentID
+            children:
+            - type: Value
+              value: sdhc1
+            type: String
+          - attributes:
+              id: targetAttachmentID
+            children:
+            - type: Value
+              value: SDHC1_SDHC
+            type: String
+          type: Attributes
+        type: DirectDependency
+      type: Attachments
+    type: drv_sdmmc_0
+  elementPosition: {}
+  symbols:
+    DRV_SDMMC_CARD_DETECTION_METHOD:
+      attributes:
+        id: DRV_SDMMC_CARD_DETECTION_METHOD
+      children:
+      - children:
+        - attributes:
+            id: drv_sdmmc_0
+            value: Use SDCD Pin
+          type: Dynamic
+        type: Values
+      type: String
+    DRV_SDMMC_FS_ENABLE:
+      attributes:
+        id: DRV_SDMMC_FS_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: drv_sdmmc_0
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    DRV_SDMMC_PLIB:
+      attributes:
+        id: DRV_SDMMC_PLIB
+      children:
+      - children:
+        - attributes:
+            id: drv_sdmmc_0
+            value: SDHC1
+          type: Dynamic
+        type: Values
+      type: String
+    DRV_SDMMC_PLIB_SDCD_ENABLE:
+      attributes:
+        id: DRV_SDMMC_PLIB_SDCD_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: drv_sdmmc_0
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    DRV_SDMMC_PLIB_SDWP_ENABLE:
+      attributes:
+        id: DRV_SDMMC_PLIB_SDWP_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: drv_sdmmc_0
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    DRV_SDMMC_TRANSFER_BUS_WIDTH:
+      attributes:
+        id: DRV_SDMMC_TRANSFER_BUS_WIDTH
+      children:
+      - children:
+        - attributes:
+            id: drv_sdmmc_0
+            value: 4-bit
+          type: Dynamic
+        type: Values
+      type: Combo
+  userData: {}

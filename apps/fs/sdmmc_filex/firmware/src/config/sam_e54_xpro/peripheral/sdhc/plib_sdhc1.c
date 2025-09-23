@@ -58,7 +58,7 @@
 
 static CACHE_ALIGN SDHC_ADMA_DESCR sdhc1DmaDescrTable[(SDHC1_DMA_DESC_TABLE_SIZE_CACHE_ALIGN/8U)];
 
-volatile static SDHC_OBJECT sdhc1Obj;
+static volatile SDHC_OBJECT sdhc1Obj;
 
 static void SDHC1_VariablesInit ( void )
 {

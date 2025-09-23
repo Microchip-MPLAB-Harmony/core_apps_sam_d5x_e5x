@@ -7,7 +7,7 @@ These license terms are an agreement between you and Microsoft Corporation (or
 one of its affiliates). They apply to the software named above and any Microsoft
 services or software updates (except to the extent such services or updates are
 accompanied by new or additional terms, in which case those different terms
-apply prospectively and do not alter your or Microsoftâ??s rights relating to
+apply prospectively and do not alter your or Microsoft?s rights relating to
 pre-updated software or services). IF YOU COMPLY WITH THESE LICENSE TERMS, YOU
 HAVE THE RIGHTS BELOW.  BY USING THE SOFTWARE, YOU ACCEPT THESE TERMS. 
 
@@ -40,13 +40,13 @@ gathering, you waive as against Microsoft, its subsidiaries, and its affiliated
 companies (including prospectively) any competitive use, access, and
 benchmarking test restrictions in the terms governing your software to the
 extent your terms of use are, or purport to be, more restrictive than
-Microsoftâ??s terms. If you do not waive any such purported restrictions in the
+Microsoft?s terms. If you do not waive any such purported restrictions in the
 terms governing your software, you are not allowed to access or use this
 software, and will not do so. 
 
 2. DISTRIBUTION AND PRODUCTION USE. If you have obtained and/or are developing on
-microprocessor(s) and/or microcontroller(s) (â??hardwareâ??) listed in the file
-named â??LICENSED-HARDWARE.txtâ?? included in the repository and/or distributed with
+microprocessor(s) and/or microcontroller(s) (?hardware?) listed in the file
+named ?LICENSED-HARDWARE.txt? included in the repository and/or distributed with
 the software you have the following rights in and to the software solely when
 used in combination with the hardware. In the event hardware is not listed in
 the LICENSED-HARDWARE.txt file, you do not have the rights in this Section 2. 
@@ -71,7 +71,7 @@ i. when distributed in binary form, except as embedded in a device, include with
 such distribution the terms of this agreement;  
 ii. when distributed in source code form to distributors or developers of your
 devices, include with such distribution the terms of this agreement; and 
-iii. indemnify, defend and hold harmless Microsoft from any claims, including claims arising from any High Risk Uses, and inclusive of attorneysâ?? fees, related to the distribution or use of your devices that include the software, except to the extent that any intellectual property claim is based solely on the unmodified software.
+iii. indemnify, defend and hold harmless Microsoft from any claims, including claims arising from any High Risk Uses, and inclusive of attorneys? fees, related to the distribution or use of your devices that include the software, except to the extent that any intellectual property claim is based solely on the unmodified software.
 
 c) Restrictions. You may not: 
 i. use or modify the software to create competing real time operating system
@@ -79,14 +79,14 @@ software;
 
 ii. remove any copyright notices or licenses contained in the software; 
 
-iii. use Microsoftâ??s trademarks or trade dress in your application in any way that
+iii. use Microsoft?s trademarks or trade dress in your application in any way that
 suggests your device or application comes from or is endorsed by Microsoft;  
 
 iv. transfer individual components, specific libraries, classes, functions or code
 fragments of the software separately for purposes unrelated to the software; or 
 
 v. use or distribute the software in any way that would subject the software or
-Microsoftâ??s intellectual property or technology to any other license terms. 
+Microsoft?s intellectual property or technology to any other license terms. 
 
 3. SCOPE OF LICENSE. The software is licensed, not sold. Microsoft reserves all
 other rights. Unless applicable law gives you more rights despite this
@@ -113,8 +113,8 @@ destinations, end users, and end use. For further information on export
 restrictions, visit https://aka.ms/exporting. 
 
 6. SUPPORT SERVICES. Microsoft is not obligated under this agreement to provide any
-support services for the software. Any support provided is â??as isâ??, â??with all
-faultsâ??, and without warranty of any kind. 
+support services for the software. Any support provided is ?as is?, ?with all
+faults?, and without warranty of any kind. 
 
 7. UPDATES. Microsoft may periodically update the software. You may obtain updates
 only from Microsoft or Microsoft-authorized sources. Updates may not include or
@@ -174,12 +174,12 @@ with which a party may constantly trust in (so-called "cardinal obligations").
 In other cases of slight negligence, Microsoft will not be liable for slight
 negligence. 
 12. DISCLAIMER OF WARRANTY. 
-a) THE SOFTWARE IS LICENSED â??AS IS.â?? YOU BEAR THE RISK OF
+a) THE SOFTWARE IS LICENSED ?AS IS.? YOU BEAR THE RISK OF
 USING IT. MICROSOFT GIVES NO EXPRESS WARRANTIES, GUARANTEES, OR CONDITIONS. TO
 THE EXTENT PERMITTED UNDER APPLICABLE LAWS, MICROSOFT EXCLUDES ALL IMPLIED
 WARRANTIES, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND
 NON-INFRINGEMENT. 
-b) HIGH RISK USE DISCLAIMER. WARNING: THE SOFTWARE IS NOT DESIGNED OR INTENDED FOR USE  WHERE FAILURE OR FAULT OF ANY KIND OF THE SOFTWARE COULD  RESULT IN DEATH OR SERIOUS BODILY INJURY, OR IN  PHYSICAL OR ENVIRONMENTAL DAMAGE (â??collectively High Risk Useâ??). Accordingly, You must design and implement your hardware and software such that, in the event of any interruption, defect, error, or other failure of the software, the safety of people, property, and the environment are not reduced below a level that is reasonable, appropriate, and legal, whether in general or for a specific industry. Your High Risk Use of the software is at Your own risk. 
+b) HIGH RISK USE DISCLAIMER. WARNING: THE SOFTWARE IS NOT DESIGNED OR INTENDED FOR USE  WHERE FAILURE OR FAULT OF ANY KIND OF THE SOFTWARE COULD  RESULT IN DEATH OR SERIOUS BODILY INJURY, OR IN  PHYSICAL OR ENVIRONMENTAL DAMAGE (?collectively High Risk Use?). Accordingly, You must design and implement your hardware and software such that, in the event of any interruption, defect, error, or other failure of the software, the safety of people, property, and the environment are not reduced below a level that is reasonable, appropriate, and legal, whether in general or for a specific industry. Your High Risk Use of the software is at Your own risk. 
 
 13. LIMITATION ON AND EXCLUSION OF DAMAGES. IF YOU HAVE ANY BASIS FOR RECOVERING
 DAMAGES DESPITE THE PRECEDING DISCLAIMER OF WARRANTY, YOU CAN RECOVER FROM
@@ -201,49 +201,49 @@ limitation of incidental, consequential, or other damages.
  Please note: As this software is distributed in Canada, some of the clauses in
 this agreement are provided below in French. 
 
-Remarque: Ce logiciel Ã©tant distribuÃ© au Canada, certaines des clauses dans ce
-contrat sont fournies ci-dessous en franÃ§ais. 
+Remarque: Ce logiciel étant distribué au Canada, certaines des clauses dans ce
+contrat sont fournies ci-dessous en français. 
 
-EXONÃ?RATION DE GARANTIE. 
-a)	Le logiciel visÃ© par une licence est offert Â« tel quel
-Â». Toute utilisation de ce logiciel est Ã  votre seule risque et pÃ©ril. Microsoft
-nâ??accorde aucune autre garantie expresse. Vous pouvez bÃ©nÃ©ficier de droits
+EXONÉRATION DE GARANTIE. 
+a)	Le logiciel visé par une licence est offert « tel quel
+». Toute utilisation de ce logiciel est à votre seule risque et péril. Microsoft
+n?accorde aucune autre garantie expresse. Vous pouvez bénéficier de droits
 additionnels en vertu du droit local sur la protection des consommateurs, que ce
 contrat ne peut modifier. La ou elles sont permises par le droit locale, les
-garanties implicites de qualitÃ© marchande, dâ??adÃ©quation Ã  un usage particulier
-et dâ??absence de contrefaÃ§on sont exclues. 
-b)	CLAUSE Dâ??EXCLUSION DE RESPONSABILITÃ? RELATIVE Ã? Lâ??UTILISATION Ã? HAUT RISQUE. 
-AVERTISSEMENT: LE LOGICIEL Nâ??EST PAS CONÃ?U OU DESTINÃ? Ã? Ã?TRE UTILISÃ? LORSQUâ??UNE 
-DÃ?FAILLANCE OU UN DÃ?FAUT DE QUELQUE NATURE QUE CE SOIT POURRAIT ENTRAÃ?NER LA 
+garanties implicites de qualité marchande, d?adéquation à un usage particulier
+et d?absence de contrefaçon sont exclues. 
+b)	CLAUSE D?EXCLUSION DE RESPONSABILITÉ RELATIVE À L?UTILISATION À HAUT RISQUE. 
+AVERTISSEMENT: LE LOGICIEL N?EST PAS CONÇU OU DESTINÉ À ÊTRE UTILISÉ LORSQU?UNE 
+DÉFAILLANCE OU UN DÉFAUT DE QUELQUE NATURE QUE CE SOIT POURRAIT ENTRAÎNER LA 
 MORT OU DES BLESSURES CORPORELLES GRAVES, OU DES DOMMAGES PHYSIQUES OU 
-ENVIRONNEMENTAUX (Â« Utilisation Ã  haut risque Â»). Par consÃ©quent, vous devez concevoir et mettre en 
-Å?uvre votre Ã©quipement et votre logiciel de maniÃ¨re Ã  ce que, en cas dâ??interruption, de dÃ©faut, dâ??erreur 
-ou de toute autre dÃ©faillance du logiciel, la sÃ©curitÃ© des personnes, des biens et de lâ??environnement ne 
-soit pas rÃ©duite en dessous dâ??un niveau raisonnable, appropriÃ© et lÃ©gal, que ce soit en gÃ©nÃ©ral ou pour 
-un secteur spÃ©cifique. Votre utilisation Ã  haut risque du logiciel est Ã  vos propres risques.
+ENVIRONNEMENTAUX (« Utilisation à haut risque »). Par conséquent, vous devez concevoir et mettre en 
+?uvre votre équipement et votre logiciel de manière à ce que, en cas d?interruption, de défaut, d?erreur 
+ou de toute autre défaillance du logiciel, la sécurité des personnes, des biens et de l?environnement ne 
+soit pas réduite en dessous d?un niveau raisonnable, approprié et légal, que ce soit en général ou pour 
+un secteur spécifique. Votre utilisation à haut risque du logiciel est à vos propres risques.
 
-LIMITATION DES DOMMAGES-INTÃ?RÃ?TS ET EXCLUSION DE RESPONSABILITÃ? POUR LES
+LIMITATION DES DOMMAGES-INTÉRÊTS ET EXCLUSION DE RESPONSABILITÉ POUR LES
 DOMMAGES. Vous pouvez obtenir de Microsoft et de ses fournisseurs une
-indemnisation en cas de dommages directs uniquement Ã  hauteur de 5,00 $ US. Vous
-ne pouvez prÃ©tendre Ã  aucune indemnisation pour les autres dommages, y compris
-les dommages spÃ©ciaux, indirects ou accessoires et pertes de bÃ©nÃ©fices. 
+indemnisation en cas de dommages directs uniquement à hauteur de 5,00 $ US. Vous
+ne pouvez prétendre à aucune indemnisation pour les autres dommages, y compris
+les dommages spéciaux, indirects ou accessoires et pertes de bénéfices. 
 
 Cette limitation concerne: 
 
-â?¢tout ce qui est reliÃ© au logiciel, aux services ou au contenu (y compris le
+?tout ce qui est relié au logiciel, aux services ou au contenu (y compris le
 code) figurant sur des sites Internet tiers ou dans des programmes tiers; et 
 
-â?¢les rÃ©clamations au titre de violation de contrat ou de garantie, ou au titre
-de responsabilitÃ© stricte, de nÃ©gligence ou dâ??une autre faute dans la limite
-autorisÃ©e par la loi en vigueur. 
+?les réclamations au titre de violation de contrat ou de garantie, ou au titre
+de responsabilité stricte, de négligence ou d?une autre faute dans la limite
+autorisée par la loi en vigueur. 
 
-Elle sâ??applique Ã©galement, mÃªme si Microsoft connaissait ou devrait connaÃ®tre
-lâ??Ã©ventualitÃ© dâ??un tel dommage. Si votre pays nâ??autorise pas lâ??exclusion ou la
-limitation de responsabilitÃ© pour les dommages indirects, accessoires ou de
-quelque nature que ce soit, il se peut que la limitation ou lâ??exclusion
-ci-dessus ne sâ??appliquera pas Ã  votre Ã©gard. 
+Elle s?applique également, même si Microsoft connaissait ou devrait connaître
+l?éventualité d?un tel dommage. Si votre pays n?autorise pas l?exclusion ou la
+limitation de responsabilité pour les dommages indirects, accessoires ou de
+quelque nature que ce soit, il se peut que la limitation ou l?exclusion
+ci-dessus ne s?appliquera pas à votre égard. 
 
-EFFET JURIDIQUE. Le prÃ©sent contrat dÃ©crit certains droits juridiques. Vous
-pourriez avoir dâ??autres droits prÃ©vus par les lois de votre pays. Le prÃ©sent
-contrat ne modifie pas les droits que vous confÃ¨rent les lois de votre pays si
+EFFET JURIDIQUE. Le présent contrat décrit certains droits juridiques. Vous
+pourriez avoir d?autres droits prévus par les lois de votre pays. Le présent
+contrat ne modifie pas les droits que vous confèrent les lois de votre pays si
 celles-ci ne le permettent pas.
