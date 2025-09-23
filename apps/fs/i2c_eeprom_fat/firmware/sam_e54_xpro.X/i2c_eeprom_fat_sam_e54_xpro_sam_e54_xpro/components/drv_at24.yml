@@ -1,0 +1,154 @@
+configVersion: 1.0.0
+componentName: drv_at24
+coreVersion: 5.8.2
+device: ATSAME54P20A
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: drv_at24
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: CMSIS_5
+  type: package
+  version: 5.9.0
+- dependencyPackage: ''
+  name: bsp
+  type: package
+  version: v3.23.0
+- dependencyPackage: ''
+  name: core
+  type: package
+  version: v3.15.5
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.23.0
+- dependencyPackage: ''
+  name: filex
+  type: package
+  version: v6.4.0_rel
+- dependencyPackage: ''
+  name: littlefs
+  type: package
+  version: v2.9.3
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments:
+    children:
+    - children:
+      - attributes:
+          id: drv_at24_I2C_dependency
+        children:
+        - children:
+          - attributes:
+              id: targetComponentID
+            children:
+            - type: Value
+              value: sercom7
+            type: String
+          - attributes:
+              id: targetAttachmentID
+            children:
+            - type: Value
+              value: SERCOM7_I2C
+            type: String
+          type: Attributes
+        type: DirectDependency
+      - attributes:
+          id: memory
+        children:
+        - children:
+          - attributes:
+              id: targetComponentID
+            children:
+            - type: Value
+              value: drv_memory_0
+            type: String
+          - attributes:
+              id: targetAttachmentID
+            children:
+            - type: Value
+              value: drv_memory_MEMORY_dependency
+            type: String
+          type: Attributes
+        type: DirectCapability
+      type: Attachments
+    type: drv_at24
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: drv_at24
+          x: '189'
+          y: '201'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    DRV_AT24_PLIB:
+      attributes:
+        id: DRV_AT24_PLIB
+      children:
+      - children:
+        - attributes:
+            id: drv_at24
+            value: SERCOM7
+          type: Dynamic
+        type: Values
+      type: String
+    DRV_MEMORY_CONNECTED:
+      attributes:
+        id: DRV_MEMORY_CONNECTED
+      children:
+      - children:
+        - attributes:
+            id: drv_memory_0
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    EEPROM_ADDR_LEN:
+      attributes:
+        id: EEPROM_ADDR_LEN
+      children:
+      - children:
+        - attributes:
+            id: drv_at24
+            value: '2'
+          type: Dynamic
+        type: Values
+      type: Integer
+    EEPROM_FLASH_SIZE:
+      attributes:
+        id: EEPROM_FLASH_SIZE
+      children:
+      - children:
+        - attributes:
+            value: '262144'
+          type: User
+        type: Values
+      type: Integer
+    EEPROM_PAGE_SIZE:
+      attributes:
+        id: EEPROM_PAGE_SIZE
+      children:
+      - children:
+        - attributes:
+            value: '256'
+          type: User
+        type: Values
+      type: Integer
+    I2C_EEPROM_ADDDRESS:
+      attributes:
+        id: I2C_EEPROM_ADDDRESS
+      children:
+      - children:
+        - attributes:
+            value: '84'
+          type: User
+        type: Values
+      type: Hex
+  userData: {}
