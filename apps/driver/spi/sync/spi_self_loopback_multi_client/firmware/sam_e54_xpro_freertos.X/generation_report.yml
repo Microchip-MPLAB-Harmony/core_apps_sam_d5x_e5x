@@ -1,0 +1,868 @@
+generatedFiles:
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/peripheral/nvmctrl/plib_nvmctrl.h
+  projectFolder: config/sam_e54_xpro_freertos/peripheral/nvmctrl
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/peripheral/nvmctrl/plib_nvmctrl.c
+  projectFolder: config/sam_e54_xpro_freertos/peripheral/nvmctrl
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/bsp/bsp.c
+  projectFolder: config/sam_e54_xpro_freertos/bsp
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/bsp/bsp.h
+  projectFolder: config/sam_e54_xpro_freertos/bsp
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/peripheral/evsys/plib_evsys.h
+  projectFolder: config/sam_e54_xpro_freertos/peripheral/evsys
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/peripheral/evsys/plib_evsys.c
+  projectFolder: config/sam_e54_xpro_freertos/peripheral/evsys
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/peripheral/sercom/spi_master/plib_sercom6_spi_master.h
+  projectFolder: config/sam_e54_xpro_freertos/peripheral/sercom/spi_master
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/peripheral/sercom/spi_master/plib_sercom_spi_master_common.h
+  projectFolder: config/sam_e54_xpro_freertos/peripheral/sercom/spi_master
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/peripheral/sercom/spi_master/plib_sercom6_spi_master.c
+  projectFolder: config/sam_e54_xpro_freertos/peripheral/sercom/spi_master
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/device_cache.h
+  projectFolder: config/sam_e54_xpro_freertos
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/toolchain_specifics.h
+  projectFolder: config/sam_e54_xpro_freertos
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/main.c
+  projectFolder: ''
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/definitions.h
+  projectFolder: config/sam_e54_xpro_freertos
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/initialization.c
+  projectFolder: config/sam_e54_xpro_freertos
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/interrupts.c
+  projectFolder: config/sam_e54_xpro_freertos
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/interrupts.h
+  projectFolder: config/sam_e54_xpro_freertos
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/device_vectors.h
+  projectFolder: config/sam_e54_xpro_freertos
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/exceptions.c
+  projectFolder: config/sam_e54_xpro_freertos
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/ATSAME54P20A.ld
+  projectFolder: config/sam_e54_xpro_freertos
+  type: Linker Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/stdio/xc32_monitor.c
+  projectFolder: config/sam_e54_xpro_freertos/stdio
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/peripheral/port/plib_port.h
+  projectFolder: config/sam_e54_xpro_freertos/peripheral/port
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/peripheral/port/plib_port.c
+  projectFolder: config/sam_e54_xpro_freertos/peripheral/port
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/pin_configurations.csv
+  projectFolder: ''
+  type: Important Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/peripheral/clock/plib_clock.h
+  projectFolder: config/sam_e54_xpro_freertos/peripheral/clock
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/peripheral/clock/plib_clock.c
+  projectFolder: config/sam_e54_xpro_freertos/peripheral/clock
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/peripheral/nvic/plib_nvic.h
+  projectFolder: config/sam_e54_xpro_freertos/peripheral/nvic
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/peripheral/nvic/plib_nvic.c
+  projectFolder: config/sam_e54_xpro_freertos/peripheral/nvic
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/peripheral/cmcc/plib_cmcc.h
+  projectFolder: config/sam_e54_xpro_freertos/peripheral/cmcc
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/peripheral/cmcc/plib_cmcc.c
+  projectFolder: config/sam_e54_xpro_freertos/peripheral/cmcc
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/startup_xc32.c
+  projectFolder: config/sam_e54_xpro_freertos
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/libc_syscalls.c
+  projectFolder: config/sam_e54_xpro_freertos
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/device.h
+  projectFolder: config/sam_e54_xpro_freertos
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/ac.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/adc.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/aes.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/can.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/ccl.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/cmcc.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/dac.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/dmac.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/dsu.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/eic.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/evsys.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/freqm.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/fuses.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/gclk.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/gmac.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/hmatrixb.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/i2s.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/icm.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/mclk.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/nvmctrl.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/osc32kctrl.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/oscctrl.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/pac.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/pcc.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/pdec.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/pm.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/port.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/pukcc.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/qspi.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/ramecc.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/rstc.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/rtc.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/sdhc.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/sercom.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/supc.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/tc.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/tcc.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/trng.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/usb.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/component/wdt.h
+  projectFolder: packs/ATSAME54P20A_DFP/component
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/ac.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/adc0.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/adc1.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/aes.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/can0.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/can1.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/ccl.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/cmcc.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/dac.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/dmac.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/dsu.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/eic.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/evsys.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/freqm.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/fuses.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/gclk.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/gmac.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/hmatrix.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/i2s.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/icm.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/mclk.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/nvmctrl.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/osc32kctrl.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/oscctrl.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/pac.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/pcc.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/pdec.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/pm.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/port.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/qspi.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/ramecc.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/rstc.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/rtc.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/sdhc0.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/sdhc1.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/sercom0.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/sercom1.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/sercom2.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/sercom3.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/sercom4.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/sercom5.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/sercom6.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/sercom7.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/supc.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/tc0.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/tc1.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/tc2.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/tc3.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/tc4.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/tc5.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/tc6.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/tc7.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/tcc0.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/tcc1.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/tcc2.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/tcc3.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/tcc4.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/trng.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/usb.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/instance/wdt.h
+  projectFolder: packs/ATSAME54P20A_DFP/instance
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/same54p20a.h
+  projectFolder: packs/ATSAME54P20A_DFP
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/ATSAME54P20A_DFP/pio/same54p20a.h
+  projectFolder: packs/ATSAME54P20A_DFP/pio
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_version.h
+  projectFolder: packs/CMSIS/CMSIS/Core/Include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_compiler.h
+  projectFolder: packs/CMSIS/CMSIS/Core/Include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_iccarm.h
+  projectFolder: packs/CMSIS/CMSIS/Core/Include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_gcc.h
+  projectFolder: packs/CMSIS/CMSIS/Core/Include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_armcc.h
+  projectFolder: packs/CMSIS/CMSIS/Core/Include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang.h
+  projectFolder: packs/CMSIS/CMSIS/Core/Include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang_ltm.h
+  projectFolder: packs/CMSIS/CMSIS/Core/Include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/CMSIS/CMSIS/Core/Include/core_cm4.h
+  projectFolder: packs/CMSIS/CMSIS/Core/Include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/CMSIS/CMSIS/Core/Include/mpu_armv7.h
+  projectFolder: packs/CMSIS/CMSIS/Core/Include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/packs/CMSIS/CMSIS/Core/Include/cachel1_armv7.h
+  projectFolder: packs/CMSIS/CMSIS/Core/Include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/FreeRTOSConfig.h
+  projectFolder: config/sam_e54_xpro_freertos
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/freertos_hooks.c
+  projectFolder: config/sam_e54_xpro_freertos
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/third_party/rtos/FreeRTOS/Source/croutine.c
+  projectFolder: FreeRTOS/Source
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/third_party/rtos/FreeRTOS/Source/list.c
+  projectFolder: FreeRTOS/Source
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/third_party/rtos/FreeRTOS/Source/queue.c
+  projectFolder: FreeRTOS/Source
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/third_party/rtos/FreeRTOS/Source/FreeRTOS_tasks.c
+  projectFolder: FreeRTOS/Source
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/third_party/rtos/FreeRTOS/Source/timers.c
+  projectFolder: FreeRTOS/Source
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/third_party/rtos/FreeRTOS/Source/event_groups.c
+  projectFolder: FreeRTOS/Source
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/third_party/rtos/FreeRTOS/Source/stream_buffer.c
+  projectFolder: FreeRTOS/Source
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/third_party/rtos/FreeRTOS/Source/portable/MemMang/heap_1.c
+  projectFolder: FreeRTOS/Source/portable/MemMang
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/third_party/rtos/FreeRTOS/Source/include/croutine.h
+  projectFolder: FreeRTOS/Source/include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/third_party/rtos/FreeRTOS/Source/include/event_groups.h
+  projectFolder: FreeRTOS/Source/include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/third_party/rtos/FreeRTOS/Source/include/FreeRTOS.h
+  projectFolder: FreeRTOS/Source/include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/third_party/rtos/FreeRTOS/Source/include/list.h
+  projectFolder: FreeRTOS/Source/include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/third_party/rtos/FreeRTOS/Source/include/mpu_wrappers.h
+  projectFolder: FreeRTOS/Source/include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/third_party/rtos/FreeRTOS/Source/include/portable.h
+  projectFolder: FreeRTOS/Source/include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/third_party/rtos/FreeRTOS/Source/include/projdefs.h
+  projectFolder: FreeRTOS/Source/include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/third_party/rtos/FreeRTOS/Source/include/queue.h
+  projectFolder: FreeRTOS/Source/include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/third_party/rtos/FreeRTOS/Source/include/semphr.h
+  projectFolder: FreeRTOS/Source/include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/third_party/rtos/FreeRTOS/Source/include/stack_macros.h
+  projectFolder: FreeRTOS/Source/include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/third_party/rtos/FreeRTOS/Source/include/deprecated_definitions.h
+  projectFolder: FreeRTOS/Source/include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/third_party/rtos/FreeRTOS/Source/include/task.h
+  projectFolder: FreeRTOS/Source/include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/third_party/rtos/FreeRTOS/Source/include/timers.h
+  projectFolder: FreeRTOS/Source/include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/third_party/rtos/FreeRTOS/Source/include/mpu_prototypes.h
+  projectFolder: FreeRTOS/Source/include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/third_party/rtos/FreeRTOS/Source/include/mpu_syscall_numbers.h
+  projectFolder: FreeRTOS/Source/include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/third_party/rtos/FreeRTOS/Source/include/stream_buffer.h
+  projectFolder: FreeRTOS/Source/include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/third_party/rtos/FreeRTOS/Source/include/message_buffer.h
+  projectFolder: FreeRTOS/Source/include
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/third_party/rtos/FreeRTOS/Source/portable/GCC/SAM/ARM_CM4F/port.c
+  projectFolder: FreeRTOS/Source/portable/GCC/SAM/ARM_CM4F
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/third_party/rtos/FreeRTOS/Source/portable/GCC/SAM/ARM_CM4F/portmacro.h
+  projectFolder: FreeRTOS/Source/portable/GCC/SAM/ARM_CM4F
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/driver/spi/src/drv_spi.c
+  projectFolder: config/sam_e54_xpro_freertos/driver/spi
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/driver/spi/src/drv_spi_local.h
+  projectFolder: config/sam_e54_xpro_freertos/driver/spi
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/driver/spi/drv_spi.h
+  projectFolder: config/sam_e54_xpro_freertos/driver/spi
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/driver/spi/drv_spi_definitions.h
+  projectFolder: config/sam_e54_xpro_freertos/driver/spi
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/driver/driver.h
+  projectFolder: config/sam_e54_xpro_freertos/driver
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/driver/driver_common.h
+  projectFolder: config/sam_e54_xpro_freertos/driver
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/system/system.h
+  projectFolder: config/sam_e54_xpro_freertos/system
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/system/system_common.h
+  projectFolder: config/sam_e54_xpro_freertos/system
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/system/system_module.h
+  projectFolder: config/sam_e54_xpro_freertos/system
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/system/int/sys_int.h
+  projectFolder: config/sam_e54_xpro_freertos/system/int
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/system/int/sys_int_mapping.h
+  projectFolder: config/sam_e54_xpro_freertos/system/int
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/system/int/src/sys_int.c
+  projectFolder: config/sam_e54_xpro_freertos/system/int
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/system/ports/sys_ports.h
+  projectFolder: config/sam_e54_xpro_freertos/system/ports
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/system/ports/sys_ports_mapping.h
+  projectFolder: config/sam_e54_xpro_freertos/system/ports
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/system/cache/sys_cache.h
+  projectFolder: config/sam_e54_xpro_freertos/system/cache
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/system/cache/sys_cache.c
+  projectFolder: config/sam_e54_xpro_freertos/system/cache
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/system/dma/sys_dma.h
+  projectFolder: config/sam_e54_xpro_freertos/system/dma
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/system/dma/sys_dma.c
+  projectFolder: config/sam_e54_xpro_freertos/system/dma
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/system/dma/sys_dma_mapping.h
+  projectFolder: config/sam_e54_xpro_freertos/system/dma
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/osal/osal.h
+  projectFolder: config/sam_e54_xpro_freertos/osal
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/osal/osal_definitions.h
+  projectFolder: config/sam_e54_xpro_freertos/osal
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/osal/osal_freertos.h
+  projectFolder: config/sam_e54_xpro_freertos/osal
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/osal/osal_freertos.c
+  projectFolder: config/sam_e54_xpro_freertos/osal
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/app_monitor.c
+  projectFolder: ''
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/app_monitor.h
+  projectFolder: ''
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/app_client1.c
+  projectFolder: ''
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/app_client1.h
+  projectFolder: ''
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/app_client2.c
+  projectFolder: ''
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/app_client2.h
+  projectFolder: ''
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/user.h
+  projectFolder: config/sam_e54_xpro_freertos
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/configuration.h
+  projectFolder: config/sam_e54_xpro_freertos
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/sys_tasks.h
+  projectFolder: config/sam_e54_xpro_freertos
+  type: Header Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/tasks.c
+  projectFolder: config/sam_e54_xpro_freertos
+  type: Source Files
+- excludeFromProject: false
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/driver/spi/sync/spi_self_loopback_multi_client/firmware/src/config/sam_e54_xpro_freertos/system/debug/sys_debug.h
+  projectFolder: config/sam_e54_xpro_freertos/system/debug
+  type: Header Files
+generatedSettings:
+- category: C32-LD
+  key: preprocessor-macros
+  value: ''
+- category: C32-LD
+  key: heap-size
+  value: '512'
+- category: C32
+  key: extra-include-directories
+  value: ../src;../src/config/sam_e54_xpro_freertos;../src/packs/ATSAME54P20A_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/
+- category: C32CPP
+  key: extra-include-directories
+  value: ../src;../src/config/sam_e54_xpro_freertos;../src/packs/ATSAME54P20A_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/
+- category: C32-LD
+  key: no-device-startup-code
+  value: 'true'
+- category: C32-LD
+  key: preprocessor-macros
+  value: ''
+- category: C32Global
+  key: mitcm
+  value: ''
+- category: C32Global
+  key: mdtcm
+  value: ''
+- category: C32Global
+  key: mstacktcm
+  value: 'false'
+- category: C32
+  key: extra-include-directories
+  value: ../src/third_party/rtos/FreeRTOS/Source/include;
+- category: C32
+  key: extra-include-directories
+  value: ../src/third_party/rtos/FreeRTOS/Source/portable/GCC/SAM/ARM_CM4F;
+- category: C32CPP
+  key: extra-include-directories
+  value: ../src/third_party/rtos/FreeRTOS/Source/include;../src/third_party/rtos/FreeRTOS/Source/portable/GCC/SAM/ARM_CM4F;
+removedFiles: [
+  ]
