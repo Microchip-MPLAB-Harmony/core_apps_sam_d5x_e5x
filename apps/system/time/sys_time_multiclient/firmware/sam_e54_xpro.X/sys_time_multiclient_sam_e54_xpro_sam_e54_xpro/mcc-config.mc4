@@ -30,7 +30,7 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\sam_e54_xpro\configuration.h
   hash: cf0c014b37d57a79e4aacfa61f93d0548a8618ad155f92df970e07c5b16eab47
 - file: ..\src\config\sam_e54_xpro\definitions.h
-  hash: ccdd2f758daf8d1476b184455d109bb2301d8ec1deeca1dd82538cc9483fad08
+  hash: 78fb8e6fa5edc54818d4c2791bac9a8ee029b37645d1ac90d7eb4f940e03091a
 - file: ..\src\config\sam_e54_xpro\device.h
   hash: b8fdcc4ed83daa65a6f38614a689c97d414774be19ae106e6da07556c50a2c82
 - file: ..\src\config\sam_e54_xpro\device_cache.h

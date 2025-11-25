@@ -32,7 +32,7 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\sam_e54_xpro_freertos\configuration.h
   hash: b0c3c1832498263562b4dcb753ddc26a0871fcfb66d608bc4677b8154be5a0cb
 - file: ..\src\config\sam_e54_xpro_freertos\definitions.h
-  hash: 1f5a531d6b41605ac1c00fb360f91152469fe07807d13abdef26deae87c01839
+  hash: a41f3f86cd7b426bc1ad14884f151d9a7ea5bc3ef0731780863919359884bbf5
 - file: ..\src\config\sam_e54_xpro_freertos\device.h
   hash: b8fdcc4ed83daa65a6f38614a689c97d414774be19ae106e6da07556c50a2c82
 - file: ..\src\config\sam_e54_xpro_freertos\device_cache.h

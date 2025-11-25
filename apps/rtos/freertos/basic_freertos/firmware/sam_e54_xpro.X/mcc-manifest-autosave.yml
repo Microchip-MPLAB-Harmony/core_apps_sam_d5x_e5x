@@ -2,8 +2,8 @@
 
 manifest_file_version: 1.0.0
 project: basic_freertos_sam_e54_xpro
-creation_date: 2025-09-23T09:25:02.759+00:00[UTC]
-operating_system: Windows 10
+creation_date: 2025-11-25T11:02:03.529+00:00[UTC]
+operating_system: Windows 11
 mcc_mode: IDE
 mcc_mode_version: v6.25
 device_name: ATSAME54P20A

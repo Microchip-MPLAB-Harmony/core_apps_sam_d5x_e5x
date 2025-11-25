@@ -47,11 +47,11 @@ data:
         - children:
           - attributes:
               targetAttachmentID: drv_media
-              targetComponentID: drv_memory_0
+              targetComponentID: drv_sdspi_0
             type: TargetAttachment
           - attributes:
               targetAttachmentID: drv_media
-              targetComponentID: drv_sdspi_0
+              targetComponentID: drv_memory_0
             type: TargetAttachment
           type: TargetAttachments
         type: MultiCapability

@@ -31,7 +31,7 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\sam_e54_xpro\configuration.h
   hash: 85479a8cfe90abc69a2e16220be512b8412eaa28abdafffd0ed2444297973944
 - file: ..\src\config\sam_e54_xpro\definitions.h
-  hash: a9649e91af9f4d24955b25c5a4df8c2e00a993f9758669fcd1d187ba6c2c068f
+  hash: 0b48a294608c98efb5d60d0f236fb954485b4783904744f80b7b639dec557786
 - file: ..\src\config\sam_e54_xpro\device.h
   hash: b8fdcc4ed83daa65a6f38614a689c97d414774be19ae106e6da07556c50a2c82
 - file: ..\src\config\sam_e54_xpro\device_cache.h

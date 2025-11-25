@@ -2,8 +2,8 @@
 
 manifest_file_version: 1.0.0
 project: sdmmc_fat_throughput_sam_e54_xpro
-creation_date: 2025-09-23T09:26:27.863+00:00[UTC]
-operating_system: Windows 10
+creation_date: 2025-11-25T11:05:14.985+00:00[UTC]
+operating_system: Windows 11
 mcc_mode: IDE
 mcc_mode_version: v6.25
 device_name: ATSAME54P20A

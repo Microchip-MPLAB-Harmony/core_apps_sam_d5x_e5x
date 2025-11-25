@@ -17,6 +17,7 @@
               <itemPath>../src/config/sam_e54_xpro_freertos/driver/sdspi/src/drv_sdspi_local.h</itemPath>
               <itemPath>../src/config/sam_e54_xpro_freertos/driver/sdspi/src/drv_sdspi_plib_interface.h</itemPath>
               <itemPath>../src/config/sam_e54_xpro_freertos/driver/sdspi/drv_sdspi.h</itemPath>
+              <itemPath>../src/config/sam_e54_xpro_freertos/driver/sdspi/src/drv_sdspi_file_system.h</itemPath>
             </logicalFolder>
             <itemPath>../src/config/sam_e54_xpro_freertos/driver/driver.h</itemPath>
             <itemPath>../src/config/sam_e54_xpro_freertos/driver/driver_common.h</itemPath>
@@ -305,7 +306,6 @@
         <itemPath>sdspi_fat_sam_e54_xpro_freertos_sam_e54_xpro_freertos/mcc-config.mc4</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
-      <itemPath>../src/config/sam_e54_xpro_freertos/harmony-manifest-success.yml</itemPath>
       <itemPath>../src/config/sam_e54_xpro_freertos/pin_configurations.csv</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
@@ -455,7 +455,7 @@
       </toolsSet>
       <packs>
         <pack name="SAME54_DFP" vendor="Microchip" version="3.9.244"/>
-        <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
+        <pack name="CMSIS" vendor="ARM" version="5.9.0"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>

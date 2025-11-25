@@ -223,27 +223,28 @@
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
                    projectFiles="true">
-      <logicalFolder name="sam_e54_xpro_default"
-                     displayName="sam_e54_xpro_default"
+      <logicalFolder name="async_sdio_read_write_sam_e54_xpro_default"
+                     displayName="async_sdio_read_write_sam_e54_xpro_default"
                      projectFiles="true">
         <logicalFolder name="components" displayName="components" projectFiles="true">
-          <itemPath>sam_e54_xpro_default/components/HarmonyCore.yml</itemPath>
-          <itemPath>sam_e54_xpro_default/components/cmsis.yml</itemPath>
-          <itemPath>sam_e54_xpro_default/components/core.yml</itemPath>
-          <itemPath>sam_e54_xpro_default/components/dfp.yml</itemPath>
-          <itemPath>sam_e54_xpro_default/components/drv_sdmmc.yml</itemPath>
-          <itemPath>sam_e54_xpro_default/components/drv_sdmmc_0.yml</itemPath>
-          <itemPath>sam_e54_xpro_default/components/evsys.yml</itemPath>
-          <itemPath>sam_e54_xpro_default/components/nvmctrl.yml</itemPath>
-          <itemPath>sam_e54_xpro_default/components/sdhc1.yml</itemPath>
-          <itemPath>sam_e54_xpro_default/components/sercom2.yml</itemPath>
-          <itemPath>sam_e54_xpro_default/components/stdio.yml</itemPath>
-          <itemPath>sam_e54_xpro_default/components/sys_time.yml</itemPath>
-          <itemPath>sam_e54_xpro_default/components/tc0.yml</itemPath>
+          <itemPath>async_sdio_read_write_sam_e54_xpro_default/components/HarmonyCore.yml</itemPath>
+          <itemPath>async_sdio_read_write_sam_e54_xpro_default/components/cmsis.yml</itemPath>
+          <itemPath>async_sdio_read_write_sam_e54_xpro_default/components/core.yml</itemPath>
+          <itemPath>async_sdio_read_write_sam_e54_xpro_default/components/dfp.yml</itemPath>
+          <itemPath>async_sdio_read_write_sam_e54_xpro_default/components/drv_sdmmc.yml</itemPath>
+          <itemPath>async_sdio_read_write_sam_e54_xpro_default/components/drv_sdmmc_0.yml</itemPath>
+          <itemPath>async_sdio_read_write_sam_e54_xpro_default/components/evsys.yml</itemPath>
+          <itemPath>async_sdio_read_write_sam_e54_xpro_default/components/nvmctrl.yml</itemPath>
+          <itemPath>async_sdio_read_write_sam_e54_xpro_default/components/sdhc1.yml</itemPath>
+          <itemPath>async_sdio_read_write_sam_e54_xpro_default/components/sercom2.yml</itemPath>
+          <itemPath>async_sdio_read_write_sam_e54_xpro_default/components/stdio.yml</itemPath>
+          <itemPath>async_sdio_read_write_sam_e54_xpro_default/components/sys_time.yml</itemPath>
+          <itemPath>async_sdio_read_write_sam_e54_xpro_default/components/tc0.yml</itemPath>
         </logicalFolder>
-        <itemPath>sam_e54_xpro_default/mcc-config.mc4</itemPath>
+        <itemPath>async_sdio_read_write_sam_e54_xpro_default/mcc-config.mc4</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
+      <itemPath>../src/config/default/pin_configurations.csv</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -318,7 +319,6 @@
         </logicalFolder>
       </logicalFolder>
       <itemPath>../src/main.c</itemPath>
-      <itemPath>../src/config/default/pin_configurations.csv</itemPath>
       <itemPath>../src/app.c</itemPath>
     </logicalFolder>
   </logicalFolder>
@@ -337,7 +337,7 @@
       </toolsSet>
       <packs>
         <pack name="SAME54_DFP" vendor="Microchip" version="3.9.244"/>
-        <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
+        <pack name="CMSIS" vendor="ARM" version="5.9.0"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>

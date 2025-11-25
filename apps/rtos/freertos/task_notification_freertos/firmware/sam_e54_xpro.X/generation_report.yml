@@ -1,730 +1,730 @@
 generatedFiles:
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/peripheral/nvmctrl/plib_nvmctrl.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/peripheral/nvmctrl/plib_nvmctrl.h
   projectFolder: config/sam_e54_xpro/peripheral/nvmctrl
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/peripheral/nvmctrl/plib_nvmctrl.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/peripheral/nvmctrl/plib_nvmctrl.c
   projectFolder: config/sam_e54_xpro/peripheral/nvmctrl
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/bsp/bsp.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/bsp/bsp.c
   projectFolder: config/sam_e54_xpro/bsp
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/bsp/bsp.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/bsp/bsp.h
   projectFolder: config/sam_e54_xpro/bsp
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/peripheral/evsys/plib_evsys.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/peripheral/evsys/plib_evsys.h
   projectFolder: config/sam_e54_xpro/peripheral/evsys
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/peripheral/evsys/plib_evsys.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/peripheral/evsys/plib_evsys.c
   projectFolder: config/sam_e54_xpro/peripheral/evsys
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/device_cache.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/device_cache.h
   projectFolder: config/sam_e54_xpro
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/toolchain_specifics.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/toolchain_specifics.h
   projectFolder: config/sam_e54_xpro
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/main.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/main.c
   projectFolder: ''
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/definitions.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/definitions.h
   projectFolder: config/sam_e54_xpro
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/initialization.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/initialization.c
   projectFolder: config/sam_e54_xpro
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/interrupts.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/interrupts.c
   projectFolder: config/sam_e54_xpro
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/interrupts.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/interrupts.h
   projectFolder: config/sam_e54_xpro
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/device_vectors.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/device_vectors.h
   projectFolder: config/sam_e54_xpro
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/exceptions.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/exceptions.c
   projectFolder: config/sam_e54_xpro
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/ATSAME54P20A.ld
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/ATSAME54P20A.ld
   projectFolder: config/sam_e54_xpro
   type: Linker Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/stdio/xc32_monitor.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/stdio/xc32_monitor.c
   projectFolder: config/sam_e54_xpro/stdio
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/peripheral/port/plib_port.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/peripheral/port/plib_port.h
   projectFolder: config/sam_e54_xpro/peripheral/port
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/peripheral/port/plib_port.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/peripheral/port/plib_port.c
   projectFolder: config/sam_e54_xpro/peripheral/port
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/pin_configurations.csv
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/pin_configurations.csv
   projectFolder: ''
   type: Important Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/peripheral/clock/plib_clock.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/peripheral/clock/plib_clock.h
   projectFolder: config/sam_e54_xpro/peripheral/clock
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/peripheral/clock/plib_clock.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/peripheral/clock/plib_clock.c
   projectFolder: config/sam_e54_xpro/peripheral/clock
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/peripheral/nvic/plib_nvic.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/peripheral/nvic/plib_nvic.h
   projectFolder: config/sam_e54_xpro/peripheral/nvic
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/peripheral/nvic/plib_nvic.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/peripheral/nvic/plib_nvic.c
   projectFolder: config/sam_e54_xpro/peripheral/nvic
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/peripheral/cmcc/plib_cmcc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/peripheral/cmcc/plib_cmcc.h
   projectFolder: config/sam_e54_xpro/peripheral/cmcc
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/peripheral/cmcc/plib_cmcc.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/peripheral/cmcc/plib_cmcc.c
   projectFolder: config/sam_e54_xpro/peripheral/cmcc
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/startup_xc32.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/startup_xc32.c
   projectFolder: config/sam_e54_xpro
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/libc_syscalls.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/libc_syscalls.c
   projectFolder: config/sam_e54_xpro
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/device.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/device.h
   projectFolder: config/sam_e54_xpro
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/ac.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/ac.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/adc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/adc.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/aes.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/aes.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/can.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/can.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/ccl.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/ccl.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/cmcc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/cmcc.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/dac.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/dac.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/dmac.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/dmac.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/dsu.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/dsu.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/eic.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/eic.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/evsys.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/evsys.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/freqm.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/freqm.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/fuses.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/fuses.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/gclk.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/gclk.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/gmac.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/gmac.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/hmatrixb.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/hmatrixb.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/i2s.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/i2s.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/icm.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/icm.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/mclk.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/mclk.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/nvmctrl.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/nvmctrl.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/osc32kctrl.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/osc32kctrl.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/oscctrl.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/oscctrl.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/pac.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/pac.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/pcc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/pcc.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/pdec.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/pdec.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/pm.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/pm.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/port.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/port.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/pukcc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/pukcc.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/qspi.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/qspi.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/ramecc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/ramecc.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/rstc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/rstc.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/rtc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/rtc.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/sdhc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/sdhc.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/sercom.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/sercom.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/supc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/supc.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/tc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/tc.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/tcc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/tcc.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/trng.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/trng.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/usb.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/usb.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/wdt.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/component/wdt.h
   projectFolder: packs/ATSAME54P20A_DFP/component
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/ac.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/ac.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/adc0.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/adc0.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/adc1.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/adc1.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/aes.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/aes.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/can0.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/can0.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/can1.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/can1.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/ccl.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/ccl.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/cmcc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/cmcc.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/dac.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/dac.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/dmac.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/dmac.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/dsu.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/dsu.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/eic.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/eic.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/evsys.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/evsys.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/freqm.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/freqm.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/fuses.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/fuses.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/gclk.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/gclk.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/gmac.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/gmac.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/hmatrix.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/hmatrix.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/i2s.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/i2s.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/icm.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/icm.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/mclk.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/mclk.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/nvmctrl.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/nvmctrl.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/osc32kctrl.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/osc32kctrl.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/oscctrl.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/oscctrl.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/pac.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/pac.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/pcc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/pcc.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/pdec.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/pdec.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/pm.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/pm.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/port.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/port.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/qspi.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/qspi.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/ramecc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/ramecc.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/rstc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/rstc.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/rtc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/rtc.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/sdhc0.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/sdhc0.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/sdhc1.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/sdhc1.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/sercom0.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/sercom0.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/sercom1.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/sercom1.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/sercom2.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/sercom2.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/sercom3.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/sercom3.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/sercom4.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/sercom4.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/sercom5.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/sercom5.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/sercom6.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/sercom6.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/sercom7.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/sercom7.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/supc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/supc.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/tc0.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/tc0.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/tc1.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/tc1.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/tc2.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/tc2.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/tc3.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/tc3.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/tc4.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/tc4.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/tc5.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/tc5.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/tc6.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/tc6.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/tc7.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/tc7.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/tcc0.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/tcc0.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/tcc1.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/tcc1.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/tcc2.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/tcc2.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/tcc3.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/tcc3.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/tcc4.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/tcc4.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/trng.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/trng.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/usb.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/usb.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/wdt.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/instance/wdt.h
   projectFolder: packs/ATSAME54P20A_DFP/instance
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/same54p20a.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/same54p20a.h
   projectFolder: packs/ATSAME54P20A_DFP
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/pio/same54p20a.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/ATSAME54P20A_DFP/pio/same54p20a.h
   projectFolder: packs/ATSAME54P20A_DFP/pio
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_version.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_version.h
   projectFolder: packs/CMSIS/CMSIS/Core/Include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_compiler.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_compiler.h
   projectFolder: packs/CMSIS/CMSIS/Core/Include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_iccarm.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_iccarm.h
   projectFolder: packs/CMSIS/CMSIS/Core/Include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_gcc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_gcc.h
   projectFolder: packs/CMSIS/CMSIS/Core/Include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_armcc.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_armcc.h
   projectFolder: packs/CMSIS/CMSIS/Core/Include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang.h
   projectFolder: packs/CMSIS/CMSIS/Core/Include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang_ltm.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang_ltm.h
   projectFolder: packs/CMSIS/CMSIS/Core/Include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/core_cm4.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/core_cm4.h
   projectFolder: packs/CMSIS/CMSIS/Core/Include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/mpu_armv7.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/mpu_armv7.h
   projectFolder: packs/CMSIS/CMSIS/Core/Include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/cachel1_armv7.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/packs/CMSIS/CMSIS/Core/Include/cachel1_armv7.h
   projectFolder: packs/CMSIS/CMSIS/Core/Include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/FreeRTOSConfig.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/FreeRTOSConfig.h
   projectFolder: config/sam_e54_xpro
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/freertos_hooks.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/freertos_hooks.c
   projectFolder: config/sam_e54_xpro
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/croutine.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/croutine.c
   projectFolder: FreeRTOS/Source
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/list.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/list.c
   projectFolder: FreeRTOS/Source
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/queue.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/queue.c
   projectFolder: FreeRTOS/Source
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/FreeRTOS_tasks.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/FreeRTOS_tasks.c
   projectFolder: FreeRTOS/Source
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/timers.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/timers.c
   projectFolder: FreeRTOS/Source
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/event_groups.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/event_groups.c
   projectFolder: FreeRTOS/Source
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/stream_buffer.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/stream_buffer.c
   projectFolder: FreeRTOS/Source
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/portable/MemMang/heap_1.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/portable/MemMang/heap_1.c
   projectFolder: FreeRTOS/Source/portable/MemMang
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/croutine.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/croutine.h
   projectFolder: FreeRTOS/Source/include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/event_groups.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/event_groups.h
   projectFolder: FreeRTOS/Source/include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/FreeRTOS.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/FreeRTOS.h
   projectFolder: FreeRTOS/Source/include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/list.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/list.h
   projectFolder: FreeRTOS/Source/include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/mpu_wrappers.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/mpu_wrappers.h
   projectFolder: FreeRTOS/Source/include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/portable.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/portable.h
   projectFolder: FreeRTOS/Source/include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/projdefs.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/projdefs.h
   projectFolder: FreeRTOS/Source/include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/queue.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/queue.h
   projectFolder: FreeRTOS/Source/include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/semphr.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/semphr.h
   projectFolder: FreeRTOS/Source/include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/stack_macros.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/stack_macros.h
   projectFolder: FreeRTOS/Source/include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/deprecated_definitions.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/deprecated_definitions.h
   projectFolder: FreeRTOS/Source/include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/task.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/task.h
   projectFolder: FreeRTOS/Source/include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/timers.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/timers.h
   projectFolder: FreeRTOS/Source/include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/mpu_prototypes.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/mpu_prototypes.h
   projectFolder: FreeRTOS/Source/include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/mpu_syscall_numbers.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/mpu_syscall_numbers.h
   projectFolder: FreeRTOS/Source/include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/stream_buffer.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/stream_buffer.h
   projectFolder: FreeRTOS/Source/include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/message_buffer.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/include/message_buffer.h
   projectFolder: FreeRTOS/Source/include
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/portable/GCC/SAM/ARM_CM4F/port.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/portable/GCC/SAM/ARM_CM4F/port.c
   projectFolder: FreeRTOS/Source/portable/GCC/SAM/ARM_CM4F
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/portable/GCC/SAM/ARM_CM4F/portmacro.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/third_party/rtos/FreeRTOS/Source/portable/GCC/SAM/ARM_CM4F/portmacro.h
   projectFolder: FreeRTOS/Source/portable/GCC/SAM/ARM_CM4F
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/osal/osal.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/osal/osal.h
   projectFolder: config/sam_e54_xpro/osal
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/osal/osal_definitions.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/osal/osal_definitions.h
   projectFolder: config/sam_e54_xpro/osal
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/osal/osal_freertos.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/osal/osal_freertos.h
   projectFolder: config/sam_e54_xpro/osal
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/osal/osal_freertos.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/osal/osal_freertos.c
   projectFolder: config/sam_e54_xpro/osal
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/app.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/app.c
   projectFolder: ''
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/app.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/app.h
   projectFolder: ''
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/app1.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/app1.c
   projectFolder: ''
   type: Source Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/app1.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/app1.h
   projectFolder: ''
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/user.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/user.h
   projectFolder: config/sam_e54_xpro
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/configuration.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/configuration.h
   projectFolder: config/sam_e54_xpro
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/sys_tasks.h
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/sys_tasks.h
   projectFolder: config/sam_e54_xpro
   type: Header Files
 - excludeFromProject: false
-  path: /home/svcjenkins/workspace/apps-team/Users/skn/regenerate-apps-for_xc32-v500/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/tasks.c
+  path: /home/svcjenkins/workspace/apps-team/Users/skn/fix-double-type-symbol-issue/core_apps_sam_d5x_e5x/apps/rtos/freertos/task_notification_freertos/firmware/src/config/sam_e54_xpro/tasks.c
   projectFolder: config/sam_e54_xpro
   type: Source Files
 generatedSettings:
