@@ -1,0 +1,142 @@
+configVersion: 1.0.0
+componentName: drv_sfdp
+coreVersion: 5.8.4
+device: ATSAME54P20A
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: drv_sfdp
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: core
+  type: package
+  version: v3.16.2
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments:
+    children:
+    - children:
+      - attributes:
+          id: drv_sfdp_DRV_SPI_dependency
+        children:
+        - children:
+          - attributes:
+              id: enabled
+            children:
+            - type: Value
+              value: 'false'
+            type: Boolean
+          type: Attributes
+        type: DirectDependency
+      - attributes:
+          id: drv_sfdp_SPI_dependency
+        children:
+        - children:
+          - attributes:
+              id: enabled
+            children:
+            - type: Value
+              value: 'false'
+            type: Boolean
+          type: Attributes
+        type: DirectDependency
+      - attributes:
+          id: drv_sfdp_SQI_dependency
+        children:
+        - children:
+          - attributes:
+              id: targetComponentID
+            children:
+            - type: Value
+              value: qspi
+            type: String
+          - attributes:
+              id: targetAttachmentID
+            children:
+            - type: Value
+              value: QSPI_SQI
+            type: String
+          type: Attributes
+        type: DirectDependency
+      type: Attachments
+    type: drv_sfdp
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: drv_sfdp
+          x: '182'
+          y: '166'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    DRV_SFDP_HEADER_DEF:
+      attributes:
+        id: DRV_SFDP_HEADER_DEF
+      children:
+      - children:
+        - attributes:
+            id: source
+          children:
+          - type: Value
+            value: driver/sfdp/templates/drv_sfdp_qspi_definitions.h.ftl
+          type: String
+        type: Attributes
+      type: File
+    DRV_SFDP_INTERFACE_TYPE:
+      attributes:
+        id: DRV_SFDP_INTERFACE_TYPE
+      children:
+      - children:
+        - attributes:
+            id: drv_sfdp
+            value: SQI_PLIB
+          type: Dynamic
+        type: Values
+      type: String
+    DRV_SFDP_PLIB:
+      attributes:
+        id: DRV_SFDP_PLIB
+      children:
+      - children:
+        - attributes:
+            id: drv_sfdp
+            value: QSPI
+          type: Dynamic
+        type: Values
+      type: String
+    DRV_SFDP_PROTOCOL:
+      attributes:
+        id: DRV_SFDP_PROTOCOL
+      children:
+      - children:
+        - attributes:
+            id: drv_sfdp
+            value: SQI
+          type: Dynamic
+        type: Values
+      type: Combo
+    DRV_SFDP_SOURCE:
+      attributes:
+        id: DRV_SFDP_SOURCE
+      children:
+      - children:
+        - attributes:
+            id: markup
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        - attributes:
+            id: source
+          children:
+          - type: Value
+            value: driver/sfdp/src/drv_sfdp_qspi.c.ftl
+          type: String
+        type: Attributes
+      type: File
+  userData: {}
