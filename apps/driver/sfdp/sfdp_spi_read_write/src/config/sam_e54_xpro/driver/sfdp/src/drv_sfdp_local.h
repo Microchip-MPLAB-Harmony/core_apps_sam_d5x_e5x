@@ -137,9 +137,69 @@ typedef enum
     SFDP_CMD_UNPROTECT_GLOBAL    = 0x98,
 
     /* Command to write the Flash status register. */
-    SFDP_CMD_WRITE_STATUS_REG    = 0x01
+    SFDP_CMD_WRITE_STATUS_REG    = 0x01,
+
+    /* N25Q specific commands */
+    SFDP_CMD_WRITE_ENHANCED_VOLATILE_CONFIG_REG = 0x61,
+    SFDP_CMD_READ_ENHANCED_VOLATILE_CONFIG_REG = 0x65,
+    SFDP_CMD_ENTER_QUAD_N25Q = 0x35,
+    SFDP_CMD_EXIT_QUAD_N25Q = 0xF5,
+
+    /* W25 specific commands */
+    SFDP_CMD_QUAD_INPUT_PAGE_PROGRAM = 0x32,
+    SFDP_CMD_FAST_READ_QUAD_IO_W25 = 0xEB,
+
+    /* MX25L/MX66 specific commands */
+    SFDP_CMD_ENABLE_QUAD_IO_MX25L = 0x35,
+    SFDP_CMD_RESET_QUAD_IO_MX25L = 0xF5,
+    SFDP_CMD_ENTER_4_BYTE_ADDR_MODE = 0xB7,
+    SFDP_CMD_HIGH_SPEED_QREAD_MX25L = 0xEB,
+
+    /* S25FL/IS25 specific commands */
+    SFDP_CMD_READ_STATUS_REG2 = 0x35,
+    SFDP_CMD_WRITE_STATUS_REG2 = 0x31,
+    SFDP_CMD_READ_CONFIG_REG = 0x15
 
 } SFDP_CMD;
+
+// *****************************************************************************
+/* SFDP Device Type Enumeration
+
+  Summary:
+    Enumeration for different flash device types.
+
+  Description:
+    This enumeration defines device types for applying device-specific
+    optimizations and quad enable methods.
+
+  Remarks:
+    Device type is detected at runtime via JEDEC ID.
+*/
+
+typedef enum
+{
+    /* Generic JEDEC-compliant device using SFDP discovery */
+    SFDP_DEVICE_TYPE_GENERIC = 0,
+
+    /* SST26 family devices */
+    SFDP_DEVICE_TYPE_SST26,
+
+    /* W25 family devices */
+    SFDP_DEVICE_TYPE_W25,
+
+    /* N25Q family devices */
+    SFDP_DEVICE_TYPE_N25Q,
+
+    /* MX25L/MX66 family devices */
+    SFDP_DEVICE_TYPE_MX25L,
+
+    /* S25FL family devices */
+    SFDP_DEVICE_TYPE_S25FL,
+
+    /* IS25 family devices */
+    SFDP_DEVICE_TYPE_IS25
+
+} SFDP_DEVICE_TYPE;
 
 // *****************************************************************************
 /* SFDP Header Structure
@@ -260,8 +320,17 @@ typedef struct
     uint8_t addressBytes;
 
     /* Quad command */
-    uint32_t quadCommandEnable;
-    uint32_t quadCommandDisable;
+    uint8_t quadCommandEnable;
+    uint8_t quadCommandDisable;
+
+    /* Device type detected from JEDEC ID */
+    SFDP_DEVICE_TYPE deviceType;
+
+    /* Vendor ID from JEDEC (first byte) */
+    uint8_t vendorId;
+
+    /* Device ID from JEDEC (bytes 1-2) */
+    uint16_t deviceId;
 
 } DRV_SFDP_FLASH_PARAMS;
 
