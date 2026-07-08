@@ -3,6 +3,31 @@
 
 # Microchip MPLAB® Harmony 3 Release Notes
 
+## Harmony 3 driver and system service application examples for SAM D5x/E5x family v3.7.0
+
+### Development kit and demo application support
+
+Following table provides number of driver and system service examples available for different development kits.
+
+| Development Kits  | MPLAB X applications |
+|:-----------------:|:-------------------:|
+| [SAM E54 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsame54-xpro) | 46 |
+
+### New Features
+
+- Added demo applications for SFDP Flash driver
+
+### Known Issues
+
+- None
+
+### Development Tools
+
+- [MPLAB® X IDE 6.30](https://www.microchip.com/mplab/mplab-x-ide)
+- MPLAB® X IDE plug-ins:
+  - MPLAB® Code Configurator (MCC) 5.6.4 or higher
+- [MPLAB® XC32 C/C++ Compiler 5.10](https://www.microchip.com/mplab/compilers) or higher
+
 ## Harmony 3 driver and system service application examples for SAM D5x/E5x family v3.6.1
 
 ### Development kit and demo application support
